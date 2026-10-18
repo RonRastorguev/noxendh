@@ -1,0 +1,30 @@
+{
+ "changeset": "PARAM_CHANGESET_S1",
+ "set": "Scout stability port, stage A (estimation + failsafe) + offboard switch",
+ "status": "PREPARED, NOT WRITTEN. Written only on Ron's explicit go with this file's sha256.",
+ "firmware": "PX4 1.18.0 RC fca3df865af36124a28c9d607e850f111dbaaea9, MICOAIR_H743_V2",
+ "board_uid": "0x3533511634343432",
+ "baseline_dump": "hardware/scout/fc_baseline_20261015/scout_baseline_20261015.params",
+ "scope": "docs/SCOUT_STABILITY_PORT.md section A, plus RC_MAP_OFFB_SW (Ron 2026-10-15: ch 6 high). Reboot flags from this firmware's /etc/extras/parameters.json.xz.",
+ "note": "Types: 6 = INT32, 9 = REAL32. Every 'current' is the live baseline value; the apply tool refuses on any drift. scout_apply.sh refuses unless the FC's UID is board_uid (another FC shares the USB ID and COM port).",
+ "writes": [
+  {"n": 1, "name": "COM_LOW_BAT_ACT", "type": 6, "current": 0, "proposed": 2, "reboot": false,
+   "source": "Reference value. 2 = Land: no GPS, so Return is meaningless; land instead of warn-only"},
+  {"n": 2, "name": "SYS_HAS_NUM_DIST", "type": 6, "current": 0, "proposed": 1, "reboot": false,
+   "source": "Reference value. Refuse to arm without the rangefinder (the floor-stop sensor)"},
+  {"n": 3, "name": "SDLOG_PROFILE", "type": 6, "current": 1, "proposed": 3, "reboot": true,
+   "source": "Reference value. Default + estimator replay topics in every log"},
+  {"n": 4, "name": "EKF2_OF_POS_Y", "type": 9, "current": 0.0, "proposed": 0.0076, "reboot": false,
+   "source": "Ron 2026-10-15, hand-measured: flow/range module 0.3 in right of the FC (config/scout_hw.yaml)"},
+  {"n": 5, "name": "EKF2_OF_POS_Z", "type": 9, "current": 0.019999999552965164, "proposed": 0.0127, "reboot": false,
+   "source": "Ron 2026-10-15, hand-measured: 0.5 in below the FC (FRD z down)"},
+  {"n": 6, "name": "EKF2_RNG_POS_Y", "type": 9, "current": 0.0, "proposed": 0.0076, "reboot": false,
+   "source": "same module as the flow sensor (MTF-02P)"},
+  {"n": 7, "name": "EKF2_RNG_POS_Z", "type": 9, "current": 0.019999999552965164, "proposed": 0.0127, "reboot": false,
+   "source": "same module as the flow sensor (MTF-02P)"},
+  {"n": 8, "name": "EKF2_MIN_RNG", "type": 9, "current": 0.009999999776482582, "proposed": 0.043, "reboot": false,
+   "source": "Ron's measured lens height at rest, 1.7 in (config/scout_hw.yaml). The sensor itself reads its 2 cm floor at rest (measured 2026-10-15, flat floor), so the measured height is used"},
+  {"n": 9, "name": "RC_MAP_OFFB_SW", "type": 6, "current": 0, "proposed": 6, "reboot": false,
+   "source": "Reference value; Ron 2026-10-15. RC_OFFB_TH is already 0.75: channel 6 high = offboard"}
+ ]
+}

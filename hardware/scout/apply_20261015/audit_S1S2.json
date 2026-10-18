@@ -1,0 +1,86 @@
+{
+ "bytes": 1141,
+ "messages": 43,
+ "by_type": {
+  "HEARTBEAT": 13,
+  "COMMAND_LONG": 2,
+  "PARAM_REQUEST_LIST": 5,
+  "PARAM_REQUEST_READ": 5,
+  "PARAM_SET": 18
+ },
+ "reboots": [],
+ "non_whitelisted": [
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ]
+ ]
+}

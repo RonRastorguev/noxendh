@@ -1,0 +1,44 @@
+# Scout mission (navigation/mission.py, docs/SCOUT_NAV.md §7). Every number is PROVISIONAL (synthetic sim only).
+# Hardware facts are not written here (config/scout_hw.yaml); speeds / inflation live in config/scout_nav.yaml.
+
+takeoff:
+  # The FIXED takeoff pad: body (FC) origin ON THE GROUND, in the prior map. Real value: measured in the Point-LIO
+  # map once it exists (NEEDS_RON R20). null = the mission refuses to start. The sim sets its own pad.
+  # The pad is a RAISED BOX (Ron 2026-10-17), part of the prior map: z = pad top + derived.fc_height_at_rest_m.
+  position_map: null                 # [x, y, z]
+  yaw_deg: null
+mode: wall_goal                      # wall_goal (fly to B) | hover_test (take off, rise, hover, land on the pad)
+hover_test:                          # Ron 2026-10-17: "takes off, hovers, and lands after hovering for 10 seconds,
+  climb_m: 2.0                       #   all in the same spot. maybe rising 2 meters"; capped below the map ceiling
+  hover_s: 10.0                      #   minus ceiling_margin_m (scout_nav.yaml) when the room is too low
+  ceiling_margin_m: null             # null = scout_nav.yaml ceiling_margin_m
+goal:
+  point_b: null                      # [x, y, z] a point ON a wall, in map (CLI / dashboard "Send Scout" sets it)
+
+takeoff_alt_m: 1.0                   # body above the floor after the vertical climb ...
+takeoff_min_climb_m: 0.5             # ... and at least this far above the pad top (raised pad)
+pad_max_rest_height_m: 0.25          # pad pose must rest within this above the mapped surface under it, else REFUSED
+takeoff_speed_mps: 0.3               # well under MPC_TKO_SPEED (1.0) / MPC_Z_VEL_MAX_UP (1.0)
+takeoff_decel_mps2: 0.25             # the climb ramp slows into its target (a hard stop overshot ~14 cm in the sim)
+takeoff_tol_m: 0.08
+preflight_max_offset_m: 0.30         # a PnP fix on the pad farther than this from the pad pose -> REFUSED
+preflight_max_offset_deg: 15.0
+preflight_fixes: 2                   # consistent fixes to accept or to refuse
+preflight_require_fix: false         # true: never take off without a PnP fix on the pad
+preflight_timeout_s: 15.0
+stream_before_offboard_s: 1.0        # PX4 needs a setpoint stream before it accepts offboard
+auto_arm: false                      # false: the pilot arms on the RC; the mission then takes off by itself
+arm_timeout_s: 30.0
+settle_fixes: 3                      # fresh accepted PnP fixes after the climb before leaving the pad column
+settle_timeout_s: 15.0
+replan_period_s: 1.0
+replan_deviation_m: 0.5
+no_path_land_s: 20.0
+dwell_s: 5.0                         # hover facing the wall point
+on_arrival: hold                     # hold | return_land | land
+return_tol_m: 0.15
+loc_lost_abort_s: 6.0                # alignment invalid this long -> land in place
+max_mission_s: 300.0
+odom_buffer_s: 3.0
+ff_alpha: 0.3                        # low-pass of the odom-setpoint velocity feed-forward (DN-08)
+ff_max_mps: 0.6

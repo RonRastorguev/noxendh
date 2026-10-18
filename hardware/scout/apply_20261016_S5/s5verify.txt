@@ -1,0 +1,322 @@
+# sent message types this session: {'HEARTBEAT': 36, 'SERIAL_CONTROL': 10}
+===== $ param show EKF2_MULTI_IMU
+param show EKF2_MULTI_IMU
+Symbols: x = used, + = saved, * = unsaved, l = locked
+x +   EKF2_MULTI_IMU [396,668] : 0
+
+ 993/1602 parameters used.
+nsh> [K
+===== $ param show SENS_IMU_MODE
+param show SENS_IMU_MODE
+Symbols: x = used, + = saved, * = unsaved, l = locked
+x +   SENS_IMU_MODE [940,1451] : 1
+
+ 993/1602 parameters used.
+nsh> [K
+===== $ param show CAL_*1_PRIO
+param show CAL_*1_PRIO
+Symbols: x = used, + = saved, * = unsaved, l = locked
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+WARN  [param] * symbol only allowed at end of search string
+
+ 993/1602 parameters used.
+nsh> [K
+===== $ param show SDLOG_PROFILE
+param show SDLOG_PROFILE
+Symbols: x = used, + = saved, * = unsaved, l = locked
+x +   SDLOG_PROFILE [898,1395] : 3
+
+ 993/1602 parameters used.
+nsh> [K
+===== $ listener estimator_selector_status
+listener estimator_selector_status
+never published
+nsh> [K
+===== $ listener estimator_status_flags
+listener estimator_status_flags
+
+TOPIC: estimator_status_flags
+ estimator_status_flags
+    timestamp: 38503119 (0.199980 seconds ago)
+    timestamp_sample: 38326578 (176541 us before timestamp)
+    control_status_changes: 14
+    fault_status_changes: 0
+    cs_tilt_align: True
+    cs_yaw_align: False
+    cs_gnss_pos: False
+    cs_opt_flow: False
+    cs_mag_hdg: False
+    cs_mag_3d: False
+    cs_mag_dec: False
+    cs_in_air: False
+    cs_wind: False
+    cs_baro_hgt: True
+    cs_rng_hgt: True
+    cs_gps_hgt: False
+    cs_ev_pos: False
+    cs_ev_yaw: False
+    cs_ev_hgt: False
+    cs_fuse_beta: False
+    cs_mag_field_disturbed: False
+    cs_fixed_wing: False
+    cs_mag_fault: False
+    cs_fuse_aspd: False
+    cs_gnd_effect: False
+    cs_rng_stuck: False
+    cs_gnss_yaw: False
+    cs_mag_aligned_in_flight: False
+    cs_ev_vel: False
+    cs_synthetic_mag_z: False
+    cs_vehicle_at_rest: True
+    cs_gnss_yaw_fault: False
+    cs_rng_fault: False
+    cs_inertial_dead_reckoning: False
+    cs_wind_dead_reckoning: False
+    cs_rng_kin_consistent: True
+    cs_fake_pos: False
+    cs_fake_hgt: False
+    cs_gravity_vector: True
+    cs_mag: False
+    cs_ev_yaw_fault: False
+    cs_mag_heading_consistent: False
+    cs_aux_gpos: False
+    cs_rng_terrain: False
+    cs_opt_flow_terrain: False
+    cs_valid_fake_pos: True
+    cs_constant_pos: False
+    cs_baro_fault: False
+    cs_gnss_vel: False
+    cs_gnss_fault: False
+    cs_yaw_manual: False
+    cs_gnss_hgt_fault: False
+    cs_in_transition: False
+    cs_heading_observable: False
+    fs_bad_mag_x: False
+    fs_bad_mag_y: False
+    fs_bad_mag_z: False
+    fs_bad_hdg: False
+    fs_bad_mag_decl: False
+    fs_bad_airspeed: False
+    fs_bad_sideslip: False
+    fs_bad_optflow_x: False
+    fs_bad_optflow_y: False
+    fs_bad_acc_vertical: False
+    fs_bad_acc_clipping: False
+
+nsh> [K
+===== $ sensors status
+sensors status
+selected gyro: 6684690 (0)
+validator: best: 0, prev best: 0, failsafe: NO (0 events)
+sensor #0, prio: 50, state: OK
+	val:  -0.0040, lp:  -0.0037 mean dev:  -0.0001 RMS:   0.0040 conf:   1.0000
+	val:   0.0010, lp:   0.0019 mean dev:   0.0001 RMS:   0.0042 conf:   1.0000
+	val:  -0.0002, lp:  -0.0002 mean dev:  -0.0000 RMS:   0.0032 conf:   1.0000
+sensor #1, prio: 25, state: OK
+	val:  -0.0013, lp:  -0.0020 mean dev:  -0.0000 RMS:   0.0028 conf:   1.0000
+	val:  -0.0020, lp:  -0.0002 mean dev:  -0.0000 RMS:   0.0036 conf:   1.0000
+	val:   0.0006, lp:   0.0007 mean dev:   0.0000 RMS:   0.0015 conf:   1.0000
+
+selected accel: 6946834 (0)
+validator: best: 0, prev best: 0, failsafe: NO (0 events)
+sensor #0, prio: 50, state: OK
+	val:  -0.4101, lp:  -0.3913 mean dev:  -0.0027 RMS:   0.0472 conf:   1.0000
+	val:  -0.2464, lp:  -0.2654 mean dev:  -0.0019 RMS:   0.0466 conf:   1.0000
+	val:  -9.7624, lp:  -9.7530 mean dev:  -0.0726 RMS:   0.4160 conf:   1.0000
+sensor #1, prio: 25, state: OK
+	val:  -0.3959, lp:  -0.3819 mean dev:  -0.0040 RMS:   0.0549 conf:   1.0000
+	val:  -0.2222, lp:  -0.2406 mean dev:  -0.0016 RMS:   0.0543 conf:   1.0000
+	val:  -9.6136, lp:  -9.6010 mean dev:  -0.1028 RMS:   0.5680 conf:   1.0000
+
+[vehicle_air_data] selected BARO: 5207825 (0)
+validator: best: 0, prev best: 0, failsafe: NO (0 events)
+sensor #0, prio: 50, state: OK
+	val: 100851.4453, lp: 100850.7891 mean dev:  -0.1375 RMS:   0.2919 conf:   1.0000
+	val:  39.7469, lp:  39.6843 mean dev:   0.0671 RMS:   0.0242 conf:   1.0000
+	val:  39.5000, lp:  39.5652 mean dev:   0.0029 RMS:   0.0237 conf:   1.0000
+BARO 5207825 EN: 1, offset: 0.000, Internal
+
+Airspeed status:
+	no data
+
+
+[vehicle_acceleration] selected sensor: 6946834, rate: 801.0 Hz, estimated bias: [0.0018 0.0008 0.0431]
+ACC 6946834 EN: 1, offset: [-0.017 0.008 0.178], scale: [1.000 1.000 1.000], Internal
+
+[vehicle_angular_velocity] selected sensor: 6684690, rate: 1976.3 Hz FIFO, estimated bias: [-0.00351 0.00216 -0.00032]
+GYRO 6684690 EN: 1, offset: [0.009 -0.001 0.002], Internal
+vehicle_angular_velocity: gyro filter: 28151 events, 322880us elapsed, 11.47us avg, min 9us max 35us 1.056us rms
+vehicle_angular_velocity: gyro filter reset: 2 events
+vehicle_angular_velocity: gyro selection changed: 1 events
+
+
+[vehicle_imu] 0 - Accel: 6946834, interval: 1249.4 us (SD 175.2 us), Gyro: 6684690, interval: 1502.4 us (SD 30.7 us)
+vehicle_imu: accel data gap: 1 events
+vehicle_imu: gyro data gap: 2 events
+ACC 6946834 EN: 1, offset: [-0.017 0.008 0.178], scale: [1.000 1.000 1.000], Internal
+GYRO 6684690 EN: 1, offset: [0.009 -0.001 0.002], Internal
+
+[vehicle_imu] 1 - Accel: 3604506, interval: 626.7 us (SD 0.7 us), Gyro: 3604506, interval: 626.7 us (SD 0.7 us)
+vehicle_imu: accel data gap: 14 events
+vehicle_imu: gyro data gap: 10 events
+ACC 3604506 EN: 1, offset: [-0.010 -0.070 0.207], scale: [0.994 0.997 0.991], Internal
+GYRO 3604506 EN: 1, offset: [-0.001 0.001 -0.001], Internal
+nsh> [K
+===== $ listener vehicle_imu
+listener vehicle_imu
+
+TOPIC: vehicle_imu 2 instances
+
+Instance 0:
+ vehicle_imu
+    timestamp: 46322327 (0.003529 seconds ago)
+    timestamp_sample: 46322056 (271 us before timestamp)
+    accel_device_id: 6946834 (Type: 0x6A, SPI:2 (0x00))
+    gyro_device_id: 6684690 (Type: 0x66, SPI:2 (0x00))
+    delta_angle: [-0.00003, 0.00000, 0.00001]
+    delta_velocity: [-0.00352, -0.00223, -0.08548]
+    delta_angle_dt: 9014
+    delta_velocity_dt: 8741
+    delta_angle_clipping: 0
+    delta_velocity_clipping: 0
+    accel_calibration_count: 1
+    gyro_calibration_count: 1
+
+
+Instance 1:
+ vehicle_imu
+    timestamp: 46343010 (0.004112 seconds ago)
+    timestamp_sample: 46342863 (147 us before timestamp)
+    accel_device_id: 3604506 (Type: 0x37, SPI:3 (0x00))
+    gyro_device_id: 3604506 (Type: 0x37, SPI:3 (0x00))
+    delta_angle: [-0.00001, -0.00001, 0.00001]
+    delta_velocity: [-0.00187, -0.00126, -0.04809]
+    delta_angle_dt: 5015
+    delta_velocity_dt: 5015
+    delta_angle_clipping: 0
+    delta_velocity_clipping: 0
+    accel_calibration_count: 2
+    gyro_calibration_count: 1
+
+nsh> [K
+===== $ listener vehicle_local_position
+listener vehicle_local_position
+
+TOPIC: vehicle_local_position
+ vehicle_local_position
+    timestamp: 50045481 (0.003504 seconds ago)
+    timestamp_sample: 50044872 (609 us before timestamp)
+    ref_timestamp: 0
+    ref_lat: nan
+    ref_lon: nan
+    x: -0.00232
+    y: -0.00496
+    z: -0.04666
+    delta_xy: [0.00000, 0.00000]
+    delta_z: -0.04296
+    vx: -0.00115
+    vy: 0.00302
+    vz: 0.00270
+    z_deriv: 0.00374
+    delta_vxy: [0.00552, 0.01188]
+    delta_vz: -0.00031
+    ax: -0.01288
+    ay: -0.00006
+    az: -0.01436
+    heading: 0.00104
+    heading_var: 0.00020
+    unaided_heading: 0.00197
+    delta_heading: 0.00000
+    tilt_var: 0.00030
+    ref_alt: nan
+    dist_bottom: 0.04254
+    dist_bottom_var: 0.00065
+    delta_dist_bottom: -0.04296
+    eph: 0.01274
+    epv: 0.08153
+    evh: 0.04062
+    evv: 0.03680
+    vxy_max: inf
+    vz_max: inf
+    hagl_min: inf
+    hagl_max_z: inf
+    hagl_max_xy: inf
+    xy_valid: True
+    z_valid: True
+    v_xy_valid: True
+    v_z_valid: True
+    xy_reset_counter: 3
+    z_reset_counter: 2
+    vxy_reset_counter: 3
+    vz_reset_counter: 1
+    heading_reset_counter: 0
+    heading_good_for_control: False
+    xy_global: False
+    z_global: False
+    dist_bottom_valid: True
+    dist_bottom_reset_counter: 2
+    dist_bottom_sensor_bitfield: 1
+    dead_reckoning: False
+nsh> [K

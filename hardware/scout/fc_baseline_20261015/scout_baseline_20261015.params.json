@@ -1,0 +1,7008 @@
+{
+"param_count": 999,
+"received": 1000,
+"missing_indices": [],
+"seconds": 0.6,
+"params": [
+{
+"name": "ASPD_SCALE_1",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 0
+},
+{
+"name": "BAT1_A_PER_V",
+"value": 14.140000343322754,
+"type": 9,
+"raw_hex": "713d6241",
+"index": 1
+},
+{
+"name": "BAT1_CAPACITY",
+"value": 1500.0,
+"type": 9,
+"raw_hex": "0080bb44",
+"index": 2
+},
+{
+"name": "BAT1_I_FILT",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 3
+},
+{
+"name": "BAT1_I_OVERWRITE",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 4
+},
+{
+"name": "BAT1_N_CELLS",
+"value": 4,
+"type": 6,
+"raw_hex": "04000000",
+"index": 5
+},
+{
+"name": "BAT1_R_INTERNAL",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 6
+},
+{
+"name": "BAT1_SOURCE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 7
+},
+{
+"name": "BAT1_V_CHANNEL",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 8
+},
+{
+"name": "BAT1_V_CHARGED",
+"value": 4.199999809265137,
+"type": 9,
+"raw_hex": "66668640",
+"index": 9
+},
+{
+"name": "BAT1_V_DIV",
+"value": 21.1200008392334,
+"type": 9,
+"raw_hex": "c3f5a841",
+"index": 10
+},
+{
+"name": "BAT1_V_EMPTY",
+"value": 3.5,
+"type": 9,
+"raw_hex": "00006040",
+"index": 11
+},
+{
+"name": "BAT1_V_FILT",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 12
+},
+{
+"name": "BATMON_DRIVER_EN",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 13
+},
+{
+"name": "BAT_AVRG_CURRENT",
+"value": 15.0,
+"type": 9,
+"raw_hex": "00007041",
+"index": 14
+},
+{
+"name": "BAT_CRIT_THR",
+"value": 0.07000000029802322,
+"type": 9,
+"raw_hex": "295c8f3d",
+"index": 15
+},
+{
+"name": "BAT_EMERGEN_THR",
+"value": 0.05000000074505806,
+"type": 9,
+"raw_hex": "cdcc4c3d",
+"index": 16
+},
+{
+"name": "BAT_LOW_THR",
+"value": 0.15000000596046448,
+"type": 9,
+"raw_hex": "9a99193e",
+"index": 17
+},
+{
+"name": "BAT_V_OFFS_CURR",
+"value": 0.08100000023841858,
+"type": 9,
+"raw_hex": "54e3a53d",
+"index": 18
+},
+{
+"name": "BMM350_AVG",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 19
+},
+{
+"name": "BMM350_DRIVE",
+"value": 7,
+"type": 6,
+"raw_hex": "07000000",
+"index": 20
+},
+{
+"name": "BMM350_ODR",
+"value": 3,
+"type": 6,
+"raw_hex": "03000000",
+"index": 21
+},
+{
+"name": "CAL_ACC0_ID",
+"value": 6946834,
+"type": 6,
+"raw_hex": "12006a00",
+"index": 22
+},
+{
+"name": "CAL_ACC0_PRIO",
+"value": 50,
+"type": 6,
+"raw_hex": "32000000",
+"index": 23
+},
+{
+"name": "CAL_ACC0_ROT",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 24
+},
+{
+"name": "CAL_ACC0_XOFF",
+"value": -0.008488655090332031,
+"type": 9,
+"raw_hex": "00140bbc",
+"index": 25
+},
+{
+"name": "CAL_ACC0_XSCALE",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 26
+},
+{
+"name": "CAL_ACC0_YOFF",
+"value": 0.033188819885253906,
+"type": 9,
+"raw_hex": "00f1073d",
+"index": 27
+},
+{
+"name": "CAL_ACC0_YSCALE",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 28
+},
+{
+"name": "CAL_ACC0_ZOFF",
+"value": 0.08704996109008789,
+"type": 9,
+"raw_hex": "4047b23d",
+"index": 29
+},
+{
+"name": "CAL_ACC0_ZSCALE",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 30
+},
+{
+"name": "CAL_ACC1_ID",
+"value": 3604506,
+"type": 6,
+"raw_hex": "1a003700",
+"index": 31
+},
+{
+"name": "CAL_ACC1_PRIO",
+"value": 50,
+"type": 6,
+"raw_hex": "32000000",
+"index": 32
+},
+{
+"name": "CAL_ACC1_ROT",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 33
+},
+{
+"name": "CAL_ACC1_XOFF",
+"value": -0.04299347847700119,
+"type": 9,
+"raw_hex": "ee1930bd",
+"index": 34
+},
+{
+"name": "CAL_ACC1_XSCALE",
+"value": 0.9940136075019836,
+"type": 9,
+"raw_hex": "ad777e3f",
+"index": 35
+},
+{
+"name": "CAL_ACC1_YOFF",
+"value": -0.1711881309747696,
+"type": 9,
+"raw_hex": "f14b2fbe",
+"index": 36
+},
+{
+"name": "CAL_ACC1_YSCALE",
+"value": 0.9973275065422058,
+"type": 9,
+"raw_hex": "db507f3f",
+"index": 37
+},
+{
+"name": "CAL_ACC1_ZOFF",
+"value": 0.15366198122501373,
+"type": 9,
+"raw_hex": "91591d3e",
+"index": 38
+},
+{
+"name": "CAL_ACC1_ZSCALE",
+"value": 0.9917458295822144,
+"type": 9,
+"raw_hex": "0ee37d3f",
+"index": 39
+},
+{
+"name": "CAL_ACC2_ID",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 40
+},
+{
+"name": "CAL_ACC3_ID",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 41
+},
+{
+"name": "CAL_AIR_CMODEL",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 42
+},
+{
+"name": "CAL_AIR_TUBED_MM",
+"value": 1.5,
+"type": 9,
+"raw_hex": "0000c03f",
+"index": 43
+},
+{
+"name": "CAL_AIR_TUBELEN",
+"value": 0.20000000298023224,
+"type": 9,
+"raw_hex": "cdcc4c3e",
+"index": 44
+},
+{
+"name": "CAL_BARO0_ID",
+"value": 5207825,
+"type": 6,
+"raw_hex": "11774f00",
+"index": 45
+},
+{
+"name": "CAL_BARO0_OFF",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 46
+},
+{
+"name": "CAL_BARO0_PRIO",
+"value": 50,
+"type": 6,
+"raw_hex": "32000000",
+"index": 47
+},
+{
+"name": "CAL_GYRO0_ID",
+"value": 6684690,
+"type": 6,
+"raw_hex": "12006600",
+"index": 48
+},
+{
+"name": "CAL_GYRO0_PRIO",
+"value": 50,
+"type": 6,
+"raw_hex": "32000000",
+"index": 49
+},
+{
+"name": "CAL_GYRO0_ROT",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 50
+},
+{
+"name": "CAL_GYRO0_XOFF",
+"value": 0.009723733179271221,
+"type": 9,
+"raw_hex": "4b501f3c",
+"index": 51
+},
+{
+"name": "CAL_GYRO0_YOFF",
+"value": -0.0016632328042760491,
+"type": 9,
+"raw_hex": "d500daba",
+"index": 52
+},
+{
+"name": "CAL_GYRO0_ZOFF",
+"value": 0.0029429704882204533,
+"type": 9,
+"raw_hex": "dade403b",
+"index": 53
+},
+{
+"name": "CAL_GYRO1_ID",
+"value": 3604506,
+"type": 6,
+"raw_hex": "1a003700",
+"index": 54
+},
+{
+"name": "CAL_GYRO1_PRIO",
+"value": 50,
+"type": 6,
+"raw_hex": "32000000",
+"index": 55
+},
+{
+"name": "CAL_GYRO1_ROT",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 56
+},
+{
+"name": "CAL_GYRO1_XOFF",
+"value": -0.0016425095964223146,
+"type": 9,
+"raw_hex": "7a49d7ba",
+"index": 57
+},
+{
+"name": "CAL_GYRO1_YOFF",
+"value": 0.0009443369344808161,
+"type": 9,
+"raw_hex": "618d773a",
+"index": 58
+},
+{
+"name": "CAL_GYRO1_ZOFF",
+"value": -0.0019947791006416082,
+"type": 9,
+"raw_hex": "d7ba02bb",
+"index": 59
+},
+{
+"name": "CAL_GYRO2_ID",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 60
+},
+{
+"name": "CAL_GYRO3_ID",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 61
+},
+{
+"name": "CAL_MAG0_ID",
+"value": 527633,
+"type": 6,
+"raw_hex": "110d0800",
+"index": 62
+},
+{
+"name": "CAL_MAG0_PITCH",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 63
+},
+{
+"name": "CAL_MAG0_PRIO",
+"value": 50,
+"type": 6,
+"raw_hex": "32000000",
+"index": 64
+},
+{
+"name": "CAL_MAG0_ROLL",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 65
+},
+{
+"name": "CAL_MAG0_ROT",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 66
+},
+{
+"name": "CAL_MAG0_XCOMP",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 67
+},
+{
+"name": "CAL_MAG0_XODIAG",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 68
+},
+{
+"name": "CAL_MAG0_XOFF",
+"value": 0.4635477364063263,
+"type": 9,
+"raw_hex": "2156ed3e",
+"index": 69
+},
+{
+"name": "CAL_MAG0_XSCALE",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 70
+},
+{
+"name": "CAL_MAG0_YAW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 71
+},
+{
+"name": "CAL_MAG0_YCOMP",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 72
+},
+{
+"name": "CAL_MAG0_YODIAG",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 73
+},
+{
+"name": "CAL_MAG0_YOFF",
+"value": -0.10582567006349564,
+"type": 9,
+"raw_hex": "21bbd8bd",
+"index": 74
+},
+{
+"name": "CAL_MAG0_YSCALE",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 75
+},
+{
+"name": "CAL_MAG0_ZCOMP",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 76
+},
+{
+"name": "CAL_MAG0_ZODIAG",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 77
+},
+{
+"name": "CAL_MAG0_ZOFF",
+"value": -0.03181988000869751,
+"type": 9,
+"raw_hex": "905502bd",
+"index": 78
+},
+{
+"name": "CAL_MAG0_ZSCALE",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 79
+},
+{
+"name": "CAL_MAG1_ID",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 80
+},
+{
+"name": "CAL_MAG1_ROT",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 81
+},
+{
+"name": "CAL_MAG2_ID",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 82
+},
+{
+"name": "CAL_MAG2_ROT",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 83
+},
+{
+"name": "CAL_MAG3_ID",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 84
+},
+{
+"name": "CAL_MAG3_ROT",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 85
+},
+{
+"name": "CAM_CAP_FBACK",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 86
+},
+{
+"name": "CA_AIRFRAME",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 87
+},
+{
+"name": "CA_FAILURE_MODE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 88
+},
+{
+"name": "CA_ICE_PERIOD",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 89
+},
+{
+"name": "CA_METHOD",
+"value": 2,
+"type": 6,
+"raw_hex": "02000000",
+"index": 90
+},
+{
+"name": "CA_R0_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 91
+},
+{
+"name": "CA_R10_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 92
+},
+{
+"name": "CA_R11_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 93
+},
+{
+"name": "CA_R1_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 94
+},
+{
+"name": "CA_R2_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 95
+},
+{
+"name": "CA_R3_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 96
+},
+{
+"name": "CA_R4_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 97
+},
+{
+"name": "CA_R5_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 98
+},
+{
+"name": "CA_R6_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 99
+},
+{
+"name": "CA_R7_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 100
+},
+{
+"name": "CA_R8_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 101
+},
+{
+"name": "CA_R9_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 102
+},
+{
+"name": "CA_ROTOR0_AX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 103
+},
+{
+"name": "CA_ROTOR0_AY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 104
+},
+{
+"name": "CA_ROTOR0_AZ",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 105
+},
+{
+"name": "CA_ROTOR0_CT",
+"value": 6.5,
+"type": 9,
+"raw_hex": "0000d040",
+"index": 106
+},
+{
+"name": "CA_ROTOR0_KM",
+"value": 0.05000000074505806,
+"type": 9,
+"raw_hex": "cdcc4c3d",
+"index": 107
+},
+{
+"name": "CA_ROTOR0_PX",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 108
+},
+{
+"name": "CA_ROTOR0_PY",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 109
+},
+{
+"name": "CA_ROTOR0_PZ",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 110
+},
+{
+"name": "CA_ROTOR10_AX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 111
+},
+{
+"name": "CA_ROTOR10_AY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 112
+},
+{
+"name": "CA_ROTOR10_AZ",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 113
+},
+{
+"name": "CA_ROTOR10_CT",
+"value": 6.5,
+"type": 9,
+"raw_hex": "0000d040",
+"index": 114
+},
+{
+"name": "CA_ROTOR10_KM",
+"value": 0.05000000074505806,
+"type": 9,
+"raw_hex": "cdcc4c3d",
+"index": 115
+},
+{
+"name": "CA_ROTOR10_PX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 116
+},
+{
+"name": "CA_ROTOR10_PY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 117
+},
+{
+"name": "CA_ROTOR10_PZ",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 118
+},
+{
+"name": "CA_ROTOR11_AX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 119
+},
+{
+"name": "CA_ROTOR11_AY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 120
+},
+{
+"name": "CA_ROTOR11_AZ",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 121
+},
+{
+"name": "CA_ROTOR11_CT",
+"value": 6.5,
+"type": 9,
+"raw_hex": "0000d040",
+"index": 122
+},
+{
+"name": "CA_ROTOR11_KM",
+"value": 0.05000000074505806,
+"type": 9,
+"raw_hex": "cdcc4c3d",
+"index": 123
+},
+{
+"name": "CA_ROTOR11_PX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 124
+},
+{
+"name": "CA_ROTOR11_PY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 125
+},
+{
+"name": "CA_ROTOR11_PZ",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 126
+},
+{
+"name": "CA_ROTOR1_AX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 127
+},
+{
+"name": "CA_ROTOR1_AY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 128
+},
+{
+"name": "CA_ROTOR1_AZ",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 129
+},
+{
+"name": "CA_ROTOR1_CT",
+"value": 6.5,
+"type": 9,
+"raw_hex": "0000d040",
+"index": 130
+},
+{
+"name": "CA_ROTOR1_KM",
+"value": 0.05000000074505806,
+"type": 9,
+"raw_hex": "cdcc4c3d",
+"index": 131
+},
+{
+"name": "CA_ROTOR1_PX",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 132
+},
+{
+"name": "CA_ROTOR1_PY",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 133
+},
+{
+"name": "CA_ROTOR1_PZ",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 134
+},
+{
+"name": "CA_ROTOR2_AX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 135
+},
+{
+"name": "CA_ROTOR2_AY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 136
+},
+{
+"name": "CA_ROTOR2_AZ",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 137
+},
+{
+"name": "CA_ROTOR2_CT",
+"value": 6.5,
+"type": 9,
+"raw_hex": "0000d040",
+"index": 138
+},
+{
+"name": "CA_ROTOR2_KM",
+"value": -0.05000000074505806,
+"type": 9,
+"raw_hex": "cdcc4cbd",
+"index": 139
+},
+{
+"name": "CA_ROTOR2_PX",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 140
+},
+{
+"name": "CA_ROTOR2_PY",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 141
+},
+{
+"name": "CA_ROTOR2_PZ",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 142
+},
+{
+"name": "CA_ROTOR3_AX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 143
+},
+{
+"name": "CA_ROTOR3_AY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 144
+},
+{
+"name": "CA_ROTOR3_AZ",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 145
+},
+{
+"name": "CA_ROTOR3_CT",
+"value": 6.5,
+"type": 9,
+"raw_hex": "0000d040",
+"index": 146
+},
+{
+"name": "CA_ROTOR3_KM",
+"value": -0.05000000074505806,
+"type": 9,
+"raw_hex": "cdcc4cbd",
+"index": 147
+},
+{
+"name": "CA_ROTOR3_PX",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 148
+},
+{
+"name": "CA_ROTOR3_PY",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 149
+},
+{
+"name": "CA_ROTOR3_PZ",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 150
+},
+{
+"name": "CA_ROTOR4_AX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 151
+},
+{
+"name": "CA_ROTOR4_AY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 152
+},
+{
+"name": "CA_ROTOR4_AZ",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 153
+},
+{
+"name": "CA_ROTOR4_CT",
+"value": 6.5,
+"type": 9,
+"raw_hex": "0000d040",
+"index": 154
+},
+{
+"name": "CA_ROTOR4_KM",
+"value": 0.05000000074505806,
+"type": 9,
+"raw_hex": "cdcc4c3d",
+"index": 155
+},
+{
+"name": "CA_ROTOR4_PX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 156
+},
+{
+"name": "CA_ROTOR4_PY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 157
+},
+{
+"name": "CA_ROTOR4_PZ",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 158
+},
+{
+"name": "CA_ROTOR5_AX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 159
+},
+{
+"name": "CA_ROTOR5_AY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 160
+},
+{
+"name": "CA_ROTOR5_AZ",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 161
+},
+{
+"name": "CA_ROTOR5_CT",
+"value": 6.5,
+"type": 9,
+"raw_hex": "0000d040",
+"index": 162
+},
+{
+"name": "CA_ROTOR5_KM",
+"value": 0.05000000074505806,
+"type": 9,
+"raw_hex": "cdcc4c3d",
+"index": 163
+},
+{
+"name": "CA_ROTOR5_PX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 164
+},
+{
+"name": "CA_ROTOR5_PY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 165
+},
+{
+"name": "CA_ROTOR5_PZ",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 166
+},
+{
+"name": "CA_ROTOR6_AX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 167
+},
+{
+"name": "CA_ROTOR6_AY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 168
+},
+{
+"name": "CA_ROTOR6_AZ",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 169
+},
+{
+"name": "CA_ROTOR6_CT",
+"value": 6.5,
+"type": 9,
+"raw_hex": "0000d040",
+"index": 170
+},
+{
+"name": "CA_ROTOR6_KM",
+"value": 0.05000000074505806,
+"type": 9,
+"raw_hex": "cdcc4c3d",
+"index": 171
+},
+{
+"name": "CA_ROTOR6_PX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 172
+},
+{
+"name": "CA_ROTOR6_PY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 173
+},
+{
+"name": "CA_ROTOR6_PZ",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 174
+},
+{
+"name": "CA_ROTOR7_AX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 175
+},
+{
+"name": "CA_ROTOR7_AY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 176
+},
+{
+"name": "CA_ROTOR7_AZ",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 177
+},
+{
+"name": "CA_ROTOR7_CT",
+"value": 6.5,
+"type": 9,
+"raw_hex": "0000d040",
+"index": 178
+},
+{
+"name": "CA_ROTOR7_KM",
+"value": 0.05000000074505806,
+"type": 9,
+"raw_hex": "cdcc4c3d",
+"index": 179
+},
+{
+"name": "CA_ROTOR7_PX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 180
+},
+{
+"name": "CA_ROTOR7_PY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 181
+},
+{
+"name": "CA_ROTOR7_PZ",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 182
+},
+{
+"name": "CA_ROTOR8_AX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 183
+},
+{
+"name": "CA_ROTOR8_AY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 184
+},
+{
+"name": "CA_ROTOR8_AZ",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 185
+},
+{
+"name": "CA_ROTOR8_CT",
+"value": 6.5,
+"type": 9,
+"raw_hex": "0000d040",
+"index": 186
+},
+{
+"name": "CA_ROTOR8_KM",
+"value": 0.05000000074505806,
+"type": 9,
+"raw_hex": "cdcc4c3d",
+"index": 187
+},
+{
+"name": "CA_ROTOR8_PX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 188
+},
+{
+"name": "CA_ROTOR8_PY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 189
+},
+{
+"name": "CA_ROTOR8_PZ",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 190
+},
+{
+"name": "CA_ROTOR9_AX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 191
+},
+{
+"name": "CA_ROTOR9_AY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 192
+},
+{
+"name": "CA_ROTOR9_AZ",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 193
+},
+{
+"name": "CA_ROTOR9_CT",
+"value": 6.5,
+"type": 9,
+"raw_hex": "0000d040",
+"index": 194
+},
+{
+"name": "CA_ROTOR9_KM",
+"value": 0.05000000074505806,
+"type": 9,
+"raw_hex": "cdcc4c3d",
+"index": 195
+},
+{
+"name": "CA_ROTOR9_PX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 196
+},
+{
+"name": "CA_ROTOR9_PY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 197
+},
+{
+"name": "CA_ROTOR9_PZ",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 198
+},
+{
+"name": "CA_ROTOR_COUNT",
+"value": 4,
+"type": 6,
+"raw_hex": "04000000",
+"index": 199
+},
+{
+"name": "CA_R_REV",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 200
+},
+{
+"name": "CA_SV0_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 201
+},
+{
+"name": "CA_SV10_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 202
+},
+{
+"name": "CA_SV11_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 203
+},
+{
+"name": "CA_SV12_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 204
+},
+{
+"name": "CA_SV13_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 205
+},
+{
+"name": "CA_SV14_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 206
+},
+{
+"name": "CA_SV1_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 207
+},
+{
+"name": "CA_SV2_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 208
+},
+{
+"name": "CA_SV3_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 209
+},
+{
+"name": "CA_SV4_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 210
+},
+{
+"name": "CA_SV5_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 211
+},
+{
+"name": "CA_SV6_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 212
+},
+{
+"name": "CA_SV7_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 213
+},
+{
+"name": "CA_SV8_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 214
+},
+{
+"name": "CA_SV9_SLEW",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 215
+},
+{
+"name": "CBRK_BUZZER",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 216
+},
+{
+"name": "CBRK_FLIGHTTERM",
+"value": 121212,
+"type": 6,
+"raw_hex": "7cd90100",
+"index": 217
+},
+{
+"name": "CBRK_IO_SAFETY",
+"value": 22027,
+"type": 6,
+"raw_hex": "0b560000",
+"index": 218
+},
+{
+"name": "CBRK_SUPPLY_CHK",
+"value": 894281,
+"type": 6,
+"raw_hex": "49a50d00",
+"index": 219
+},
+{
+"name": "CBRK_UAVCAN_FW",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 220
+},
+{
+"name": "CBRK_USB_CHK",
+"value": 197848,
+"type": 6,
+"raw_hex": "d8040300",
+"index": 221
+},
+{
+"name": "CBRK_VTOLARMING",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 222
+},
+{
+"name": "COM_ACT_FAIL_ACT",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 223
+},
+{
+"name": "COM_ARMABLE",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 224
+},
+{
+"name": "COM_ARM_AUTH_ID",
+"value": 10,
+"type": 6,
+"raw_hex": "0a000000",
+"index": 225
+},
+{
+"name": "COM_ARM_AUTH_MET",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 226
+},
+{
+"name": "COM_ARM_AUTH_REQ",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 227
+},
+{
+"name": "COM_ARM_AUTH_TO",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 228
+},
+{
+"name": "COM_ARM_BAT_MIN",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 229
+},
+{
+"name": "COM_ARM_CHK_ESCS",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 230
+},
+{
+"name": "COM_ARM_HFLT_CHK",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 231
+},
+{
+"name": "COM_ARM_IMU_ACC",
+"value": 0.699999988079071,
+"type": 9,
+"raw_hex": "3333333f",
+"index": 232
+},
+{
+"name": "COM_ARM_IMU_GYR",
+"value": 0.25,
+"type": 9,
+"raw_hex": "0000803e",
+"index": 233
+},
+{
+"name": "COM_ARM_MAG_ANG",
+"value": 60,
+"type": 6,
+"raw_hex": "3c000000",
+"index": 234
+},
+{
+"name": "COM_ARM_MAG_STR",
+"value": 2,
+"type": 6,
+"raw_hex": "02000000",
+"index": 235
+},
+{
+"name": "COM_ARM_MIS_REQ",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 236
+},
+{
+"name": "COM_ARM_ODID",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 237
+},
+{
+"name": "COM_ARM_ON_BOOT",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 238
+},
+{
+"name": "COM_ARM_SWISBTN",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 239
+},
+{
+"name": "COM_ARM_TRAFF",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 240
+},
+{
+"name": "COM_ARM_WO_GPS",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 241
+},
+{
+"name": "COM_CC_TEMP_WARN",
+"value": 80.0,
+"type": 9,
+"raw_hex": "0000a042",
+"index": 242
+},
+{
+"name": "COM_CPU_MAX",
+"value": 95.0,
+"type": 9,
+"raw_hex": "0000be42",
+"index": 243
+},
+{
+"name": "COM_DISARM_LAND",
+"value": 2.0,
+"type": 9,
+"raw_hex": "00000040",
+"index": 244
+},
+{
+"name": "COM_DISARM_PRFLT",
+"value": 10.0,
+"type": 9,
+"raw_hex": "00002041",
+"index": 245
+},
+{
+"name": "COM_DLL_EXCEPT",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 246
+},
+{
+"name": "COM_DL_LOSS_T",
+"value": 10,
+"type": 6,
+"raw_hex": "0a000000",
+"index": 247
+},
+{
+"name": "COM_FAIL_ACT_T",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 248
+},
+{
+"name": "COM_FLIGHT_UUID",
+"value": 14,
+"type": 6,
+"raw_hex": "0e000000",
+"index": 249
+},
+{
+"name": "COM_FLTMODE1",
+"value": 8,
+"type": 6,
+"raw_hex": "08000000",
+"index": 250
+},
+{
+"name": "COM_FLTMODE2",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 251
+},
+{
+"name": "COM_FLTMODE3",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 252
+},
+{
+"name": "COM_FLTMODE4",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 253
+},
+{
+"name": "COM_FLTMODE5",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 254
+},
+{
+"name": "COM_FLTMODE6",
+"value": 2,
+"type": 6,
+"raw_hex": "02000000",
+"index": 255
+},
+{
+"name": "COM_FLTMODE_BOOT",
+"value": 4,
+"type": 6,
+"raw_hex": "04000000",
+"index": 256
+},
+{
+"name": "COM_FLTT_LOW_ACT",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 257
+},
+{
+"name": "COM_FLT_TIME_MAX",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 258
+},
+{
+"name": "COM_FORCE_SAFETY",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 259
+},
+{
+"name": "COM_GNSSLOSS_ACT",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 260
+},
+{
+"name": "COM_HLDL_LOSS_T",
+"value": 120,
+"type": 6,
+"raw_hex": "78000000",
+"index": 261
+},
+{
+"name": "COM_HOME_EN",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 262
+},
+{
+"name": "COM_HOME_IN_AIR",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 263
+},
+{
+"name": "COM_LOW_BAT_ACT",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 264
+},
+{
+"name": "COM_MODE0_HASH",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 265
+},
+{
+"name": "COM_MODE1_HASH",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 266
+},
+{
+"name": "COM_MODE2_HASH",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 267
+},
+{
+"name": "COM_MODE3_HASH",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 268
+},
+{
+"name": "COM_MODE4_HASH",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 269
+},
+{
+"name": "COM_MODE5_HASH",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 270
+},
+{
+"name": "COM_MODE6_HASH",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 271
+},
+{
+"name": "COM_MODE7_HASH",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 272
+},
+{
+"name": "COM_MODE_ARM_CHK",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 273
+},
+{
+"name": "COM_OBL_RC_ACT",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 274
+},
+{
+"name": "COM_OF_LOSS_T",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 275
+},
+{
+"name": "COM_PARACHUTE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 276
+},
+{
+"name": "COM_POS_FS_EPH",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 277
+},
+{
+"name": "COM_POS_LOW_ACT",
+"value": 3,
+"type": 6,
+"raw_hex": "03000000",
+"index": 278
+},
+{
+"name": "COM_POS_LOW_EPH",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 279
+},
+{
+"name": "COM_POWER_COUNT",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 280
+},
+{
+"name": "COM_PREARM_MODE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 281
+},
+{
+"name": "COM_QC_ACT",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 282
+},
+{
+"name": "COM_RAM_MAX",
+"value": 95.0,
+"type": 9,
+"raw_hex": "0000be42",
+"index": 283
+},
+{
+"name": "COM_RCL_EXCEPT",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 284
+},
+{
+"name": "COM_RC_IN_MODE",
+"value": 3,
+"type": 6,
+"raw_hex": "03000000",
+"index": 285
+},
+{
+"name": "COM_RC_LOSS_T",
+"value": 0.5,
+"type": 9,
+"raw_hex": "0000003f",
+"index": 286
+},
+{
+"name": "COM_SPOOLUP_TIME",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 287
+},
+{
+"name": "COM_THROW_EN",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 288
+},
+{
+"name": "COM_THROW_SPEED",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 289
+},
+{
+"name": "COM_VEL_FS_EVH",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 290
+},
+{
+"name": "COM_WIND_MAX",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 291
+},
+{
+"name": "COM_WIND_MAX_ACT",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 292
+},
+{
+"name": "COM_WIND_WARN",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 293
+},
+{
+"name": "CP_DELAY",
+"value": 0.4000000059604645,
+"type": 9,
+"raw_hex": "cdcccc3e",
+"index": 294
+},
+{
+"name": "CP_DIST",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 295
+},
+{
+"name": "CP_GO_NO_DATA",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 296
+},
+{
+"name": "CP_GUIDE_ANG",
+"value": 30.0,
+"type": 9,
+"raw_hex": "0000f041",
+"index": 297
+},
+{
+"name": "DSHOT_3D_DEAD_H",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 298
+},
+{
+"name": "DSHOT_3D_DEAD_L",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 299
+},
+{
+"name": "DSHOT_3D_ENABLE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 300
+},
+{
+"name": "DSHOT_BIDIR_EDT",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 301
+},
+{
+"name": "DSHOT_ESC_TYPE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 302
+},
+{
+"name": "DSHOT_MIN",
+"value": 0.054999999701976776,
+"type": 9,
+"raw_hex": "ae47613d",
+"index": 303
+},
+{
+"name": "DSHOT_MOT_POL1",
+"value": 14,
+"type": 6,
+"raw_hex": "0e000000",
+"index": 304
+},
+{
+"name": "DSHOT_MOT_POL10",
+"value": 14,
+"type": 6,
+"raw_hex": "0e000000",
+"index": 305
+},
+{
+"name": "DSHOT_MOT_POL2",
+"value": 14,
+"type": 6,
+"raw_hex": "0e000000",
+"index": 306
+},
+{
+"name": "DSHOT_MOT_POL3",
+"value": 14,
+"type": 6,
+"raw_hex": "0e000000",
+"index": 307
+},
+{
+"name": "DSHOT_MOT_POL4",
+"value": 14,
+"type": 6,
+"raw_hex": "0e000000",
+"index": 308
+},
+{
+"name": "DSHOT_MOT_POL5",
+"value": 14,
+"type": 6,
+"raw_hex": "0e000000",
+"index": 309
+},
+{
+"name": "DSHOT_MOT_POL6",
+"value": 14,
+"type": 6,
+"raw_hex": "0e000000",
+"index": 310
+},
+{
+"name": "DSHOT_MOT_POL7",
+"value": 14,
+"type": 6,
+"raw_hex": "0e000000",
+"index": 311
+},
+{
+"name": "DSHOT_MOT_POL8",
+"value": 14,
+"type": 6,
+"raw_hex": "0e000000",
+"index": 312
+},
+{
+"name": "DSHOT_MOT_POL9",
+"value": 14,
+"type": 6,
+"raw_hex": "0e000000",
+"index": 313
+},
+{
+"name": "DSHOT_TEL_CFG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 314
+},
+{
+"name": "EKF2_ABIAS_INIT",
+"value": 0.20000000298023224,
+"type": 9,
+"raw_hex": "cdcc4c3e",
+"index": 315
+},
+{
+"name": "EKF2_ABL_ACCLIM",
+"value": 25.0,
+"type": 9,
+"raw_hex": "0000c841",
+"index": 316
+},
+{
+"name": "EKF2_ABL_GYRLIM",
+"value": 3.0,
+"type": 9,
+"raw_hex": "00004040",
+"index": 317
+},
+{
+"name": "EKF2_ABL_LIM",
+"value": 0.4000000059604645,
+"type": 9,
+"raw_hex": "cdcccc3e",
+"index": 318
+},
+{
+"name": "EKF2_ABL_TAU",
+"value": 0.5,
+"type": 9,
+"raw_hex": "0000003f",
+"index": 319
+},
+{
+"name": "EKF2_ACC_B_NOISE",
+"value": 0.003000000026077032,
+"type": 9,
+"raw_hex": "a69b443b",
+"index": 320
+},
+{
+"name": "EKF2_ACC_NOISE",
+"value": 0.3499999940395355,
+"type": 9,
+"raw_hex": "3333b33e",
+"index": 321
+},
+{
+"name": "EKF2_AGP0_ID",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 322
+},
+{
+"name": "EKF2_AGP1_ID",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 323
+},
+{
+"name": "EKF2_AGP2_ID",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 324
+},
+{
+"name": "EKF2_AGP3_ID",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 325
+},
+{
+"name": "EKF2_ANGERR_INIT",
+"value": 0.10000000149011612,
+"type": 9,
+"raw_hex": "cdcccc3d",
+"index": 326
+},
+{
+"name": "EKF2_ARSP_THR",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 327
+},
+{
+"name": "EKF2_ASPD_MAX",
+"value": 20.0,
+"type": 9,
+"raw_hex": "0000a041",
+"index": 328
+},
+{
+"name": "EKF2_ASP_DELAY",
+"value": 100.0,
+"type": 9,
+"raw_hex": "0000c842",
+"index": 329
+},
+{
+"name": "EKF2_AVEL_DELAY",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 330
+},
+{
+"name": "EKF2_AVEL_EN",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 331
+},
+{
+"name": "EKF2_BARO_CTRL",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 332
+},
+{
+"name": "EKF2_BARO_DELAY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 333
+},
+{
+"name": "EKF2_BARO_GATE",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 334
+},
+{
+"name": "EKF2_BARO_NOISE",
+"value": 3.5,
+"type": 9,
+"raw_hex": "00006040",
+"index": 335
+},
+{
+"name": "EKF2_BCOEF_X",
+"value": 100.0,
+"type": 9,
+"raw_hex": "0000c842",
+"index": 336
+},
+{
+"name": "EKF2_BCOEF_Y",
+"value": 100.0,
+"type": 9,
+"raw_hex": "0000c842",
+"index": 337
+},
+{
+"name": "EKF2_BETA_GATE",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 338
+},
+{
+"name": "EKF2_BETA_NOISE",
+"value": 0.30000001192092896,
+"type": 9,
+"raw_hex": "9a99993e",
+"index": 339
+},
+{
+"name": "EKF2_DECL_TYPE",
+"value": 3,
+"type": 6,
+"raw_hex": "03000000",
+"index": 340
+},
+{
+"name": "EKF2_DELAY_MAX",
+"value": 200.0,
+"type": 9,
+"raw_hex": "00004843",
+"index": 341
+},
+{
+"name": "EKF2_DRAG_CTRL",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 342
+},
+{
+"name": "EKF2_DRAG_NOISE",
+"value": 2.5,
+"type": 9,
+"raw_hex": "00002040",
+"index": 343
+},
+{
+"name": "EKF2_EAS_NOISE",
+"value": 1.399999976158142,
+"type": 9,
+"raw_hex": "3333b33f",
+"index": 344
+},
+{
+"name": "EKF2_EN",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 345
+},
+{
+"name": "EKF2_EVA_NOISE",
+"value": 0.10000000149011612,
+"type": 9,
+"raw_hex": "cdcccc3d",
+"index": 346
+},
+{
+"name": "EKF2_EVP_GATE",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 347
+},
+{
+"name": "EKF2_EVP_NOISE",
+"value": 0.10000000149011612,
+"type": 9,
+"raw_hex": "cdcccc3d",
+"index": 348
+},
+{
+"name": "EKF2_EVV_GATE",
+"value": 3.0,
+"type": 9,
+"raw_hex": "00004040",
+"index": 349
+},
+{
+"name": "EKF2_EVV_NOISE",
+"value": 0.10000000149011612,
+"type": 9,
+"raw_hex": "cdcccc3d",
+"index": 350
+},
+{
+"name": "EKF2_EV_CTRL",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 351
+},
+{
+"name": "EKF2_EV_DELAY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 352
+},
+{
+"name": "EKF2_EV_NOISE_MD",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 353
+},
+{
+"name": "EKF2_EV_POS_X",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 354
+},
+{
+"name": "EKF2_EV_POS_Y",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 355
+},
+{
+"name": "EKF2_EV_POS_Z",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 356
+},
+{
+"name": "EKF2_EV_QMIN",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 357
+},
+{
+"name": "EKF2_FUSE_BETA",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 358
+},
+{
+"name": "EKF2_GBIAS_INIT",
+"value": 0.10000000149011612,
+"type": 9,
+"raw_hex": "cdcccc3d",
+"index": 359
+},
+{
+"name": "EKF2_GND_EFF_DZ",
+"value": 4.0,
+"type": 9,
+"raw_hex": "00008040",
+"index": 360
+},
+{
+"name": "EKF2_GND_MAX_HGT",
+"value": 0.5,
+"type": 9,
+"raw_hex": "0000003f",
+"index": 361
+},
+{
+"name": "EKF2_GPS_CHECK",
+"value": 2047,
+"type": 6,
+"raw_hex": "ff070000",
+"index": 362
+},
+{
+"name": "EKF2_GPS_CTRL",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 363
+},
+{
+"name": "EKF2_GPS_MODE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 364
+},
+{
+"name": "EKF2_GPS_P_GATE",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 365
+},
+{
+"name": "EKF2_GPS_P_NOISE",
+"value": 0.5,
+"type": 9,
+"raw_hex": "0000003f",
+"index": 366
+},
+{
+"name": "EKF2_GPS_V_GATE",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 367
+},
+{
+"name": "EKF2_GPS_V_NOISE",
+"value": 0.30000001192092896,
+"type": 9,
+"raw_hex": "9a99993e",
+"index": 368
+},
+{
+"name": "EKF2_GPS_YAW_OFF",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 369
+},
+{
+"name": "EKF2_GRAV_NOISE",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 370
+},
+{
+"name": "EKF2_GSF_TAS",
+"value": 15.0,
+"type": 9,
+"raw_hex": "00007041",
+"index": 371
+},
+{
+"name": "EKF2_GYR_B_LIM",
+"value": 0.15000000596046448,
+"type": 9,
+"raw_hex": "9a99193e",
+"index": 372
+},
+{
+"name": "EKF2_GYR_B_NOISE",
+"value": 0.0010000000474974513,
+"type": 9,
+"raw_hex": "6f12833a",
+"index": 373
+},
+{
+"name": "EKF2_GYR_NOISE",
+"value": 0.014999999664723873,
+"type": 9,
+"raw_hex": "8fc2753c",
+"index": 374
+},
+{
+"name": "EKF2_HDG_GATE",
+"value": 2.5999999046325684,
+"type": 9,
+"raw_hex": "66662640",
+"index": 375
+},
+{
+"name": "EKF2_HEAD_NOISE",
+"value": 0.30000001192092896,
+"type": 9,
+"raw_hex": "9a99993e",
+"index": 376
+},
+{
+"name": "EKF2_HGT_REF",
+"value": 2,
+"type": 6,
+"raw_hex": "02000000",
+"index": 377
+},
+{
+"name": "EKF2_IMU_CTRL",
+"value": 7,
+"type": 6,
+"raw_hex": "07000000",
+"index": 378
+},
+{
+"name": "EKF2_IMU_POS_X",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 379
+},
+{
+"name": "EKF2_IMU_POS_Y",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 380
+},
+{
+"name": "EKF2_IMU_POS_Z",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 381
+},
+{
+"name": "EKF2_LOG_VERBOSE",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 382
+},
+{
+"name": "EKF2_MAG_ACCLIM",
+"value": 0.5,
+"type": 9,
+"raw_hex": "0000003f",
+"index": 383
+},
+{
+"name": "EKF2_MAG_B_NOISE",
+"value": 9.999999747378752e-05,
+"type": 9,
+"raw_hex": "17b7d138",
+"index": 384
+},
+{
+"name": "EKF2_MAG_CHECK",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 385
+},
+{
+"name": "EKF2_MAG_CHK_INC",
+"value": 20.0,
+"type": 9,
+"raw_hex": "0000a041",
+"index": 386
+},
+{
+"name": "EKF2_MAG_CHK_STR",
+"value": 0.20000000298023224,
+"type": 9,
+"raw_hex": "cdcc4c3e",
+"index": 387
+},
+{
+"name": "EKF2_MAG_DECL",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 388
+},
+{
+"name": "EKF2_MAG_DELAY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 389
+},
+{
+"name": "EKF2_MAG_E_NOISE",
+"value": 0.0010000000474974513,
+"type": 9,
+"raw_hex": "6f12833a",
+"index": 390
+},
+{
+"name": "EKF2_MAG_GATE",
+"value": 3.0,
+"type": 9,
+"raw_hex": "00004040",
+"index": 391
+},
+{
+"name": "EKF2_MAG_NOISE",
+"value": 0.05000000074505806,
+"type": 9,
+"raw_hex": "cdcc4c3d",
+"index": 392
+},
+{
+"name": "EKF2_MAG_TYPE",
+"value": 5,
+"type": 6,
+"raw_hex": "05000000",
+"index": 393
+},
+{
+"name": "EKF2_MCOEF",
+"value": 0.15000000596046448,
+"type": 9,
+"raw_hex": "9a99193e",
+"index": 394
+},
+{
+"name": "EKF2_MIN_RNG",
+"value": 0.009999999776482582,
+"type": 9,
+"raw_hex": "0ad7233c",
+"index": 395
+},
+{
+"name": "EKF2_MULTI_IMU",
+"value": 3,
+"type": 6,
+"raw_hex": "03000000",
+"index": 396
+},
+{
+"name": "EKF2_NOAID_NOISE",
+"value": 10.0,
+"type": 9,
+"raw_hex": "00002041",
+"index": 397
+},
+{
+"name": "EKF2_NOAID_TOUT",
+"value": 5000000,
+"type": 6,
+"raw_hex": "404b4c00",
+"index": 398
+},
+{
+"name": "EKF2_OF_CTRL",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 399
+},
+{
+"name": "EKF2_OF_DELAY",
+"value": 20.0,
+"type": 9,
+"raw_hex": "0000a041",
+"index": 400
+},
+{
+"name": "EKF2_OF_GATE",
+"value": 3.0,
+"type": 9,
+"raw_hex": "00004040",
+"index": 401
+},
+{
+"name": "EKF2_OF_GYR_SRC",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 402
+},
+{
+"name": "EKF2_OF_N_MAX",
+"value": 0.5,
+"type": 9,
+"raw_hex": "0000003f",
+"index": 403
+},
+{
+"name": "EKF2_OF_N_MIN",
+"value": 0.15000000596046448,
+"type": 9,
+"raw_hex": "9a99193e",
+"index": 404
+},
+{
+"name": "EKF2_OF_POS_X",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 405
+},
+{
+"name": "EKF2_OF_POS_Y",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 406
+},
+{
+"name": "EKF2_OF_POS_Z",
+"value": 0.019999999552965164,
+"type": 9,
+"raw_hex": "0ad7a33c",
+"index": 407
+},
+{
+"name": "EKF2_OF_QMIN",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 408
+},
+{
+"name": "EKF2_OF_QMIN_GND",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 409
+},
+{
+"name": "EKF2_PCOEF_XN",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 410
+},
+{
+"name": "EKF2_PCOEF_XP",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 411
+},
+{
+"name": "EKF2_PCOEF_YN",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 412
+},
+{
+"name": "EKF2_PCOEF_YP",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 413
+},
+{
+"name": "EKF2_PCOEF_Z",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 414
+},
+{
+"name": "EKF2_POS_LOCK",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 415
+},
+{
+"name": "EKF2_PREDICT_US",
+"value": 10000,
+"type": 6,
+"raw_hex": "10270000",
+"index": 416
+},
+{
+"name": "EKF2_REQ_EPH",
+"value": 3.0,
+"type": 9,
+"raw_hex": "00004040",
+"index": 417
+},
+{
+"name": "EKF2_REQ_EPV",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 418
+},
+{
+"name": "EKF2_REQ_FIX",
+"value": 3,
+"type": 6,
+"raw_hex": "03000000",
+"index": 419
+},
+{
+"name": "EKF2_REQ_GPS_H",
+"value": 10.0,
+"type": 9,
+"raw_hex": "00002041",
+"index": 420
+},
+{
+"name": "EKF2_REQ_HDRIFT",
+"value": 0.10000000149011612,
+"type": 9,
+"raw_hex": "cdcccc3d",
+"index": 421
+},
+{
+"name": "EKF2_REQ_NSATS",
+"value": 6,
+"type": 6,
+"raw_hex": "06000000",
+"index": 422
+},
+{
+"name": "EKF2_REQ_PDOP",
+"value": 2.5,
+"type": 9,
+"raw_hex": "00002040",
+"index": 423
+},
+{
+"name": "EKF2_REQ_SACC",
+"value": 0.5,
+"type": 9,
+"raw_hex": "0000003f",
+"index": 424
+},
+{
+"name": "EKF2_REQ_VDRIFT",
+"value": 0.20000000298023224,
+"type": 9,
+"raw_hex": "cdcc4c3e",
+"index": 425
+},
+{
+"name": "EKF2_RNGBC_CTRL",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 426
+},
+{
+"name": "EKF2_RNGBC_DELAY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 427
+},
+{
+"name": "EKF2_RNGBC_GATE",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 428
+},
+{
+"name": "EKF2_RNGBC_NOISE",
+"value": 30.0,
+"type": 9,
+"raw_hex": "0000f041",
+"index": 429
+},
+{
+"name": "EKF2_RNG_A_HMAX",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 430
+},
+{
+"name": "EKF2_RNG_A_VMAX",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 431
+},
+{
+"name": "EKF2_RNG_CTRL",
+"value": 2,
+"type": 6,
+"raw_hex": "02000000",
+"index": 432
+},
+{
+"name": "EKF2_RNG_DELAY",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 433
+},
+{
+"name": "EKF2_RNG_FOG",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 434
+},
+{
+"name": "EKF2_RNG_GATE",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 435
+},
+{
+"name": "EKF2_RNG_K_GATE",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 436
+},
+{
+"name": "EKF2_RNG_NOISE",
+"value": 0.10000000149011612,
+"type": 9,
+"raw_hex": "cdcccc3d",
+"index": 437
+},
+{
+"name": "EKF2_RNG_PITCH",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 438
+},
+{
+"name": "EKF2_RNG_POS_X",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 439
+},
+{
+"name": "EKF2_RNG_POS_Y",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 440
+},
+{
+"name": "EKF2_RNG_POS_Z",
+"value": 0.019999999552965164,
+"type": 9,
+"raw_hex": "0ad7a33c",
+"index": 441
+},
+{
+"name": "EKF2_RNG_QLTY_T",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 442
+},
+{
+"name": "EKF2_RNG_SFE",
+"value": 0.05000000074505806,
+"type": 9,
+"raw_hex": "cdcc4c3d",
+"index": 443
+},
+{
+"name": "EKF2_SEL_ERR_RED",
+"value": 0.20000000298023224,
+"type": 9,
+"raw_hex": "cdcc4c3e",
+"index": 444
+},
+{
+"name": "EKF2_SEL_IMU_ACC",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 445
+},
+{
+"name": "EKF2_SEL_IMU_ANG",
+"value": 15.0,
+"type": 9,
+"raw_hex": "00007041",
+"index": 446
+},
+{
+"name": "EKF2_SEL_IMU_RAT",
+"value": 7.0,
+"type": 9,
+"raw_hex": "0000e040",
+"index": 447
+},
+{
+"name": "EKF2_SEL_IMU_VEL",
+"value": 2.0,
+"type": 9,
+"raw_hex": "00000040",
+"index": 448
+},
+{
+"name": "EKF2_SENS_EN",
+"value": 8189,
+"type": 6,
+"raw_hex": "fd1f0000",
+"index": 449
+},
+{
+"name": "EKF2_SYNT_MAG_Z",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 450
+},
+{
+"name": "EKF2_TAS_GATE",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 451
+},
+{
+"name": "EKF2_TAU_POS",
+"value": 0.25,
+"type": 9,
+"raw_hex": "0000803e",
+"index": 452
+},
+{
+"name": "EKF2_TAU_VEL",
+"value": 0.25,
+"type": 9,
+"raw_hex": "0000803e",
+"index": 453
+},
+{
+"name": "EKF2_TERR_GRAD",
+"value": 0.5,
+"type": 9,
+"raw_hex": "0000003f",
+"index": 454
+},
+{
+"name": "EKF2_TERR_NOISE",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 455
+},
+{
+"name": "EKF2_VEL_LIM",
+"value": 100.0,
+"type": 9,
+"raw_hex": "0000c842",
+"index": 456
+},
+{
+"name": "EKF2_WIND_NSD",
+"value": 0.05000000074505806,
+"type": 9,
+"raw_hex": "cdcc4c3d",
+"index": 457
+},
+{
+"name": "ESC_TEMP_WARN_TH",
+"value": 90.0,
+"type": 9,
+"raw_hex": "0000b442",
+"index": 458
+},
+{
+"name": "EV_TSK_RC_LOSS",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 459
+},
+{
+"name": "EV_TSK_STAT_DIS",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 460
+},
+{
+"name": "FD_ACT_EN",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 461
+},
+{
+"name": "FD_ALT_LOSS",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 462
+},
+{
+"name": "FD_ALT_LOSS_T",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 463
+},
+{
+"name": "FD_EXT_ATS_EN",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 464
+},
+{
+"name": "FD_EXT_ATS_TRIG",
+"value": 1900,
+"type": 6,
+"raw_hex": "6c070000",
+"index": 465
+},
+{
+"name": "FD_FAIL_P",
+"value": 60,
+"type": 6,
+"raw_hex": "3c000000",
+"index": 466
+},
+{
+"name": "FD_FAIL_P_TTRI",
+"value": 0.30000001192092896,
+"type": 9,
+"raw_hex": "9a99993e",
+"index": 467
+},
+{
+"name": "FD_FAIL_R",
+"value": 60,
+"type": 6,
+"raw_hex": "3c000000",
+"index": 468
+},
+{
+"name": "FD_FAIL_R_TTRI",
+"value": 0.30000001192092896,
+"type": 9,
+"raw_hex": "9a99993e",
+"index": 469
+},
+{
+"name": "FD_IMB_PROP_THR",
+"value": 30,
+"type": 6,
+"raw_hex": "1e000000",
+"index": 470
+},
+{
+"name": "FLW_TGT_ALT_M",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 471
+},
+{
+"name": "FLW_TGT_DST",
+"value": 8.0,
+"type": 9,
+"raw_hex": "00000041",
+"index": 472
+},
+{
+"name": "FLW_TGT_FA",
+"value": 180.0,
+"type": 9,
+"raw_hex": "00003443",
+"index": 473
+},
+{
+"name": "FLW_TGT_HT",
+"value": 8.0,
+"type": 9,
+"raw_hex": "00000041",
+"index": 474
+},
+{
+"name": "FLW_TGT_MAX_VEL",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 475
+},
+{
+"name": "FLW_TGT_RS",
+"value": 0.10000000149011612,
+"type": 9,
+"raw_hex": "cdcccc3d",
+"index": 476
+},
+{
+"name": "FW_AIRSPD_MAX",
+"value": 20.0,
+"type": 9,
+"raw_hex": "0000a041",
+"index": 477
+},
+{
+"name": "FW_AIRSPD_TRIM",
+"value": 15.0,
+"type": 9,
+"raw_hex": "00007041",
+"index": 478
+},
+{
+"name": "FW_PSP_OFF",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 479
+},
+{
+"name": "GF_ACTION",
+"value": 2,
+"type": 6,
+"raw_hex": "02000000",
+"index": 480
+},
+{
+"name": "GF_MAX_HOR_DIST",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 481
+},
+{
+"name": "GF_MAX_VER_DIST",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 482
+},
+{
+"name": "GF_SOURCE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 483
+},
+{
+"name": "GPS_1_CONFIG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 484
+},
+{
+"name": "GPS_2_CONFIG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 485
+},
+{
+"name": "HTE_ACC_GATE",
+"value": 3.0,
+"type": 9,
+"raw_hex": "00004040",
+"index": 486
+},
+{
+"name": "HTE_HT_ERR_INIT",
+"value": 0.10000000149011612,
+"type": 9,
+"raw_hex": "cdcccc3d",
+"index": 487
+},
+{
+"name": "HTE_HT_NOISE",
+"value": 0.003599999938160181,
+"type": 9,
+"raw_hex": "faed6b3b",
+"index": 488
+},
+{
+"name": "HTE_THR_RANGE",
+"value": 0.20000000298023224,
+"type": 9,
+"raw_hex": "cdcc4c3e",
+"index": 489
+},
+{
+"name": "HTE_VXY_THR",
+"value": 10.0,
+"type": 9,
+"raw_hex": "00002041",
+"index": 490
+},
+{
+"name": "HTE_VZ_THR",
+"value": 2.0,
+"type": 9,
+"raw_hex": "00000040",
+"index": 491
+},
+{
+"name": "IMU_ACCEL_CUTOFF",
+"value": 30.0,
+"type": 9,
+"raw_hex": "0000f041",
+"index": 492
+},
+{
+"name": "IMU_DGYRO_CUTOFF",
+"value": 50.0,
+"type": 9,
+"raw_hex": "00004842",
+"index": 493
+},
+{
+"name": "IMU_GYRO_CAL_EN",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 494
+},
+{
+"name": "IMU_GYRO_CUTOFF",
+"value": 90.0,
+"type": 9,
+"raw_hex": "0000b442",
+"index": 495
+},
+{
+"name": "IMU_GYRO_DNF_BW",
+"value": 15.0,
+"type": 9,
+"raw_hex": "00007041",
+"index": 496
+},
+{
+"name": "IMU_GYRO_DNF_EN",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 497
+},
+{
+"name": "IMU_GYRO_DNF_HMC",
+"value": 3,
+"type": 6,
+"raw_hex": "03000000",
+"index": 498
+},
+{
+"name": "IMU_GYRO_DNF_MIN",
+"value": 25.0,
+"type": 9,
+"raw_hex": "0000c841",
+"index": 499
+},
+{
+"name": "IMU_GYRO_FFT_EN",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 500
+},
+{
+"name": "IMU_GYRO_FFT_LEN",
+"value": 512,
+"type": 6,
+"raw_hex": "00020000",
+"index": 501
+},
+{
+"name": "IMU_GYRO_FFT_MAX",
+"value": 150.0,
+"type": 9,
+"raw_hex": "00001643",
+"index": 502
+},
+{
+"name": "IMU_GYRO_FFT_MIN",
+"value": 30.0,
+"type": 9,
+"raw_hex": "0000f041",
+"index": 503
+},
+{
+"name": "IMU_GYRO_FFT_SNR",
+"value": 10.0,
+"type": 9,
+"raw_hex": "00002041",
+"index": 504
+},
+{
+"name": "IMU_GYRO_NF0_BW",
+"value": 20.0,
+"type": 9,
+"raw_hex": "0000a041",
+"index": 505
+},
+{
+"name": "IMU_GYRO_NF0_FRQ",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 506
+},
+{
+"name": "IMU_GYRO_NF1_BW",
+"value": 20.0,
+"type": 9,
+"raw_hex": "0000a041",
+"index": 507
+},
+{
+"name": "IMU_GYRO_NF1_FRQ",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 508
+},
+{
+"name": "IMU_GYRO_RATEMAX",
+"value": 800,
+"type": 6,
+"raw_hex": "20030000",
+"index": 509
+},
+{
+"name": "IMU_INTEG_RATE",
+"value": 200,
+"type": 6,
+"raw_hex": "c8000000",
+"index": 510
+},
+{
+"name": "LNDMC_ALT_GND",
+"value": 2.0,
+"type": 9,
+"raw_hex": "00000040",
+"index": 511
+},
+{
+"name": "LNDMC_ROT_MAX",
+"value": 20.0,
+"type": 9,
+"raw_hex": "0000a041",
+"index": 512
+},
+{
+"name": "LNDMC_XY_VEL_MAX",
+"value": 1.5,
+"type": 9,
+"raw_hex": "0000c03f",
+"index": 513
+},
+{
+"name": "LNDMC_Z_VEL_MAX",
+"value": 0.25,
+"type": 9,
+"raw_hex": "0000803e",
+"index": 514
+},
+{
+"name": "LND_FLIGHT_T_HI",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 515
+},
+{
+"name": "LND_FLIGHT_T_LO",
+"value": 101544684,
+"type": 6,
+"raw_hex": "ec720d06",
+"index": 516
+},
+{
+"name": "LPE_EN",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 517
+},
+{
+"name": "MAN_ARM_GESTURE",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 518
+},
+{
+"name": "MAN_DEADZONE",
+"value": 0.10000000149011612,
+"type": 9,
+"raw_hex": "cdcccc3d",
+"index": 519
+},
+{
+"name": "MAN_KILL_GEST_T",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 520
+},
+{
+"name": "MAN_OVERRIDE_SPD",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 521
+},
+{
+"name": "MAV_0_CONFIG",
+"value": 101,
+"type": 6,
+"raw_hex": "65000000",
+"index": 522
+},
+{
+"name": "MAV_0_FLOW_CTRL",
+"value": 2,
+"type": 6,
+"raw_hex": "02000000",
+"index": 523
+},
+{
+"name": "MAV_0_FORWARD",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 524
+},
+{
+"name": "MAV_0_MODE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 525
+},
+{
+"name": "MAV_0_RADIO_CTL",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 526
+},
+{
+"name": "MAV_0_RATE",
+"value": 1200,
+"type": 6,
+"raw_hex": "b0040000",
+"index": 527
+},
+{
+"name": "MAV_1_CONFIG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 528
+},
+{
+"name": "MAV_2_CONFIG",
+"value": 104,
+"type": 6,
+"raw_hex": "68000000",
+"index": 529
+},
+{
+"name": "MAV_2_FLOW_CTRL",
+"value": 2,
+"type": 6,
+"raw_hex": "02000000",
+"index": 530
+},
+{
+"name": "MAV_2_FORWARD",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 531
+},
+{
+"name": "MAV_2_MODE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 532
+},
+{
+"name": "MAV_2_RADIO_CTL",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 533
+},
+{
+"name": "MAV_2_RATE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 534
+},
+{
+"name": "MAV_COMP_ID",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 535
+},
+{
+"name": "MAV_FWDEXTSP",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 536
+},
+{
+"name": "MAV_HASH_CHK_EN",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 537
+},
+{
+"name": "MAV_HB_FORW_EN",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 538
+},
+{
+"name": "MAV_PROTO_VER",
+"value": 2,
+"type": 6,
+"raw_hex": "02000000",
+"index": 539
+},
+{
+"name": "MAV_RADIO_TOUT",
+"value": 5,
+"type": 6,
+"raw_hex": "05000000",
+"index": 540
+},
+{
+"name": "MAV_SIK_RADIO_ID",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 541
+},
+{
+"name": "MAV_SYS_ID",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 542
+},
+{
+"name": "MAV_TYPE",
+"value": 2,
+"type": 6,
+"raw_hex": "02000000",
+"index": 543
+},
+{
+"name": "MAV_USEHILGPS",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 544
+},
+{
+"name": "MBE_ENABLE",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 545
+},
+{
+"name": "MBE_LEARN_GAIN",
+"value": 18.0,
+"type": 9,
+"raw_hex": "00009041",
+"index": 546
+},
+{
+"name": "MC_ACRO_EXPO",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 547
+},
+{
+"name": "MC_ACRO_EXPO_Y",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 548
+},
+{
+"name": "MC_ACRO_P_MAX",
+"value": 100.0,
+"type": 9,
+"raw_hex": "0000c842",
+"index": 549
+},
+{
+"name": "MC_ACRO_R_MAX",
+"value": 100.0,
+"type": 9,
+"raw_hex": "0000c842",
+"index": 550
+},
+{
+"name": "MC_ACRO_SUPEXPO",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 551
+},
+{
+"name": "MC_ACRO_SUPEXPOY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 552
+},
+{
+"name": "MC_ACRO_Y_MAX",
+"value": 100.0,
+"type": 9,
+"raw_hex": "0000c842",
+"index": 553
+},
+{
+"name": "MC_AIRMODE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 554
+},
+{
+"name": "MC_AT_APPLY",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 555
+},
+{
+"name": "MC_AT_EN",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 556
+},
+{
+"name": "MC_AT_RISE_TIME",
+"value": 0.14000000059604645,
+"type": 9,
+"raw_hex": "295c0f3e",
+"index": 557
+},
+{
+"name": "MC_AT_SYSID_AMP",
+"value": 0.699999988079071,
+"type": 9,
+"raw_hex": "3333333f",
+"index": 558
+},
+{
+"name": "MC_BAT_SCALE_EN",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 559
+},
+{
+"name": "MC_MAN_TILT_TAU",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 560
+},
+{
+"name": "MC_ORBIT_RAD_MAX",
+"value": 1000.0,
+"type": 9,
+"raw_hex": "00007a44",
+"index": 561
+},
+{
+"name": "MC_ORBIT_YAW_MOD",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 562
+},
+{
+"name": "MC_PITCHRATE_D",
+"value": 0.0010000000474974513,
+"type": 9,
+"raw_hex": "6f12833a",
+"index": 563
+},
+{
+"name": "MC_PITCHRATE_FF",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 564
+},
+{
+"name": "MC_PITCHRATE_I",
+"value": 0.20000000298023224,
+"type": 9,
+"raw_hex": "cdcc4c3e",
+"index": 565
+},
+{
+"name": "MC_PITCHRATE_K",
+"value": 0.4000000059604645,
+"type": 9,
+"raw_hex": "cdcccc3e",
+"index": 566
+},
+{
+"name": "MC_PITCHRATE_MAX",
+"value": 220.0,
+"type": 9,
+"raw_hex": "00005c43",
+"index": 567
+},
+{
+"name": "MC_PITCHRATE_P",
+"value": 0.07999999821186066,
+"type": 9,
+"raw_hex": "0ad7a33d",
+"index": 568
+},
+{
+"name": "MC_PITCH_P",
+"value": 8.0,
+"type": 9,
+"raw_hex": "00000041",
+"index": 569
+},
+{
+"name": "MC_PR_INT_LIM",
+"value": 0.30000001192092896,
+"type": 9,
+"raw_hex": "9a99993e",
+"index": 570
+},
+{
+"name": "MC_REF_FF",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 571
+},
+{
+"name": "MC_REF_FF_MAX",
+"value": 100.0,
+"type": 9,
+"raw_hex": "0000c842",
+"index": 572
+},
+{
+"name": "MC_REF_W_N",
+"value": 50.0,
+"type": 9,
+"raw_hex": "00004842",
+"index": 573
+},
+{
+"name": "MC_ROLLRATE_D",
+"value": 0.0010000000474974513,
+"type": 9,
+"raw_hex": "6f12833a",
+"index": 574
+},
+{
+"name": "MC_ROLLRATE_FF",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 575
+},
+{
+"name": "MC_ROLLRATE_I",
+"value": 0.25,
+"type": 9,
+"raw_hex": "0000803e",
+"index": 576
+},
+{
+"name": "MC_ROLLRATE_K",
+"value": 0.3499999940395355,
+"type": 9,
+"raw_hex": "3333b33e",
+"index": 577
+},
+{
+"name": "MC_ROLLRATE_MAX",
+"value": 220.0,
+"type": 9,
+"raw_hex": "00005c43",
+"index": 578
+},
+{
+"name": "MC_ROLLRATE_P",
+"value": 0.07999999821186066,
+"type": 9,
+"raw_hex": "0ad7a33d",
+"index": 579
+},
+{
+"name": "MC_ROLL_P",
+"value": 8.0,
+"type": 9,
+"raw_hex": "00000041",
+"index": 580
+},
+{
+"name": "MC_RR_INT_LIM",
+"value": 0.30000001192092896,
+"type": 9,
+"raw_hex": "9a99993e",
+"index": 581
+},
+{
+"name": "MC_SLOW_DEF_HVEL",
+"value": 3.0,
+"type": 9,
+"raw_hex": "00004040",
+"index": 582
+},
+{
+"name": "MC_SLOW_DEF_VVEL",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 583
+},
+{
+"name": "MC_SLOW_DEF_YAWR",
+"value": 45.0,
+"type": 9,
+"raw_hex": "00003442",
+"index": 584
+},
+{
+"name": "MC_SLOW_MAP_HVEL",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 585
+},
+{
+"name": "MC_SLOW_MAP_PTCH",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 586
+},
+{
+"name": "MC_SLOW_MAP_VVEL",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 587
+},
+{
+"name": "MC_SLOW_MAP_YAWR",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 588
+},
+{
+"name": "MC_SLOW_MIN_HVEL",
+"value": 0.30000001192092896,
+"type": 9,
+"raw_hex": "9a99993e",
+"index": 589
+},
+{
+"name": "MC_SLOW_MIN_VVEL",
+"value": 0.30000001192092896,
+"type": 9,
+"raw_hex": "9a99993e",
+"index": 590
+},
+{
+"name": "MC_SLOW_MIN_YAWR",
+"value": 3.0,
+"type": 9,
+"raw_hex": "00004040",
+"index": 591
+},
+{
+"name": "MC_YAWRATE_D",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 592
+},
+{
+"name": "MC_YAWRATE_FF",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 593
+},
+{
+"name": "MC_YAWRATE_I",
+"value": 0.10000000149011612,
+"type": 9,
+"raw_hex": "cdcccc3d",
+"index": 594
+},
+{
+"name": "MC_YAWRATE_K",
+"value": 1.2000000476837158,
+"type": 9,
+"raw_hex": "9a99993f",
+"index": 595
+},
+{
+"name": "MC_YAWRATE_MAX",
+"value": 1000.0,
+"type": 9,
+"raw_hex": "00007a44",
+"index": 596
+},
+{
+"name": "MC_YAWRATE_P",
+"value": 0.20000000298023224,
+"type": 9,
+"raw_hex": "cdcc4c3e",
+"index": 597
+},
+{
+"name": "MC_YAW_P",
+"value": 4.0,
+"type": 9,
+"raw_hex": "00008040",
+"index": 598
+},
+{
+"name": "MC_YAW_TQ_CUTOFF",
+"value": 2.0,
+"type": 9,
+"raw_hex": "00000040",
+"index": 599
+},
+{
+"name": "MC_YAW_WEIGHT",
+"value": 0.4000000059604645,
+"type": 9,
+"raw_hex": "cdcccc3e",
+"index": 600
+},
+{
+"name": "MC_YR_INT_LIM",
+"value": 0.30000001192092896,
+"type": 9,
+"raw_hex": "9a99993e",
+"index": 601
+},
+{
+"name": "MIS_COMMAND_TOUT",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 602
+},
+{
+"name": "MIS_LND_ABRT_ALT",
+"value": 30,
+"type": 6,
+"raw_hex": "1e000000",
+"index": 603
+},
+{
+"name": "MIS_MNT_YAW_CTL",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 604
+},
+{
+"name": "MIS_TAKEOFF_ALT",
+"value": 2.5,
+"type": 9,
+"raw_hex": "00002040",
+"index": 605
+},
+{
+"name": "MIS_YAW_ERR",
+"value": 12.0,
+"type": 9,
+"raw_hex": "00004041",
+"index": 606
+},
+{
+"name": "MIS_YAW_TMT",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 607
+},
+{
+"name": "MNT_MODE_IN",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 608
+},
+{
+"name": "MOTFAIL_C2T",
+"value": 35.0,
+"type": 9,
+"raw_hex": "00000c42",
+"index": 609
+},
+{
+"name": "MOTFAIL_OFF",
+"value": 10.0,
+"type": 9,
+"raw_hex": "00002041",
+"index": 610
+},
+{
+"name": "MOTFAIL_TIME",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 611
+},
+{
+"name": "MPC_ACC_DECOUPLE",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 612
+},
+{
+"name": "MPC_ACC_DOWN_MAX",
+"value": 3.0,
+"type": 9,
+"raw_hex": "00004040",
+"index": 613
+},
+{
+"name": "MPC_ACC_HOR",
+"value": 3.0,
+"type": 9,
+"raw_hex": "00004040",
+"index": 614
+},
+{
+"name": "MPC_ACC_HOR_MAX",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 615
+},
+{
+"name": "MPC_ACC_UP_MAX",
+"value": 4.0,
+"type": 9,
+"raw_hex": "00008040",
+"index": 616
+},
+{
+"name": "MPC_ALT_MODE",
+"value": 2,
+"type": 6,
+"raw_hex": "02000000",
+"index": 617
+},
+{
+"name": "MPC_AUTO_NUDGING",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 618
+},
+{
+"name": "MPC_HOLD_MAX_XY",
+"value": 0.800000011920929,
+"type": 9,
+"raw_hex": "cdcc4c3f",
+"index": 619
+},
+{
+"name": "MPC_HOLD_MAX_Z",
+"value": 0.6000000238418579,
+"type": 9,
+"raw_hex": "9a99193f",
+"index": 620
+},
+{
+"name": "MPC_JERK_AUTO",
+"value": 4.0,
+"type": 9,
+"raw_hex": "00008040",
+"index": 621
+},
+{
+"name": "MPC_JERK_MAX",
+"value": 8.0,
+"type": 9,
+"raw_hex": "00000041",
+"index": 622
+},
+{
+"name": "MPC_LAND_ALT1",
+"value": 10.0,
+"type": 9,
+"raw_hex": "00002041",
+"index": 623
+},
+{
+"name": "MPC_LAND_ALT2",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 624
+},
+{
+"name": "MPC_LAND_ALT3",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 625
+},
+{
+"name": "MPC_LAND_CRWL",
+"value": 0.30000001192092896,
+"type": 9,
+"raw_hex": "9a99993e",
+"index": 626
+},
+{
+"name": "MPC_LAND_RADIUS",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 627
+},
+{
+"name": "MPC_LAND_SPEED",
+"value": 0.699999988079071,
+"type": 9,
+"raw_hex": "3333333f",
+"index": 628
+},
+{
+"name": "MPC_MANTHR_MIN",
+"value": 0.07999999821186066,
+"type": 9,
+"raw_hex": "0ad7a33d",
+"index": 629
+},
+{
+"name": "MPC_MAN_TILT_MAX",
+"value": 35.0,
+"type": 9,
+"raw_hex": "00000c42",
+"index": 630
+},
+{
+"name": "MPC_MAN_Y_MAX",
+"value": 150.0,
+"type": 9,
+"raw_hex": "00001643",
+"index": 631
+},
+{
+"name": "MPC_MAN_Y_TAU",
+"value": 0.07999999821186066,
+"type": 9,
+"raw_hex": "0ad7a33d",
+"index": 632
+},
+{
+"name": "MPC_POS_MODE",
+"value": 4,
+"type": 6,
+"raw_hex": "04000000",
+"index": 633
+},
+{
+"name": "MPC_THR_CURVE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 634
+},
+{
+"name": "MPC_THR_HOVER",
+"value": 0.5,
+"type": 9,
+"raw_hex": "0000003f",
+"index": 635
+},
+{
+"name": "MPC_THR_MAX",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 636
+},
+{
+"name": "MPC_THR_MIN",
+"value": 0.11999999731779099,
+"type": 9,
+"raw_hex": "8fc2f53d",
+"index": 637
+},
+{
+"name": "MPC_THR_XY_MARG",
+"value": 0.30000001192092896,
+"type": 9,
+"raw_hex": "9a99993e",
+"index": 638
+},
+{
+"name": "MPC_TILTMAX_AIR",
+"value": 45.0,
+"type": 9,
+"raw_hex": "00003442",
+"index": 639
+},
+{
+"name": "MPC_TILTMAX_LND",
+"value": 12.0,
+"type": 9,
+"raw_hex": "00004041",
+"index": 640
+},
+{
+"name": "MPC_TKO_RAMP_T",
+"value": 3.0,
+"type": 9,
+"raw_hex": "00004040",
+"index": 641
+},
+{
+"name": "MPC_TKO_SPEED",
+"value": 1.5,
+"type": 9,
+"raw_hex": "0000c03f",
+"index": 642
+},
+{
+"name": "MPC_VELD_LP",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 643
+},
+{
+"name": "MPC_VEL_LP",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 644
+},
+{
+"name": "MPC_VEL_MANUAL",
+"value": 10.0,
+"type": 9,
+"raw_hex": "00002041",
+"index": 645
+},
+{
+"name": "MPC_VEL_MAN_BACK",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 646
+},
+{
+"name": "MPC_VEL_MAN_SIDE",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 647
+},
+{
+"name": "MPC_VEL_NF_BW",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 648
+},
+{
+"name": "MPC_VEL_NF_FRQ",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 649
+},
+{
+"name": "MPC_XY_CRUISE",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 650
+},
+{
+"name": "MPC_XY_ERR_MAX",
+"value": 2.0,
+"type": 9,
+"raw_hex": "00000040",
+"index": 651
+},
+{
+"name": "MPC_XY_P",
+"value": 0.949999988079071,
+"type": 9,
+"raw_hex": "3333733f",
+"index": 652
+},
+{
+"name": "MPC_XY_TRAJ_P",
+"value": 0.5,
+"type": 9,
+"raw_hex": "0000003f",
+"index": 653
+},
+{
+"name": "MPC_XY_VEL_ALL",
+"value": -10.0,
+"type": 9,
+"raw_hex": "000020c1",
+"index": 654
+},
+{
+"name": "MPC_XY_VEL_D_ACC",
+"value": 0.20000000298023224,
+"type": 9,
+"raw_hex": "cdcc4c3e",
+"index": 655
+},
+{
+"name": "MPC_XY_VEL_I_ACC",
+"value": 0.4000000059604645,
+"type": 9,
+"raw_hex": "cdcccc3e",
+"index": 656
+},
+{
+"name": "MPC_XY_VEL_MAX",
+"value": 12.0,
+"type": 9,
+"raw_hex": "00004041",
+"index": 657
+},
+{
+"name": "MPC_XY_VEL_P_ACC",
+"value": 1.7999999523162842,
+"type": 9,
+"raw_hex": "6666e63f",
+"index": 658
+},
+{
+"name": "MPC_YAWRAUTO_ACC",
+"value": 20.0,
+"type": 9,
+"raw_hex": "0000a041",
+"index": 659
+},
+{
+"name": "MPC_YAWRAUTO_MAX",
+"value": 60.0,
+"type": 9,
+"raw_hex": "00007042",
+"index": 660
+},
+{
+"name": "MPC_YAW_MODE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 661
+},
+{
+"name": "MPC_Z_ERR_MAX",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 662
+},
+{
+"name": "MPC_Z_P",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 663
+},
+{
+"name": "MPC_Z_VEL_ALL",
+"value": -3.0,
+"type": 9,
+"raw_hex": "000040c0",
+"index": 664
+},
+{
+"name": "MPC_Z_VEL_D_ACC",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 665
+},
+{
+"name": "MPC_Z_VEL_I_ACC",
+"value": 2.0,
+"type": 9,
+"raw_hex": "00000040",
+"index": 666
+},
+{
+"name": "MPC_Z_VEL_MAX_DN",
+"value": 1.5,
+"type": 9,
+"raw_hex": "0000c03f",
+"index": 667
+},
+{
+"name": "MPC_Z_VEL_MAX_UP",
+"value": 3.0,
+"type": 9,
+"raw_hex": "00004040",
+"index": 668
+},
+{
+"name": "MPC_Z_VEL_P_ACC",
+"value": 4.0,
+"type": 9,
+"raw_hex": "00008040",
+"index": 669
+},
+{
+"name": "MPC_Z_V_AUTO_DN",
+"value": 1.5,
+"type": 9,
+"raw_hex": "0000c03f",
+"index": 670
+},
+{
+"name": "MPC_Z_V_AUTO_UP",
+"value": 3.0,
+"type": 9,
+"raw_hex": "00004040",
+"index": 671
+},
+{
+"name": "MSP_OSD_CONFIG",
+"value": 202,
+"type": 6,
+"raw_hex": "ca000000",
+"index": 672
+},
+{
+"name": "NAV_ACC_RAD",
+"value": 10.0,
+"type": 9,
+"raw_hex": "00002041",
+"index": 673
+},
+{
+"name": "NAV_DLL_ACT",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 674
+},
+{
+"name": "NAV_FORCE_VT",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 675
+},
+{
+"name": "NAV_FW_ALTL_RAD",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 676
+},
+{
+"name": "NAV_FW_ALT_RAD",
+"value": 10.0,
+"type": 9,
+"raw_hex": "00002041",
+"index": 677
+},
+{
+"name": "NAV_LOITER_RAD",
+"value": 80.0,
+"type": 9,
+"raw_hex": "0000a042",
+"index": 678
+},
+{
+"name": "NAV_LTR_LAST_DL",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 679
+},
+{
+"name": "NAV_MC_ALT_RAD",
+"value": 0.800000011920929,
+"type": 9,
+"raw_hex": "cdcc4c3f",
+"index": 680
+},
+{
+"name": "NAV_MIN_GND_DIST",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 681
+},
+{
+"name": "NAV_MIN_LTR_ALT",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 682
+},
+{
+"name": "NAV_RCL_ACT",
+"value": 3,
+"type": 6,
+"raw_hex": "03000000",
+"index": 683
+},
+{
+"name": "NAV_TRAFF_AVOID",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 684
+},
+{
+"name": "NAV_TRAFF_A_HOR",
+"value": 500.0,
+"type": 9,
+"raw_hex": "0000fa43",
+"index": 685
+},
+{
+"name": "NAV_TRAFF_A_VER",
+"value": 500.0,
+"type": 9,
+"raw_hex": "0000fa43",
+"index": 686
+},
+{
+"name": "NAV_TRAFF_COLL_T",
+"value": 60,
+"type": 6,
+"raw_hex": "3c000000",
+"index": 687
+},
+{
+"name": "OSD_CH_HEIGHT",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 688
+},
+{
+"name": "OSD_DWELL_TIME",
+"value": 500,
+"type": 6,
+"raw_hex": "f4010000",
+"index": 689
+},
+{
+"name": "OSD_LOG_LEVEL",
+"value": 3,
+"type": 6,
+"raw_hex": "03000000",
+"index": 690
+},
+{
+"name": "OSD_RC_STICK",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 691
+},
+{
+"name": "OSD_SCROLL_RATE",
+"value": 125,
+"type": 6,
+"raw_hex": "7d000000",
+"index": 692
+},
+{
+"name": "OSD_SYMBOLS",
+"value": 16383,
+"type": 6,
+"raw_hex": "ff3f0000",
+"index": 693
+},
+{
+"name": "PD_GRIPPER_TO",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 694
+},
+{
+"name": "PD_GRIPPER_TYPE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 695
+},
+{
+"name": "PLD_BTOUT",
+"value": 5.0,
+"type": 9,
+"raw_hex": "0000a040",
+"index": 696
+},
+{
+"name": "PLD_FAPPR_ALT",
+"value": 0.10000000149011612,
+"type": 9,
+"raw_hex": "cdcccc3d",
+"index": 697
+},
+{
+"name": "PLD_HACC_RAD",
+"value": 0.20000000298023224,
+"type": 9,
+"raw_hex": "cdcc4c3e",
+"index": 698
+},
+{
+"name": "PLD_MAX_SRCH",
+"value": 3,
+"type": 6,
+"raw_hex": "03000000",
+"index": 699
+},
+{
+"name": "PLD_SRCH_ALT",
+"value": 10.0,
+"type": 9,
+"raw_hex": "00002041",
+"index": 700
+},
+{
+"name": "PLD_SRCH_TOUT",
+"value": 10.0,
+"type": 9,
+"raw_hex": "00002041",
+"index": 701
+},
+{
+"name": "PPS_CAP_ENABLE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 702
+},
+{
+"name": "PWM_MAIN_CENT1",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 703
+},
+{
+"name": "PWM_MAIN_CENT10",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 704
+},
+{
+"name": "PWM_MAIN_CENT2",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 705
+},
+{
+"name": "PWM_MAIN_CENT3",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 706
+},
+{
+"name": "PWM_MAIN_CENT4",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 707
+},
+{
+"name": "PWM_MAIN_CENT5",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 708
+},
+{
+"name": "PWM_MAIN_CENT6",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 709
+},
+{
+"name": "PWM_MAIN_CENT7",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 710
+},
+{
+"name": "PWM_MAIN_CENT8",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 711
+},
+{
+"name": "PWM_MAIN_CENT9",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 712
+},
+{
+"name": "PWM_MAIN_DIS1",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 713
+},
+{
+"name": "PWM_MAIN_DIS10",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 714
+},
+{
+"name": "PWM_MAIN_DIS2",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 715
+},
+{
+"name": "PWM_MAIN_DIS3",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 716
+},
+{
+"name": "PWM_MAIN_DIS4",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 717
+},
+{
+"name": "PWM_MAIN_DIS5",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 718
+},
+{
+"name": "PWM_MAIN_DIS6",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 719
+},
+{
+"name": "PWM_MAIN_DIS7",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 720
+},
+{
+"name": "PWM_MAIN_DIS8",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 721
+},
+{
+"name": "PWM_MAIN_DIS9",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 722
+},
+{
+"name": "PWM_MAIN_FAIL1",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 723
+},
+{
+"name": "PWM_MAIN_FAIL10",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 724
+},
+{
+"name": "PWM_MAIN_FAIL2",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 725
+},
+{
+"name": "PWM_MAIN_FAIL3",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 726
+},
+{
+"name": "PWM_MAIN_FAIL4",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 727
+},
+{
+"name": "PWM_MAIN_FAIL5",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 728
+},
+{
+"name": "PWM_MAIN_FAIL6",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 729
+},
+{
+"name": "PWM_MAIN_FAIL7",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 730
+},
+{
+"name": "PWM_MAIN_FAIL8",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 731
+},
+{
+"name": "PWM_MAIN_FAIL9",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 732
+},
+{
+"name": "PWM_MAIN_FUNC1",
+"value": 103,
+"type": 6,
+"raw_hex": "67000000",
+"index": 733
+},
+{
+"name": "PWM_MAIN_FUNC10",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 734
+},
+{
+"name": "PWM_MAIN_FUNC2",
+"value": 104,
+"type": 6,
+"raw_hex": "68000000",
+"index": 735
+},
+{
+"name": "PWM_MAIN_FUNC3",
+"value": 101,
+"type": 6,
+"raw_hex": "65000000",
+"index": 736
+},
+{
+"name": "PWM_MAIN_FUNC4",
+"value": 102,
+"type": 6,
+"raw_hex": "66000000",
+"index": 737
+},
+{
+"name": "PWM_MAIN_FUNC5",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 738
+},
+{
+"name": "PWM_MAIN_FUNC6",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 739
+},
+{
+"name": "PWM_MAIN_FUNC7",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 740
+},
+{
+"name": "PWM_MAIN_FUNC8",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 741
+},
+{
+"name": "PWM_MAIN_FUNC9",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 742
+},
+{
+"name": "PWM_MAIN_MAX1",
+"value": 2000,
+"type": 6,
+"raw_hex": "d0070000",
+"index": 743
+},
+{
+"name": "PWM_MAIN_MAX10",
+"value": 2000,
+"type": 6,
+"raw_hex": "d0070000",
+"index": 744
+},
+{
+"name": "PWM_MAIN_MAX2",
+"value": 2000,
+"type": 6,
+"raw_hex": "d0070000",
+"index": 745
+},
+{
+"name": "PWM_MAIN_MAX3",
+"value": 2000,
+"type": 6,
+"raw_hex": "d0070000",
+"index": 746
+},
+{
+"name": "PWM_MAIN_MAX4",
+"value": 2000,
+"type": 6,
+"raw_hex": "d0070000",
+"index": 747
+},
+{
+"name": "PWM_MAIN_MAX5",
+"value": 2000,
+"type": 6,
+"raw_hex": "d0070000",
+"index": 748
+},
+{
+"name": "PWM_MAIN_MAX6",
+"value": 2000,
+"type": 6,
+"raw_hex": "d0070000",
+"index": 749
+},
+{
+"name": "PWM_MAIN_MAX7",
+"value": 2000,
+"type": 6,
+"raw_hex": "d0070000",
+"index": 750
+},
+{
+"name": "PWM_MAIN_MAX8",
+"value": 2000,
+"type": 6,
+"raw_hex": "d0070000",
+"index": 751
+},
+{
+"name": "PWM_MAIN_MAX9",
+"value": 2000,
+"type": 6,
+"raw_hex": "d0070000",
+"index": 752
+},
+{
+"name": "PWM_MAIN_MIN1",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 753
+},
+{
+"name": "PWM_MAIN_MIN10",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 754
+},
+{
+"name": "PWM_MAIN_MIN2",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 755
+},
+{
+"name": "PWM_MAIN_MIN3",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 756
+},
+{
+"name": "PWM_MAIN_MIN4",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 757
+},
+{
+"name": "PWM_MAIN_MIN5",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 758
+},
+{
+"name": "PWM_MAIN_MIN6",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 759
+},
+{
+"name": "PWM_MAIN_MIN7",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 760
+},
+{
+"name": "PWM_MAIN_MIN8",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 761
+},
+{
+"name": "PWM_MAIN_MIN9",
+"value": 1000,
+"type": 6,
+"raw_hex": "e8030000",
+"index": 762
+},
+{
+"name": "PWM_MAIN_REV",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 763
+},
+{
+"name": "PWM_MAIN_TIM0",
+"value": -4,
+"type": 6,
+"raw_hex": "fcffffff",
+"index": 764
+},
+{
+"name": "PWM_MAIN_TIM1",
+"value": 400,
+"type": 6,
+"raw_hex": "90010000",
+"index": 765
+},
+{
+"name": "PWM_MAIN_TIM2",
+"value": 400,
+"type": 6,
+"raw_hex": "90010000",
+"index": 766
+},
+{
+"name": "PWM_MAIN_TIM3",
+"value": 400,
+"type": 6,
+"raw_hex": "90010000",
+"index": 767
+},
+{
+"name": "RC10_MAX",
+"value": 2000.0,
+"type": 9,
+"raw_hex": "0000fa44",
+"index": 768
+},
+{
+"name": "RC10_MIN",
+"value": 1000.0,
+"type": 9,
+"raw_hex": "00007a44",
+"index": 769
+},
+{
+"name": "RC10_REV",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 770
+},
+{
+"name": "RC10_TRIM",
+"value": 1500.0,
+"type": 9,
+"raw_hex": "0080bb44",
+"index": 771
+},
+{
+"name": "RC11_MAX",
+"value": 2000.0,
+"type": 9,
+"raw_hex": "0000fa44",
+"index": 772
+},
+{
+"name": "RC11_MIN",
+"value": 1000.0,
+"type": 9,
+"raw_hex": "00007a44",
+"index": 773
+},
+{
+"name": "RC11_REV",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 774
+},
+{
+"name": "RC11_TRIM",
+"value": 1500.0,
+"type": 9,
+"raw_hex": "0080bb44",
+"index": 775
+},
+{
+"name": "RC12_MAX",
+"value": 2000.0,
+"type": 9,
+"raw_hex": "0000fa44",
+"index": 776
+},
+{
+"name": "RC12_MIN",
+"value": 1000.0,
+"type": 9,
+"raw_hex": "00007a44",
+"index": 777
+},
+{
+"name": "RC12_REV",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 778
+},
+{
+"name": "RC12_TRIM",
+"value": 1500.0,
+"type": 9,
+"raw_hex": "0080bb44",
+"index": 779
+},
+{
+"name": "RC13_MAX",
+"value": 2000.0,
+"type": 9,
+"raw_hex": "0000fa44",
+"index": 780
+},
+{
+"name": "RC13_MIN",
+"value": 1000.0,
+"type": 9,
+"raw_hex": "00007a44",
+"index": 781
+},
+{
+"name": "RC13_REV",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 782
+},
+{
+"name": "RC13_TRIM",
+"value": 1500.0,
+"type": 9,
+"raw_hex": "0080bb44",
+"index": 783
+},
+{
+"name": "RC14_MAX",
+"value": 2000.0,
+"type": 9,
+"raw_hex": "0000fa44",
+"index": 784
+},
+{
+"name": "RC14_MIN",
+"value": 1000.0,
+"type": 9,
+"raw_hex": "00007a44",
+"index": 785
+},
+{
+"name": "RC14_REV",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 786
+},
+{
+"name": "RC14_TRIM",
+"value": 1500.0,
+"type": 9,
+"raw_hex": "0080bb44",
+"index": 787
+},
+{
+"name": "RC15_MAX",
+"value": 2000.0,
+"type": 9,
+"raw_hex": "0000fa44",
+"index": 788
+},
+{
+"name": "RC15_MIN",
+"value": 1000.0,
+"type": 9,
+"raw_hex": "00007a44",
+"index": 789
+},
+{
+"name": "RC15_REV",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 790
+},
+{
+"name": "RC15_TRIM",
+"value": 1500.0,
+"type": 9,
+"raw_hex": "0080bb44",
+"index": 791
+},
+{
+"name": "RC16_MAX",
+"value": 2000.0,
+"type": 9,
+"raw_hex": "0000fa44",
+"index": 792
+},
+{
+"name": "RC16_MIN",
+"value": 1000.0,
+"type": 9,
+"raw_hex": "00007a44",
+"index": 793
+},
+{
+"name": "RC16_REV",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 794
+},
+{
+"name": "RC16_TRIM",
+"value": 1500.0,
+"type": 9,
+"raw_hex": "0080bb44",
+"index": 795
+},
+{
+"name": "RC17_MAX",
+"value": 2000.0,
+"type": 9,
+"raw_hex": "0000fa44",
+"index": 796
+},
+{
+"name": "RC17_MIN",
+"value": 1000.0,
+"type": 9,
+"raw_hex": "00007a44",
+"index": 797
+},
+{
+"name": "RC17_REV",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 798
+},
+{
+"name": "RC17_TRIM",
+"value": 1500.0,
+"type": 9,
+"raw_hex": "0080bb44",
+"index": 799
+},
+{
+"name": "RC18_MAX",
+"value": 2000.0,
+"type": 9,
+"raw_hex": "0000fa44",
+"index": 800
+},
+{
+"name": "RC18_MIN",
+"value": 1000.0,
+"type": 9,
+"raw_hex": "00007a44",
+"index": 801
+},
+{
+"name": "RC18_REV",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 802
+},
+{
+"name": "RC18_TRIM",
+"value": 1500.0,
+"type": 9,
+"raw_hex": "0080bb44",
+"index": 803
+},
+{
+"name": "RC1_MAX",
+"value": 2000.0,
+"type": 9,
+"raw_hex": "0000fa44",
+"index": 804
+},
+{
+"name": "RC1_MIN",
+"value": 1001.0,
+"type": 9,
+"raw_hex": "00407a44",
+"index": 805
+},
+{
+"name": "RC1_REV",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 806
+},
+{
+"name": "RC1_TRIM",
+"value": 1501.0,
+"type": 9,
+"raw_hex": "00a0bb44",
+"index": 807
+},
+{
+"name": "RC2_MAX",
+"value": 2000.0,
+"type": 9,
+"raw_hex": "0000fa44",
+"index": 808
+},
+{
+"name": "RC2_MIN",
+"value": 1001.0,
+"type": 9,
+"raw_hex": "00407a44",
+"index": 809
+},
+{
+"name": "RC2_REV",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 810
+},
+{
+"name": "RC2_TRIM",
+"value": 1500.0,
+"type": 9,
+"raw_hex": "0080bb44",
+"index": 811
+},
+{
+"name": "RC3_MAX",
+"value": 2000.0,
+"type": 9,
+"raw_hex": "0000fa44",
+"index": 812
+},
+{
+"name": "RC3_MIN",
+"value": 1001.0,
+"type": 9,
+"raw_hex": "00407a44",
+"index": 813
+},
+{
+"name": "RC3_REV",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 814
+},
+{
+"name": "RC3_TRIM",
+"value": 1001.0,
+"type": 9,
+"raw_hex": "00407a44",
+"index": 815
+},
+{
+"name": "RC4_MAX",
+"value": 2000.0,
+"type": 9,
+"raw_hex": "0000fa44",
+"index": 816
+},
+{
+"name": "RC4_MIN",
+"value": 1001.0,
+"type": 9,
+"raw_hex": "00407a44",
+"index": 817
+},
+{
+"name": "RC4_REV",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 818
+},
+{
+"name": "RC4_TRIM",
+"value": 1500.0,
+"type": 9,
+"raw_hex": "0080bb44",
+"index": 819
+},
+{
+"name": "RC5_MAX",
+"value": 2000.0,
+"type": 9,
+"raw_hex": "0000fa44",
+"index": 820
+},
+{
+"name": "RC5_MIN",
+"value": 1000.0,
+"type": 9,
+"raw_hex": "00007a44",
+"index": 821
+},
+{
+"name": "RC5_REV",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 822
+},
+{
+"name": "RC5_TRIM",
+"value": 1500.0,
+"type": 9,
+"raw_hex": "0080bb44",
+"index": 823
+},
+{
+"name": "RC6_MAX",
+"value": 2000.0,
+"type": 9,
+"raw_hex": "0000fa44",
+"index": 824
+},
+{
+"name": "RC6_MIN",
+"value": 1000.0,
+"type": 9,
+"raw_hex": "00007a44",
+"index": 825
+},
+{
+"name": "RC6_REV",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 826
+},
+{
+"name": "RC6_TRIM",
+"value": 1500.0,
+"type": 9,
+"raw_hex": "0080bb44",
+"index": 827
+},
+{
+"name": "RC7_MAX",
+"value": 2000.0,
+"type": 9,
+"raw_hex": "0000fa44",
+"index": 828
+},
+{
+"name": "RC7_MIN",
+"value": 1000.0,
+"type": 9,
+"raw_hex": "00007a44",
+"index": 829
+},
+{
+"name": "RC7_REV",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 830
+},
+{
+"name": "RC7_TRIM",
+"value": 1500.0,
+"type": 9,
+"raw_hex": "0080bb44",
+"index": 831
+},
+{
+"name": "RC8_MAX",
+"value": 2000.0,
+"type": 9,
+"raw_hex": "0000fa44",
+"index": 832
+},
+{
+"name": "RC8_MIN",
+"value": 1000.0,
+"type": 9,
+"raw_hex": "00007a44",
+"index": 833
+},
+{
+"name": "RC8_REV",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 834
+},
+{
+"name": "RC8_TRIM",
+"value": 1500.0,
+"type": 9,
+"raw_hex": "0080bb44",
+"index": 835
+},
+{
+"name": "RC9_MAX",
+"value": 2000.0,
+"type": 9,
+"raw_hex": "0000fa44",
+"index": 836
+},
+{
+"name": "RC9_MIN",
+"value": 1000.0,
+"type": 9,
+"raw_hex": "00007a44",
+"index": 837
+},
+{
+"name": "RC9_REV",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 838
+},
+{
+"name": "RC9_TRIM",
+"value": 1500.0,
+"type": 9,
+"raw_hex": "0080bb44",
+"index": 839
+},
+{
+"name": "RC_ARMSWITCH_TH",
+"value": 0.75,
+"type": 9,
+"raw_hex": "0000403f",
+"index": 840
+},
+{
+"name": "RC_CHAN_CNT",
+"value": 16,
+"type": 6,
+"raw_hex": "10000000",
+"index": 841
+},
+{
+"name": "RC_CRSF_PRT_CFG",
+"value": 201,
+"type": 6,
+"raw_hex": "c9000000",
+"index": 842
+},
+{
+"name": "RC_CRSF_TEL_EN",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 843
+},
+{
+"name": "RC_DSM_PRT_CFG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 844
+},
+{
+"name": "RC_ENG_MOT_TH",
+"value": 0.75,
+"type": 9,
+"raw_hex": "0000403f",
+"index": 845
+},
+{
+"name": "RC_FAILS_THR",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 846
+},
+{
+"name": "RC_GEAR_TH",
+"value": 0.75,
+"type": 9,
+"raw_hex": "0000403f",
+"index": 847
+},
+{
+"name": "RC_GHST_PRT_CFG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 848
+},
+{
+"name": "RC_KILLSWITCH_TH",
+"value": 0.75,
+"type": 9,
+"raw_hex": "0000403f",
+"index": 849
+},
+{
+"name": "RC_LOITER_TH",
+"value": 0.75,
+"type": 9,
+"raw_hex": "0000403f",
+"index": 850
+},
+{
+"name": "RC_MAP_ARM_SW",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 851
+},
+{
+"name": "RC_MAP_AUX1",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 852
+},
+{
+"name": "RC_MAP_AUX2",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 853
+},
+{
+"name": "RC_MAP_AUX3",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 854
+},
+{
+"name": "RC_MAP_AUX4",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 855
+},
+{
+"name": "RC_MAP_AUX5",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 856
+},
+{
+"name": "RC_MAP_AUX6",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 857
+},
+{
+"name": "RC_MAP_ENG_MOT",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 858
+},
+{
+"name": "RC_MAP_FAILSAFE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 859
+},
+{
+"name": "RC_MAP_FLAPS",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 860
+},
+{
+"name": "RC_MAP_FLTMODE",
+"value": 5,
+"type": 6,
+"raw_hex": "05000000",
+"index": 861
+},
+{
+"name": "RC_MAP_FLTM_BTN",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 862
+},
+{
+"name": "RC_MAP_GEAR_SW",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 863
+},
+{
+"name": "RC_MAP_KILL_SW",
+"value": 8,
+"type": 6,
+"raw_hex": "08000000",
+"index": 864
+},
+{
+"name": "RC_MAP_LOITER_SW",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 865
+},
+{
+"name": "RC_MAP_MODE_SW",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 866
+},
+{
+"name": "RC_MAP_OFFB_SW",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 867
+},
+{
+"name": "RC_MAP_PARAM1",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 868
+},
+{
+"name": "RC_MAP_PARAM2",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 869
+},
+{
+"name": "RC_MAP_PARAM3",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 870
+},
+{
+"name": "RC_MAP_PAY_SW",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 871
+},
+{
+"name": "RC_MAP_PITCH",
+"value": 2,
+"type": 6,
+"raw_hex": "02000000",
+"index": 872
+},
+{
+"name": "RC_MAP_RETURN_SW",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 873
+},
+{
+"name": "RC_MAP_ROLL",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 874
+},
+{
+"name": "RC_MAP_TERM_SW",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 875
+},
+{
+"name": "RC_MAP_THROTTLE",
+"value": 3,
+"type": 6,
+"raw_hex": "03000000",
+"index": 876
+},
+{
+"name": "RC_MAP_TRANS_SW",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 877
+},
+{
+"name": "RC_MAP_YAW",
+"value": 4,
+"type": 6,
+"raw_hex": "04000000",
+"index": 878
+},
+{
+"name": "RC_OFFB_TH",
+"value": 0.75,
+"type": 9,
+"raw_hex": "0000403f",
+"index": 879
+},
+{
+"name": "RC_PAYLOAD_MIDTH",
+"value": 0.25,
+"type": 9,
+"raw_hex": "0000803e",
+"index": 880
+},
+{
+"name": "RC_PAYLOAD_TH",
+"value": 0.75,
+"type": 9,
+"raw_hex": "0000403f",
+"index": 881
+},
+{
+"name": "RC_RETURN_TH",
+"value": 0.75,
+"type": 9,
+"raw_hex": "0000403f",
+"index": 882
+},
+{
+"name": "RC_SBUS_PRT_CFG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 883
+},
+{
+"name": "RC_TRANS_TH",
+"value": 0.75,
+"type": 9,
+"raw_hex": "0000403f",
+"index": 884
+},
+{
+"name": "RO_SPEED_LIM",
+"value": -1.0,
+"type": 9,
+"raw_hex": "000080bf",
+"index": 885
+},
+{
+"name": "RTL_APPR_FORCE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 886
+},
+{
+"name": "RTL_CONE_ANG",
+"value": 45,
+"type": 6,
+"raw_hex": "2d000000",
+"index": 887
+},
+{
+"name": "RTL_DESCEND_ALT",
+"value": 10.0,
+"type": 9,
+"raw_hex": "00002041",
+"index": 888
+},
+{
+"name": "RTL_LAND_DELAY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 889
+},
+{
+"name": "RTL_LOITER_RAD",
+"value": 80.0,
+"type": 9,
+"raw_hex": "0000a042",
+"index": 890
+},
+{
+"name": "RTL_MIN_DIST",
+"value": 10.0,
+"type": 9,
+"raw_hex": "00002041",
+"index": 891
+},
+{
+"name": "RTL_PLD_MD",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 892
+},
+{
+"name": "RTL_RETURN_ALT",
+"value": 30.0,
+"type": 9,
+"raw_hex": "0000f041",
+"index": 893
+},
+{
+"name": "RTL_TIME_FACTOR",
+"value": 1.100000023841858,
+"type": 9,
+"raw_hex": "cdcc8c3f",
+"index": 894
+},
+{
+"name": "RTL_TIME_MARGIN",
+"value": 100,
+"type": 6,
+"raw_hex": "64000000",
+"index": 895
+},
+{
+"name": "RTL_TYPE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 896
+},
+{
+"name": "SDLOG_BACKEND",
+"value": 3,
+"type": 6,
+"raw_hex": "03000000",
+"index": 897
+},
+{
+"name": "SDLOG_BOOT_BAT",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 898
+},
+{
+"name": "SDLOG_DIRS_MAX",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 899
+},
+{
+"name": "SDLOG_MAX_SIZE",
+"value": 1024,
+"type": 6,
+"raw_hex": "00040000",
+"index": 900
+},
+{
+"name": "SDLOG_MISSION",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 901
+},
+{
+"name": "SDLOG_MODE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 902
+},
+{
+"name": "SDLOG_PROFILE",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 903
+},
+{
+"name": "SDLOG_ROTATE",
+"value": 90,
+"type": 6,
+"raw_hex": "5a000000",
+"index": 904
+},
+{
+"name": "SDLOG_UTC_OFFSET",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 905
+},
+{
+"name": "SDLOG_UUID",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 906
+},
+{
+"name": "SENS_BARO_QNH",
+"value": 1013.25,
+"type": 9,
+"raw_hex": "00507d44",
+"index": 907
+},
+{
+"name": "SENS_BARO_RATE",
+"value": 20.0,
+"type": 9,
+"raw_hex": "0000a041",
+"index": 908
+},
+{
+"name": "SENS_BAR_AUTOCAL",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 909
+},
+{
+"name": "SENS_BOARD_ROT",
+"value": 8,
+"type": 6,
+"raw_hex": "08000000",
+"index": 910
+},
+{
+"name": "SENS_BOARD_X_OFF",
+"value": 0.4696372151374817,
+"type": 9,
+"raw_hex": "4a74f03e",
+"index": 911
+},
+{
+"name": "SENS_BOARD_Y_OFF",
+"value": -1.052474021911621,
+"type": 9,
+"raw_hex": "78b786bf",
+"index": 912
+},
+{
+"name": "SENS_BOARD_Z_OFF",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 913
+},
+{
+"name": "SENS_DPRES_OFF",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 914
+},
+{
+"name": "SENS_EN_ASP5033",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 915
+},
+{
+"name": "SENS_EN_ETSASPD",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 916
+},
+{
+"name": "SENS_EN_LL40LS",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 917
+},
+{
+"name": "SENS_EN_MS4515",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 918
+},
+{
+"name": "SENS_EN_MS4525DO",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 919
+},
+{
+"name": "SENS_EN_MS5525DS",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 920
+},
+{
+"name": "SENS_EN_PCF8583",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 921
+},
+{
+"name": "SENS_EN_SDP3X",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 922
+},
+{
+"name": "SENS_EN_SF1XX",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 923
+},
+{
+"name": "SENS_EN_SPL06",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 924
+},
+{
+"name": "SENS_EN_TF02PRO",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 925
+},
+{
+"name": "SENS_EN_THERMAL",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 926
+},
+{
+"name": "SENS_EN_VL53L0X",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 927
+},
+{
+"name": "SENS_EN_VL53L1X",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 928
+},
+{
+"name": "SENS_EXT_I2C_PRB",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 929
+},
+{
+"name": "SENS_FLOW_MAXHGT",
+"value": 100.0,
+"type": 9,
+"raw_hex": "0000c842",
+"index": 930
+},
+{
+"name": "SENS_FLOW_MAXR",
+"value": 8.0,
+"type": 9,
+"raw_hex": "00000041",
+"index": 931
+},
+{
+"name": "SENS_FLOW_MINHGT",
+"value": 0.07999999821186066,
+"type": 9,
+"raw_hex": "0ad7a33d",
+"index": 932
+},
+{
+"name": "SENS_FLOW_RATE",
+"value": 70.0,
+"type": 9,
+"raw_hex": "00008c42",
+"index": 933
+},
+{
+"name": "SENS_FLOW_ROT",
+"value": 4,
+"type": 6,
+"raw_hex": "04000000",
+"index": 934
+},
+{
+"name": "SENS_FLOW_SCALE",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 935
+},
+{
+"name": "SENS_FTX_CFG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 936
+},
+{
+"name": "SENS_GPS0_DELAY",
+"value": 110,
+"type": 6,
+"raw_hex": "6e000000",
+"index": 937
+},
+{
+"name": "SENS_GPS0_OFFX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 938
+},
+{
+"name": "SENS_GPS0_OFFY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 939
+},
+{
+"name": "SENS_GPS1_DELAY",
+"value": 110,
+"type": 6,
+"raw_hex": "6e000000",
+"index": 940
+},
+{
+"name": "SENS_GPS1_OFFX",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 941
+},
+{
+"name": "SENS_GPS1_OFFY",
+"value": 0.0,
+"type": 9,
+"raw_hex": "00000000",
+"index": 942
+},
+{
+"name": "SENS_IMU_AUTOCAL",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 943
+},
+{
+"name": "SENS_IMU_CLPNOTI",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 944
+},
+{
+"name": "SENS_IMU_MODE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 945
+},
+{
+"name": "SENS_MAG_MODE",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 946
+},
+{
+"name": "SENS_SF0X_CFG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 947
+},
+{
+"name": "SENS_TFMINI_CFG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 948
+},
+{
+"name": "SENS_ULAND_CFG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 949
+},
+{
+"name": "SEP_PORT1_CFG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 950
+},
+{
+"name": "SEP_PORT2_CFG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 951
+},
+{
+"name": "SER_TEL1_BAUD",
+"value": 115200,
+"type": 6,
+"raw_hex": "00c20100",
+"index": 952
+},
+{
+"name": "SER_TEL2_BAUD",
+"value": 921600,
+"type": 6,
+"raw_hex": "00100e00",
+"index": 953
+},
+{
+"name": "SER_TEL4_BAUD",
+"value": 115200,
+"type": 6,
+"raw_hex": "00c20100",
+"index": 954
+},
+{
+"name": "SYS_AUTOCONFIG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 955
+},
+{
+"name": "SYS_AUTOSTART",
+"value": 4050,
+"type": 6,
+"raw_hex": "d20f0000",
+"index": 956
+},
+{
+"name": "SYS_BL_UPDATE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 957
+},
+{
+"name": "SYS_CAL_TDEL",
+"value": 24,
+"type": 6,
+"raw_hex": "18000000",
+"index": 958
+},
+{
+"name": "SYS_CAL_TMAX",
+"value": 10,
+"type": 6,
+"raw_hex": "0a000000",
+"index": 959
+},
+{
+"name": "SYS_CAL_TMIN",
+"value": 5,
+"type": 6,
+"raw_hex": "05000000",
+"index": 960
+},
+{
+"name": "SYS_DM_BACKEND",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 961
+},
+{
+"name": "SYS_FAC_CAL_MODE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 962
+},
+{
+"name": "SYS_FAILURE_EN",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 963
+},
+{
+"name": "SYS_HAS_BARO",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 964
+},
+{
+"name": "SYS_HAS_GPS",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 965
+},
+{
+"name": "SYS_HAS_MAG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 966
+},
+{
+"name": "SYS_HAS_NUM_ASPD",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 967
+},
+{
+"name": "SYS_HAS_NUM_DIST",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 968
+},
+{
+"name": "SYS_HAS_NUM_GNSS",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 969
+},
+{
+"name": "SYS_HAS_NUM_OF",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 970
+},
+{
+"name": "SYS_HITL",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 971
+},
+{
+"name": "SYS_PARAM_VER",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 972
+},
+{
+"name": "SYS_STCK_EN",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 973
+},
+{
+"name": "SYS_USB_AUTO",
+"value": 2,
+"type": 6,
+"raw_hex": "02000000",
+"index": 974
+},
+{
+"name": "SYS_VEHICLE_RESP",
+"value": -0.4000000059604645,
+"type": 9,
+"raw_hex": "cdccccbe",
+"index": 975
+},
+{
+"name": "TEL_BST_EN",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 976
+},
+{
+"name": "TEL_FRSKY_CONFIG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 977
+},
+{
+"name": "TEL_HOTT_CONFIG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 978
+},
+{
+"name": "THR_MDL_FAC",
+"value": 0.30000001192092896,
+"type": 9,
+"raw_hex": "9a99993e",
+"index": 979
+},
+{
+"name": "TRIG_MODE",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 980
+},
+{
+"name": "USB_MAV_MODE",
+"value": 2,
+"type": 6,
+"raw_hex": "02000000",
+"index": 981
+},
+{
+"name": "UWB_PORT_CFG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 982
+},
+{
+"name": "UXRCE_DDS_CFG",
+"value": 102,
+"type": 6,
+"raw_hex": "66000000",
+"index": 983
+},
+{
+"name": "UXRCE_DDS_DOM_ID",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 984
+},
+{
+"name": "UXRCE_DDS_FLCTRL",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 985
+},
+{
+"name": "UXRCE_DDS_KEY",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 986
+},
+{
+"name": "UXRCE_DDS_NS_IDX",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 987
+},
+{
+"name": "UXRCE_DDS_PTCFG",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 988
+},
+{
+"name": "UXRCE_DDS_RX_TO",
+"value": -1,
+"type": 6,
+"raw_hex": "ffffffff",
+"index": 989
+},
+{
+"name": "UXRCE_DDS_SYNCC",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 990
+},
+{
+"name": "UXRCE_DDS_SYNCT",
+"value": 1,
+"type": 6,
+"raw_hex": "01000000",
+"index": 991
+},
+{
+"name": "UXRCE_DDS_TX_TO",
+"value": 3,
+"type": 6,
+"raw_hex": "03000000",
+"index": 992
+},
+{
+"name": "VT_B_DEC_I",
+"value": 0.10000000149011612,
+"type": 9,
+"raw_hex": "cdcccc3d",
+"index": 993
+},
+{
+"name": "VT_B_DEC_MSS",
+"value": 2.0,
+"type": 9,
+"raw_hex": "00000040",
+"index": 994
+},
+{
+"name": "WV_EN",
+"value": 0,
+"type": 6,
+"raw_hex": "00000000",
+"index": 995
+},
+{
+"name": "WV_GAIN",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 996
+},
+{
+"name": "WV_ROLL_MIN",
+"value": 1.0,
+"type": 9,
+"raw_hex": "0000803f",
+"index": 997
+},
+{
+"name": "WV_YRATE_MAX",
+"value": 90.0,
+"type": 9,
+"raw_hex": "0000b442",
+"index": 998
+},
+{
+"name": "_HASH_CHECK",
+"value": -739650212,
+"type": 5,
+"raw_hex": "5cd5e9d3",
+"index": 65535
+}
+]
+}

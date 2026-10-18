@@ -1,0 +1,21 @@
+{
+ "changeset": "PARAM_CHANGESET_S2",
+ "set": "Scout stability port, stage B (indoor speed limits)",
+ "status": "PREPARED, NOT WRITTEN. Written only on Ron's explicit go with this file's sha256.",
+ "firmware": "PX4 1.18.0 RC fca3df865af36124a28c9d607e850f111dbaaea9, MICOAIR_H743_V2",
+ "board_uid": "0x3533511634343432",
+ "baseline_dump": "hardware/scout/fc_baseline_20261015/scout_baseline_20261015.params",
+ "scope": "docs/SCOUT_STABILITY_PORT.md section B. The Scout ships with racer limits (12 m/s). Values = the reference set's, except MPC_VEL_MANUAL and MPC_XY_CRUISE: this firmware's metadata gives them a 3.0 m/s minimum (the reference set runs them at 1.5, below it), so they stay at 3.0 and MPC_XY_VEL_MAX (min 0) is the binding 1.5 m/s cap on every horizontal speed. The autonomous 0.5 m/s cap (ARCHITECTURE 8.5) is the laptop planner's, inside this.",
+ "note": "Types: 9 = REAL32. Every 'current' is the live baseline value; the apply tool refuses on any drift.",
+ "writes": [
+  {"n": 1, "name": "MPC_XY_VEL_MAX", "type": 9, "current": 12.0, "proposed": 1.5, "reboot": false, "source": "Reference value; the binding horizontal cap"},
+  {"n": 2, "name": "MPC_VEL_MANUAL", "type": 9, "current": 10.0, "proposed": 3.0, "reboot": false, "source": "firmware metadata minimum 3.0 (reference: 1.5); capped by MPC_XY_VEL_MAX"},
+  {"n": 3, "name": "MPC_XY_CRUISE", "type": 9, "current": 5.0, "proposed": 3.0, "reboot": false, "source": "firmware metadata minimum 3.0 (reference: 1.5); capped by MPC_XY_VEL_MAX"},
+  {"n": 4, "name": "MPC_Z_VEL_MAX_UP", "type": 9, "current": 3.0, "proposed": 1.0, "reboot": false, "source": "Reference value"},
+  {"n": 5, "name": "MPC_Z_VEL_MAX_DN", "type": 9, "current": 1.5, "proposed": 0.7, "reboot": false, "source": "Reference value"},
+  {"n": 6, "name": "MPC_Z_V_AUTO_UP", "type": 9, "current": 3.0, "proposed": 1.0, "reboot": false, "source": "Reference value"},
+  {"n": 7, "name": "MPC_Z_V_AUTO_DN", "type": 9, "current": 1.5, "proposed": 0.7, "reboot": false, "source": "Reference value"},
+  {"n": 8, "name": "MPC_TKO_SPEED", "type": 9, "current": 1.5, "proposed": 1.0, "reboot": false, "source": "Reference value; firmware min 1.0"},
+  {"n": 9, "name": "MPC_LAND_SPEED", "type": 9, "current": 0.699999988079071, "proposed": 0.6, "reboot": false, "source": "Reference value; firmware min 0.6"}
+ ]
+}

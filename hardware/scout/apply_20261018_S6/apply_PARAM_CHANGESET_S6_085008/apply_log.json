@@ -1,0 +1,65 @@
+{
+ "changeset": "C:\\Users\\Ron\\Desktop\\noxen-dh26\\hardware\\scout\\PARAM_CHANGESET_S6.json",
+ "sha256": "882e9eab66be5724ed56025b6bc2b749589943bc6c1b77c4edd1296b62fc9761",
+ "dry_run": false,
+ "started": "2026-10-18T08:50:09Z",
+ "writes": [
+  {
+   "n": 1,
+   "name": "RC_MAP_KILL_SW",
+   "from": 8,
+   "to": 5,
+   "echo": 5,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 2,
+   "name": "RC_MAP_FLTMODE",
+   "from": 5,
+   "to": 6,
+   "echo": 6,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 3,
+   "name": "RC_MAP_OFFB_SW",
+   "from": 6,
+   "to": 7,
+   "echo": 7,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 4,
+   "name": "COM_FLTMODE1",
+   "from": 1,
+   "to": 2,
+   "echo": 2,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 5,
+   "name": "COM_FLTMODE6",
+   "from": 2,
+   "to": 11,
+   "echo": 11,
+   "ok": true,
+   "reboot": false
+  }
+ ],
+ "px4_adjusted": [],
+ "post_count": 993,
+ "changed": [
+  "COM_FLTMODE1",
+  "COM_FLTMODE6",
+  "RC_MAP_FLTMODE",
+  "RC_MAP_KILL_SW",
+  "RC_MAP_OFFB_SW"
+ ],
+ "unexpected_changes": [],
+ "not_changed": [],
+ "reboot_needed": []
+}

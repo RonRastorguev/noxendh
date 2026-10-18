@@ -1,0 +1,14 @@
+{
+ "changeset": "PARAM_CHANGESET_S3",
+ "set": "Scout flow sensor orientation fix",
+ "status": "PREPARED, NOT WRITTEN. Written only on Ron's explicit go with this file's sha256.",
+ "firmware": "PX4 1.18.0 RC fca3df865af36124a28c9d607e850f111dbaaea9, MICOAIR_H743_V2",
+ "board_uid": "0x3533511634343432",
+ "baseline_dump": "hardware/scout/apply_20261015/scout_after_S1S2.params",
+ "scope": "READINESS_20261016.md: displacement test FAIL (flow velocity rotated ~+110 deg), tilt test PASS (FC frame = airframe), rocking test (flow vs gyro in OPTICAL_FLOW_RAD, 215 rotating samples, 0.52 m, quality 76): flow_y = +1.16 gyro_x, flow_x = -1.03 gyro_y, misalignment +88.4 deg = an exact +90 deg yaw rotation. PX4 applies SENS_FLOW_ROT as sensor->body, so est = R(cfg) R(actual)^T true = R(+90): actual = 180 - 90 = 90 deg = value 2. Verification after the write: the same rocking test must show same-axis flow/gyro near +1 and misalignment near 0. If it shows -1 / 180 deg, the convention was the other way and the value is 6 (a new change set); no flight in between. rebootRequired: not set in this firmware's parameters.json.",
+ "note": "Types: 6 = INT32. 'current' is the live value; the apply tool refuses on drift. scout_apply.sh refuses unless the FC's UID is board_uid.",
+ "writes": [
+  {"n": 1, "name": "SENS_FLOW_ROT", "type": 6, "current": 4, "proposed": 2, "reboot": false,
+   "source": "rocking test 2026-10-16: flow rotated +88.4 deg from gyro (exact 90 deg pattern); 180 - 90 = 90 deg = 2 (Yaw 90)"}
+ ]
+}

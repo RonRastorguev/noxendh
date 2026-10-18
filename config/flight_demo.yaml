@@ -1,0 +1,20 @@
+# Demo B (Scout flight) configuration. Values from ARCHITECTURE.md §8; filled in at Milestone 5.
+# Hardware facts live in config/scout_hw.yaml, never here.
+
+frame: map
+safety:
+  max_speed_mps: 0.5
+  geofence_margin_m: null            # TBD with the prior map
+  loc_lost_hold_s: 1.0               # PnP inliers below threshold this long -> loc_ok false -> hold
+avoid:
+  mono_depth_margin_m: 0.5
+  mono_depth_max_range_m: 4.0
+  looming_ttc_s: 1.5
+  looming_min_distance_m: 1.2
+  person_height_m: 1.7
+nav:
+  static_inflate_extra_m: 0.3
+  dynamic_inflate_extra_m: 0.5
+  dynamic_decay_s: 1.5
+  emergency_hover_s: 1.0
+  replan_hz: 10

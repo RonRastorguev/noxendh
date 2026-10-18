@@ -1,0 +1,58 @@
+{
+ "changeset": "C:\\Users\\Ron\\Desktop\\noxen-dh26\\hardware\\scout\\PARAM_CHANGESET_S5.json",
+ "sha256": "cfda56bc9adba388856463ea1540da9177257920f671b792aa94bba24239d777",
+ "dry_run": false,
+ "started": "2026-10-17T02:28:15Z",
+ "writes": [
+  {
+   "n": 1,
+   "name": "EKF2_MULTI_IMU",
+   "from": 3,
+   "to": 0,
+   "echo": 0,
+   "ok": true,
+   "reboot": true
+  },
+  {
+   "n": 2,
+   "name": "SENS_IMU_MODE",
+   "from": 0,
+   "to": 1,
+   "echo": 1,
+   "ok": true,
+   "reboot": true
+  },
+  {
+   "n": 3,
+   "name": "CAL_ACC1_PRIO",
+   "from": 50,
+   "to": 25,
+   "echo": 25,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 4,
+   "name": "CAL_GYRO1_PRIO",
+   "from": 50,
+   "to": 25,
+   "echo": 25,
+   "ok": true,
+   "reboot": false
+  }
+ ],
+ "px4_adjusted": [],
+ "post_count": 999,
+ "changed": [
+  "CAL_ACC1_PRIO",
+  "CAL_GYRO1_PRIO",
+  "EKF2_MULTI_IMU",
+  "SENS_IMU_MODE"
+ ],
+ "unexpected_changes": [],
+ "not_changed": [],
+ "reboot_needed": [
+  "EKF2_MULTI_IMU",
+  "SENS_IMU_MODE"
+ ]
+}

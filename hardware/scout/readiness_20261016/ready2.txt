@@ -1,0 +1,348 @@
+===== $ listener estimator_status_flags
+listener estimator_status_flags
+
+TOPIC: estimator_status_flags 2 instances
+
+Instance 0:
+ estimator_status_flags
+    timestamp: 8374543626 (0.538954 seconds ago)
+    timestamp_sample: 8374344673 (198953 us before timestamp)
+    control_status_changes: 7169
+    fault_status_changes: 0
+    cs_tilt_align: True
+    cs_yaw_align: False
+    cs_gnss_pos: False
+    cs_opt_flow: False
+    cs_mag_hdg: False
+    cs_mag_3d: False
+    cs_mag_dec: False
+    cs_in_air: False
+    cs_wind: False
+    cs_baro_hgt: True
+    cs_rng_hgt: True
+    cs_gps_hgt: False
+    cs_ev_pos: False
+    cs_ev_yaw: False
+    cs_ev_hgt: False
+    cs_fuse_beta: False
+    cs_mag_field_disturbed: False
+    cs_fixed_wing: False
+    cs_mag_fault: False
+    cs_fuse_aspd: False
+    cs_gnd_effect: False
+    cs_rng_stuck: False
+    cs_gnss_yaw: False
+    cs_mag_aligned_in_flight: False
+    cs_ev_vel: False
+    cs_synthetic_mag_z: False
+    cs_vehicle_at_rest: False
+    cs_gnss_yaw_fault: False
+    cs_rng_fault: False
+    cs_inertial_dead_reckoning: False
+    cs_wind_dead_reckoning: False
+    cs_rng_kin_consistent: True
+    cs_fake_pos: False
+    cs_fake_hgt: False
+    cs_gravity_vector: True
+    cs_mag: False
+    cs_ev_yaw_fault: False
+    cs_mag_heading_consistent: False
+    cs_aux_gpos: False
+    cs_rng_terrain: False
+    cs_opt_flow_terrain: False
+    cs_valid_fake_pos: False
+    cs_constant_pos: False
+    cs_baro_fault: False
+    cs_gnss_vel: False
+    cs_gnss_fault: False
+    cs_yaw_manual: False
+    cs_gnss_hgt_fault: False
+    cs_in_transition: False
+    cs_heading_observable: False
+    fs_bad_mag_x: False
+    fs_bad_mag_y: False
+    fs_bad_mag_z: False
+    fs_bad_hdg: False
+    fs_bad_mag_decl: False
+    fs_bad_airspeed: False
+    fs_bad_sideslip: False
+    fs_bad_optflow_x: False
+    fs_bad_optflow_y: False
+    fs_bad_acc_vertical: False
+    fs_bad_acc_clipping: False
+
+
+Instance 1:
+ estimator_status_flags
+    timestamp: 8374687677 (0.481573 seconds ago)
+    timestamp_sample: 8374496271 (191406 us before timestamp)
+    control_status_changes: 7175
+    fault_status_changes: 0
+    cs_tilt_align: True
+    cs_yaw_align: False
+    cs_gnss_pos: False
+    cs_opt_flow: False
+    cs_mag_hdg: False
+    cs_mag_3d: False
+    cs_mag_dec: False
+    cs_in_air: False
+    cs_wind: False
+    cs_baro_hgt: True
+    cs_rng_hgt: True
+    cs_gps_hgt: False
+    cs_ev_pos: False
+    cs_ev_yaw: False
+    cs_ev_hgt: False
+    cs_fuse_beta: False
+    cs_mag_field_disturbed: False
+    cs_fixed_wing: False
+    cs_mag_fault: False
+    cs_fuse_aspd: False
+    cs_gnd_effect: False
+    cs_rng_stuck: False
+    cs_gnss_yaw: False
+    cs_mag_aligned_in_flight: False
+    cs_ev_vel: False
+    cs_synthetic_mag_z: False
+    cs_vehicle_at_rest: False
+    cs_gnss_yaw_fault: False
+    cs_rng_fault: False
+    cs_inertial_dead_reckoning: False
+    cs_wind_dead_reckoning: False
+    cs_rng_kin_consistent: True
+    cs_fake_pos: False
+    cs_fake_hgt: False
+    cs_gravity_vector: True
+    cs_mag: False
+    cs_ev_yaw_fault: False
+    cs_mag_heading_consistent: False
+    cs_aux_gpos: False
+    cs_rng_terrain: False
+    cs_opt_flow_terrain: False
+    cs_valid_fake_pos: False
+    cs_constant_pos: False
+    cs_baro_fault: False
+    cs_gnss_vel: False
+    cs_gnss_fault: False
+    cs_yaw_manual: False
+    cs_gnss_hgt_fault: False
+    cs_in_transition: False
+    cs_heading_observable: False
+    fs_bad_mag_x: False
+    fs_bad_mag_y: False
+    fs_bad_mag_z: False
+    fs_bad_hdg: False
+    fs_bad_mag_decl: False
+    fs_bad_airspeed: False
+    fs_bad_sideslip: False
+    fs_bad_optflow_x: False
+    fs_bad_optflow_y: False
+    fs_bad_acc_vertical: False
+    fs_bad_acc_clipping: False
+
+nsh> [K
+===== $ listener vehicle_local_position
+listener vehicle_local_position
+
+TOPIC: vehicle_local_position
+ vehicle_local_position
+    timestamp: 8378971091 (0.004306 seconds ago)
+    timestamp_sample: 8378970016 (1075 us before timestamp)
+    ref_timestamp: 0
+    ref_lat: nan
+    ref_lon: nan
+    x: -15.55412
+    y: 37.97353
+    z: 0.00054
+    delta_xy: [0.00000, 0.00000]
+    delta_z: -0.05109
+    vx: 0.00155
+    vy: -0.00581
+    vz: -0.00195
+    z_deriv: 0.00061
+    delta_vxy: [-0.00396, -0.00214]
+    delta_vz: -0.02204
+    ax: 0.00157
+    ay: -0.02272
+    az: 0.01468
+    heading: -1.85487
+    heading_var: 0.02072
+    unaided_heading: -0.82169
+    delta_heading: 0.21050
+    tilt_var: 0.00004
+    ref_alt: nan
+    dist_bottom: 0.04403
+    dist_bottom_var: 0.00047
+    delta_dist_bottom: -0.45789
+    eph: 14.14223
+    epv: 0.02334
+    evh: 0.28352
+    evv: 0.03349
+    vxy_max: inf
+    vz_max: inf
+    hagl_min: inf
+    hagl_max_z: inf
+    hagl_max_xy: inf
+    xy_valid: True
+    z_valid: True
+    v_xy_valid: True
+    v_z_valid: True
+    xy_reset_counter: 29
+    z_reset_counter: 5
+    vxy_reset_counter: 35
+    vz_reset_counter: 4
+    heading_reset_counter: 3
+    heading_good_for_control: False
+    xy_global: False
+    z_global: False
+    dist_bottom_valid: True
+    dist_bottom_reset_counter: 5
+    dist_bottom_sensor_bitfield: 1
+    dead_reckoning: False
+nsh> [K
+===== $ sensors status
+sensors status
+selected gyro: 3604506 (1)
+validator: best: 0, prev best: 0, failsafe: NO (0 events)
+sensor #0, prio: 50, state: OK
+	val:  -0.0001, lp:  -0.0026 mean dev:  -0.0000 RMS:   0.0473 conf:   1.0000
+	val:   0.0050, lp:   0.0007 mean dev:  -0.0000 RMS:   0.0400 conf:   1.0000
+	val:   0.0014, lp:  -0.0002 mean dev:   0.0000 RMS:   0.0251 conf:   1.0000
+sensor #1, prio: 50, state: OK
+	val:   0.0036, lp:   0.0006 mean dev:  -0.0000 RMS:   0.0429 conf:   1.0000
+	val:   0.0167, lp:   0.0041 mean dev:   0.0000 RMS:   0.0384 conf:   1.0000
+	val:  -0.0038, lp:  -0.0003 mean dev:   0.0000 RMS:   0.0226 conf:   1.0000
+
+selected accel: 3604506 (1)
+validator: best: 0, prev best: 0, failsafe: NO (0 events)
+sensor #0, prio: 50, state: OK
+	val:   0.0211, lp:  -0.0159 mean dev:   0.0004 RMS:   0.1500 conf:   1.0000
+	val:  -0.1487, lp:  -0.1470 mean dev:  -0.0001 RMS:   0.1074 conf:   1.0000
+	val:  -9.8678, lp:  -9.8600 mean dev:  -0.0008 RMS:   0.2127 conf:   1.0000
+sensor #1, prio: 50, state: OK
+	val:   0.1510, lp:   0.1456 mean dev:   0.0006 RMS:   0.1452 conf:   1.0000
+	val:  -0.2502, lp:  -0.2909 mean dev:  -0.0000 RMS:   0.1064 conf:   1.0000
+	val:  -9.6403, lp:  -9.6940 mean dev:  -0.0006 RMS:   0.1990 conf:   1.0000
+
+[vehicle_air_data] selected BARO: 5207825 (0)
+validator: best: 0, prev best: 0, failsafe: NO (0 events)
+sensor #0, prio: 50, state: OK
+	val: 101587.5234, lp: 101587.6484 mean dev:  -0.1131 RMS:   0.3687 conf:   1.0000
+	val:  50.7828, lp:  50.7929 mean dev:   0.0044 RMS:   0.0210 conf:   1.0000
+	val: -21.8361, lp: -21.8348 mean dev:   0.0012 RMS:   0.0301 conf:   1.0000
+BARO 5207825 EN: 1, offset: 0.000, Internal
+
+Airspeed status:
+	no data
+
+
+[vehicle_acceleration] selected sensor: 3604506, rate: 1595.2 Hz, estimated bias: [0.0746 -0.0775 0.1148]
+ACC 3604506 EN: 1, offset: [-0.042 -0.171 0.153], scale: [0.994 0.997 0.991], Internal
+
+[vehicle_angular_velocity] selected sensor: 3604506, rate: 1595.2 Hz FIFO, estimated bias: [0.00078 0.00420 -0.00030]
+GYRO 3604506 EN: 1, offset: [-0.001 0.001 -0.001], Internal
+vehicle_angular_velocity: gyro filter: 6304506 events, 79188351us elapsed, 12.56us avg, min 9us max 186us 1.349us rms
+vehicle_angular_velocity: gyro filter reset: 5 events
+vehicle_angular_velocity: gyro selection changed: 4 events
+
+
+[vehicle_imu] 0 - Accel: 6946834, interval: 1254.7 us (SD 0.7 us), Gyro: 6684690, interval: 1502.8 us (SD 29.4 us)
+vehicle_imu: accel data gap: 1 events
+vehicle_imu: gyro data gap: 1 events
+ACC 6946834 EN: 1, offset: [-0.008 0.033 0.087], scale: [1.000 1.000 1.000], Internal
+GYRO 6684690 EN: 1, offset: [0.009 -0.001 0.002], Internal
+
+[vehicle_imu] 1 - Accel: 3604506, interval: 626.9 us (SD 0.6 us), Gyro: 3604506, interval: 626.9 us (SD 0.6 us)
+vehicle_imu: accel data gap: 19250 events
+vehicle_imu: gyro data gap: 18442 events
+ACC 3604506 EN: 1, offset: [-0.042 -0.171 0.153], scale: [0.994 0.997 0.991], Internal
+GYRO 3604506 EN: 1, offset: [-0.001 0.001 -0.001], Internal
+nsh> [K
+===== $ rc_input status
+rc_input status
+nsh: rc_input: command not found
+nsh> [K
+===== $ logger status
+logger status
+INFO  [logger] Running in mode: all
+INFO  [logger] Number of subscriptions: 177 (5664 bytes)
+INFO  [logger] Not logging
+nsh> [K
+===== $ param show COM_ARM_ODID
+param show COM_ARM_ODID
+Symbols: x = used, + = saved, * = unsaved, l = locked
+x     COM_ARM_ODID [237,487] : 0
+
+ 999/1602 parameters used.
+nsh> [K
+===== $ param show COM_ARM_*
+param show COM_ARM_*
+Symbols: x = used, + = saved, * = unsaved, l = locked
+x     COM_ARM_AUTH_ID [225,475] : 10
+x     COM_ARM_AUTH_MET [226,476] : 0
+x     COM_ARM_AUTH_REQ [227,477] : 0
+x     COM_ARM_AUTH_TO [228,478] : 1.0000
+x     COM_ARM_BAT_MIN [229,479] : -1.0000
+x     COM_ARM_CHK_ESCS [230,480] : 0
+x     COM_ARM_HFLT_CHK [231,481] : 1
+x     COM_ARM_IMU_ACC [232,482] : 0.7000
+x     COM_ARM_IMU_GYR [233,483] : 0.2500
+x     COM_ARM_MAG_ANG [234,484] : 60
+x     COM_ARM_MAG_STR [235,485] : 2
+x     COM_ARM_MIS_REQ [236,486] : 0
+x     COM_ARM_ODID [237,487] : 0
+x     COM_ARM_ON_BOOT [238,488] : 0
+x     COM_ARM_SWISBTN [239,489] : 0
+x     COM_ARM_TRAFF [240,490] : 0
+x     COM_ARM_WO_GPS [241,491] : 1
+
+ 999/1602 parameters used.
+nsh> [K
+===== $ listener vehicle_status
+listener vehicle_status
+
+TOPIC: vehicle_status
+ vehicle_status
+    timestamp: 8401444992 (0.068301 seconds ago)
+    armed_time: 0
+    takeoff_time: 0
+    nav_state_timestamp: 297521
+    valid_nav_states_mask: 2147411455
+    can_set_nav_states_mask: 8308223
+    arming_state: 1
+    latest_arming_reason: 0
+    latest_disarming_reason: 0
+    nav_state_user_intention: 4
+    nav_state: 4
+    executor_in_charge: 0
+    nav_state_display: 4
+    accepts_offboard_setpoints: False
+    hil_state: 0
+    vehicle_type: 1
+    failsafe: False
+    failsafe_and_user_took_over: False
+    failsafe_defer_state: 0
+    gcs_connection_lost: False
+    gcs_connection_lost_counter: 7
+    high_latency_data_link_lost: False
+    is_vtol: False
+    is_vtol_tailsitter: False
+    in_transition_mode: False
+    in_transition_to_fw: False
+    system_type: 2
+    system_id: 1
+    component_id: 1
+    safety_button_available: True
+    safety_off: True
+    power_input_valid: True
+    usb_connected: True
+    open_drone_id_system_present: False
+    open_drone_id_system_healthy: False
+    parachute_system_present: False
+    parachute_system_healthy: False
+    traffic_avoidance_system_present: False
+    rc_calibration_in_progress: False
+    calibration_enabled: False
+    pre_flight_checks_pass: False
+
+nsh> [K

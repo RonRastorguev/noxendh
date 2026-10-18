@@ -1,0 +1,30 @@
+{
+ "bytes": 370,
+ "messages": 15,
+ "by_type": {
+  "HEARTBEAT": 6,
+  "COMMAND_LONG": 1,
+  "PARAM_REQUEST_LIST": 2,
+  "PARAM_REQUEST_READ": 2,
+  "PARAM_SET": 4
+ },
+ "reboots": [],
+ "non_whitelisted": [
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ],
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ]
+ ]
+}

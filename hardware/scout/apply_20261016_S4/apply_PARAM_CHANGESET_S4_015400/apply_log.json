@@ -1,0 +1,85 @@
+{
+ "changeset": "C:\\Users\\Ron\\Desktop\\noxen-dh26\\hardware\\scout\\PARAM_CHANGESET_S4.json",
+ "sha256": "6cc2936f5956f01a2720cc7bec07c6215081071cf1b3f2e39ffa4fc43bd777ba",
+ "dry_run": false,
+ "started": "2026-10-17T01:54:01Z",
+ "writes": [
+  {
+   "n": 1,
+   "name": "MC_ROLLRATE_P",
+   "from": 0.0799999982118607,
+   "to": 0.12,
+   "echo": 0.11999999731779099,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 2,
+   "name": "MC_PITCHRATE_P",
+   "from": 0.0799999982118607,
+   "to": 0.12,
+   "echo": 0.11999999731779099,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 3,
+   "name": "MC_ROLLRATE_D",
+   "from": 0.0010000000474974513,
+   "to": 0.002,
+   "echo": 0.0020000000949949026,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 4,
+   "name": "MC_PITCHRATE_D",
+   "from": 0.0010000000474974513,
+   "to": 0.002,
+   "echo": 0.0020000000949949026,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 5,
+   "name": "MC_ROLL_P",
+   "from": 8.0,
+   "to": 6.5,
+   "echo": 6.5,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 6,
+   "name": "MC_PITCH_P",
+   "from": 8.0,
+   "to": 6.5,
+   "echo": 6.5,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 7,
+   "name": "COM_FLTMODE1",
+   "from": 8,
+   "to": 1,
+   "echo": 1,
+   "ok": true,
+   "reboot": false
+  }
+ ],
+ "px4_adjusted": [],
+ "post_count": 999,
+ "changed": [
+  "COM_FLTMODE1",
+  "MC_PITCHRATE_D",
+  "MC_PITCHRATE_P",
+  "MC_PITCH_P",
+  "MC_ROLLRATE_D",
+  "MC_ROLLRATE_P",
+  "MC_ROLL_P"
+ ],
+ "unexpected_changes": [],
+ "not_changed": [],
+ "reboot_needed": []
+}

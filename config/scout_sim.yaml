@@ -1,0 +1,64 @@
+# Scout closed-loop flight sim (flightsim/, docs/SCOUT_NAV.md §8, decisions docs/decisions_scout_nav/flightsim.md).
+# EVERY value is PROVISIONAL: a model of PX4 + the Scout, not a measurement. Hardware facts (hull radius, rest height,
+# camera FOV) are read from config/scout_hw.yaml / scout_loc.yaml, never written here.
+
+world:
+  room_seed: 0                       # the synthetic room (textures); scenario seeds vary noise / drift, not the room
+  takeoff_xy_yaw: [1.0, 4.0, 0.0]    # fixed takeoff pose A: x, y, yaw_deg (z = pad top + fc_height_at_rest_m) (DN-72)
+  pad_box: [0.5, 0.5, 0.4]           # the takeoff pad = an ELEVATED BOX at A, mapped (Ron 2026-10-17); size_x, size_y, height; PROVISIONAL (DN-88)
+  wall_points:                       # goal points B on wall_xL (x = 8.0)
+    B1: [8.0, 3.6, 1.2]
+    B2: [8.0, 2.2, 1.2]
+    B3: [8.0, 4.0, 1.0]
+  supersample: 2                     # renderer anti-aliasing (2 = what the landmark DB keyframes use)
+
+vehicle:
+  rate_hz: 100.0                     # physics / estimator integration step
+  control:                           # PX4 parameters from the Scout's dump (docs/SCOUT_NAV.md §3) + model lags
+    mpc_xy_p: 0.95
+    mpc_z_p: 1.0
+    xy_vel_max: 1.5
+    z_vel_max_up: 1.0
+    z_vel_max_dn: 0.7
+    vel_tau_s: 0.25                  # model: first-order closed-loop velocity response
+    acc_max_xy: 3.0                  # MPC_ACC_HOR
+    acc_max_z: 3.0
+    att_tau_s: 0.08                  # model: tilt lag behind the commanded acceleration
+    yaw_rate_max_dps: 60.0           # MPC_YAWRAUTO_MAX
+    land_speed_mps: 0.6
+  fc:
+    offboard_min_stream_s: 1.0       # setpoints must stream this long before offboard is accepted
+    offboard_loss_s: 1.0             # COM_OF_LOSS_T -> Position mode (COM_OBL_RC_ACT 0)
+    disarm_after_land_s: 2.0         # COM_DISARM_LAND
+    preflight_disarm_s: 10.0         # COM_DISARM_PRFLT
+    arm_requires_offboard: true
+    pilot_arm_after_s: 0.5           # the simulated pilot arms 0.5 s after offboard engages (scout_mission auto_arm false)
+  estimator:                         # "normal" drift; the drift scenario multiplies these (flightsim/scenarios.py)
+    init_offset_sigma_m: 0.5         # odom origin vs the power-on position (odom is never the map frame)
+    init_yaw: random                 # random | heading
+    bias_sigma_mps: 0.01             # Gauss-Markov x/y velocity bias (flow), stationary sigma
+    bias_tau_s: 30.0
+    vel_scale_sigma: 0.02            # flow scale-factor error
+    yaw_rate_bias_sigma_dps: 0.008   # constant gyro yaw drift (~0.5 deg/min)
+    yaw_rw_dps_sqrt_s: 0.005
+    hgt_step_tau_s: 0.3              # UNKNOWN for PX4: lag of the range height reference after a terrain step
+    hgt_noise_m: 0.003
+    reset_at_s: null                 # local-frame reset time (scenarios trigger it by progress instead)
+  hull:
+    shape: cylinder                  # cylinder (hull_radius_m, gear .. +hull_half_height_m) | sphere (DN-75)
+    end_on_collision: true
+
+camera:
+  rate_hz: 10.0
+  latency_s: 0.1                     # delivery delay; images are stamped at capture
+  gain: 0.85                         # flight images 15 % darker than the mapping walk (synthetic_eval.TEST_GAIN)
+  noise_sigma: 2.0
+
+loop:
+  tick_hz: 20.0                      # mission.tick rate
+  stop_at: arrived                   # arrived (stop after arrived_dwell_s in ARRIVED) | done
+  arrived_dwell_s: 3.0
+  arrival_window_s: 1.0              # arrival error = worst sample over the last second of the dwell
+  post_terminal_s: 2.0               # keep simulating after DONE / REFUSED / ABORTED (e.g. prove it never arms)
+
+mission: {}                          # overrides on top of config/scout_mission.yaml (takeoff / goal set by the sim)

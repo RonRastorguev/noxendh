@@ -1,0 +1,107 @@
+{
+ "changeset": "C:\\Users\\Ron\\Desktop\\noxen-dh26\\hardware\\scout\\PARAM_CHANGESET_S1.json",
+ "sha256": "aa3c6176a16328585c4f9bda6afab962939b0c309e7385849d6ae058c449df18",
+ "dry_run": false,
+ "started": "2026-10-16T05:51:40Z",
+ "writes": [
+  {
+   "n": 1,
+   "name": "COM_LOW_BAT_ACT",
+   "from": 0,
+   "to": 2,
+   "echo": 2,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 2,
+   "name": "SYS_HAS_NUM_DIST",
+   "from": 0,
+   "to": 1,
+   "echo": 1,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 3,
+   "name": "SDLOG_PROFILE",
+   "from": 1,
+   "to": 3,
+   "echo": 3,
+   "ok": true,
+   "reboot": true
+  },
+  {
+   "n": 4,
+   "name": "EKF2_OF_POS_Y",
+   "from": 0.0,
+   "to": 0.0076,
+   "echo": 0.007600000128149986,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 5,
+   "name": "EKF2_OF_POS_Z",
+   "from": 0.019999999552965164,
+   "to": 0.0127,
+   "echo": 0.01269999984651804,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 6,
+   "name": "EKF2_RNG_POS_Y",
+   "from": 0.0,
+   "to": 0.0076,
+   "echo": 0.007600000128149986,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 7,
+   "name": "EKF2_RNG_POS_Z",
+   "from": 0.019999999552965164,
+   "to": 0.0127,
+   "echo": 0.01269999984651804,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 8,
+   "name": "EKF2_MIN_RNG",
+   "from": 0.009999999776482582,
+   "to": 0.043,
+   "echo": 0.0430000014603138,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 9,
+   "name": "RC_MAP_OFFB_SW",
+   "from": 0,
+   "to": 6,
+   "echo": 6,
+   "ok": true,
+   "reboot": false
+  }
+ ],
+ "px4_adjusted": [],
+ "post_count": 999,
+ "changed": [
+  "COM_LOW_BAT_ACT",
+  "EKF2_MIN_RNG",
+  "EKF2_OF_POS_Y",
+  "EKF2_OF_POS_Z",
+  "EKF2_RNG_POS_Y",
+  "EKF2_RNG_POS_Z",
+  "RC_MAP_OFFB_SW",
+  "SDLOG_PROFILE",
+  "SYS_HAS_NUM_DIST"
+ ],
+ "unexpected_changes": [],
+ "not_changed": [],
+ "reboot_needed": [
+  "SDLOG_PROFILE"
+ ]
+}

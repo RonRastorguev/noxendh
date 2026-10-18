@@ -1,0 +1,625 @@
+{
+ "heartbeat": {
+  "type": 2,
+  "autopilot": 12,
+  "base_mode": 29,
+  "custom_mode": 50593792,
+  "system_status": 0,
+  "mavlink_version": 3,
+  "armed": false
+ },
+ "autopilot_version": {
+  "flight_sw_version": "1.18.0 type=192",
+  "flight_custom_version_hex": "0000005a86dfa3fc",
+  "flight_custom_version_hex_rev": "fca3df865a000000",
+  "middleware_custom_version_hex": "0000005a86dfa3fc",
+  "os_sw_version": 202113279,
+  "os_custom_version_hex": "9117cb879f0b0417",
+  "board_version": 54,
+  "vendor_id": "0x1b8c",
+  "product_id": "0x36",
+  "uid": "0x3533511634343432",
+  "capabilities": "0xe8ff"
+ },
+ "inventory": {
+  "ALTITUDE[1:1]": {
+   "n": 40,
+   "hz": 10.25
+  },
+  "ATTITUDE[1:1]": {
+   "n": 400,
+   "hz": 100.41
+  },
+  "ATTITUDE_QUATERNION[1:1]": {
+   "n": 200,
+   "hz": 50.3
+  },
+  "ATTITUDE_TARGET[1:1]": {
+   "n": 40,
+   "hz": 10.26
+  },
+  "BATTERY_STATUS[1:1]": {
+   "n": 2,
+   "hz": 1.0
+  },
+  "COMMAND_ACK[1:1]": {
+   "n": 1,
+   "hz": null
+  },
+  "DISTANCE_SENSOR[1:1]": {
+   "n": 40,
+   "hz": 10.26
+  },
+  "DISTANCE_SENSOR[1:88]": {
+   "n": 193,
+   "hz": 48.46
+  },
+  "ESTIMATOR_STATUS[1:1]": {
+   "n": 4,
+   "hz": 1.33
+  },
+  "EXTENDED_SYS_STATE[1:1]": {
+   "n": 20,
+   "hz": 5.27
+  },
+  "HEARTBEAT[1:1]": {
+   "n": 4,
+   "hz": 1.33
+  },
+  "HIGHRES_IMU[1:1]": {
+   "n": 200,
+   "hz": 50.29
+  },
+  "LOCAL_POSITION_NED[1:1]": {
+   "n": 121,
+   "hz": 30.29
+  },
+  "MISSION_CURRENT[1:1]": {
+   "n": 4,
+   "hz": 1.32
+  },
+  "ODOMETRY[1:1]": {
+   "n": 120,
+   "hz": 30.29
+  },
+  "OPEN_DRONE_ID_LOCATION[1:1]": {
+   "n": 4,
+   "hz": 1.33
+  },
+  "OPTICAL_FLOW_RAD[1:1]": {
+   "n": 40,
+   "hz": 10.25
+  },
+  "OPTICAL_FLOW_RAD[1:88]": {
+   "n": 193,
+   "hz": 48.45
+  },
+  "PING[1:1]": {
+   "n": 4,
+   "hz": 1.34
+  },
+  "POSITION_TARGET_LOCAL_NED[1:1]": {
+   "n": 40,
+   "hz": 10.25
+  },
+  "RC_CHANNELS[1:1]": {
+   "n": 38,
+   "hz": 9.84
+  },
+  "SCALED_PRESSURE[1:1]": {
+   "n": 4,
+   "hz": 1.33
+  },
+  "SERVO_OUTPUT_RAW[1:1]": {
+   "n": 40,
+   "hz": 10.25
+  },
+  "SYS_STATUS[1:1]": {
+   "n": 20,
+   "hz": 5.27
+  },
+  "TIMESYNC[1:1]": {
+   "n": 40,
+   "hz": 10.26
+  },
+  "UNKNOWN_380[0:0]": {
+   "n": 2,
+   "hz": 0.99
+  },
+  "UNKNOWN_411[0:0]": {
+   "n": 2,
+   "hz": 0.67
+  },
+  "UNKNOWN_436[0:0]": {
+   "n": 2,
+   "hz": 1.0
+  },
+  "UNKNOWN_8[0:0]": {
+   "n": 4,
+   "hz": 1.34
+  },
+  "VFR_HUD[1:1]": {
+   "n": 40,
+   "hz": 10.25
+  },
+  "VIBRATION[1:1]": {
+   "n": 2,
+   "hz": 1.0
+  }
+ },
+ "last_samples": {
+  "COMMAND_ACK[1:1]": {
+   "mavpackettype": "COMMAND_ACK",
+   "command": 512,
+   "result": 0,
+   "progress": 0,
+   "result_param2": 0,
+   "target_system": 255,
+   "target_component": 190
+  },
+  "OPTICAL_FLOW_RAD[1:88]": {
+   "mavpackettype": "OPTICAL_FLOW_RAD",
+   "time_usec": 408754686,
+   "sensor_id": 0,
+   "integration_time_us": 20000,
+   "integrated_x": 0.0,
+   "integrated_y": 0.0,
+   "integrated_xgyro": NaN,
+   "integrated_ygyro": NaN,
+   "integrated_zgyro": NaN,
+   "temperature": 0,
+   "quality": 26,
+   "time_delta_distance_us": 20000,
+   "distance": -1.0
+  },
+  "DISTANCE_SENSOR[1:88]": {
+   "mavpackettype": "DISTANCE_SENSOR",
+   "time_boot_ms": 408754,
+   "min_distance": 2,
+   "max_distance": 600,
+   "current_distance": 8,
+   "type": 0,
+   "id": 0,
+   "orientation": 25,
+   "covariance": 0,
+   "horizontal_fov": 0.0,
+   "vertical_fov": 0.0,
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "signal_quality": 0
+  },
+  "ATTITUDE[1:1]": {
+   "mavpackettype": "ATTITUDE",
+   "time_boot_ms": 403408,
+   "roll": -3.1257851123809814,
+   "pitch": -1.1512701511383057,
+   "yaw": -3.0952069759368896,
+   "rollspeed": -0.009714663960039616,
+   "pitchspeed": 0.0014275953872129321,
+   "yawspeed": 0.0035304443445056677
+  },
+  "LOCAL_POSITION_NED[1:1]": {
+   "mavpackettype": "LOCAL_POSITION_NED",
+   "time_boot_ms": 403417,
+   "x": 0.0028418011497706175,
+   "y": -0.002660611877217889,
+   "z": -0.03609848767518997,
+   "vx": 0.0031982637010514736,
+   "vy": -0.0027834924403578043,
+   "vz": -0.00191711715888232
+  },
+  "ODOMETRY[1:1]": {
+   "mavpackettype": "ODOMETRY",
+   "time_usec": 403385552,
+   "frame_id": 1,
+   "child_frame_id": 1,
+   "x": 0.00276913121342659,
+   "y": -0.0026141919661313295,
+   "z": -0.036054786294698715,
+   "q": [
+    0.5440458059310913,
+    0.023744860664010048,
+    -0.8384987115859985,
+    0.01924128830432892
+   ],
+   "vx": 0.0032829795964062214,
+   "vy": -0.0028527099639177322,
+   "vz": -0.001919369213283062,
+   "rollspeed": -0.004097141791135073,
+   "pitchspeed": -0.0002967847103718668,
+   "yawspeed": -0.0015430692583322525,
+   "pose_covariance": [
+    0.00013264008157420903,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.00013264086737763137,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0018227973487228155,
+    0.0,
+    0.0,
+    0.0,
+    0.0011562647996470332,
+    0.0,
+    0.0,
+    3.578264295356348e-05,
+    0.0,
+    0.0002585513866506517
+   ],
+   "velocity_covariance": [
+    0.0010667865863069892,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0010667986935004592,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0012727590510621667,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "reset_counter": 6,
+   "estimator_type": 8,
+   "quality": 0
+  },
+  "HIGHRES_IMU[1:1]": {
+   "mavpackettype": "HIGHRES_IMU",
+   "time_usec": 403408081,
+   "xacc": -8.955168724060059,
+   "yacc": 0.046519793570041656,
+   "zacc": 3.9843785762786865,
+   "xgyro": 0.002157408744096756,
+   "ygyro": -0.0015089340740814805,
+   "zgyro": 0.00023946698638610542,
+   "xmag": 0.0,
+   "ymag": 0.0,
+   "zmag": 0.0,
+   "abs_pressure": 1016.224365234375,
+   "diff_pressure": 0.0,
+   "pressure_alt": -24.73211097717285,
+   "temperature": 15.0,
+   "fields_updated": 63,
+   "id": 0
+  },
+  "ATTITUDE_QUATERNION[1:1]": {
+   "mavpackettype": "ATTITUDE_QUATERNION",
+   "time_boot_ms": 403408,
+   "q1": 0.5440503358840942,
+   "q2": 0.023754267022013664,
+   "q3": -0.8384953737258911,
+   "q4": 0.01925213262438774,
+   "rollspeed": -0.009714663960039616,
+   "pitchspeed": 0.0014275953872129321,
+   "yawspeed": 0.0035304443445056677,
+   "repr_offset_q": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ]
+  },
+  "TIMESYNC[1:1]": {
+   "mavpackettype": "TIMESYNC",
+   "tc1": 0,
+   "ts1": 403396717000
+  },
+  "ALTITUDE[1:1]": {
+   "mavpackettype": "ALTITUDE",
+   "time_usec": 403396885,
+   "altitude_monotonic": -24.73211097717285,
+   "altitude_amsl": -24.73211097717285,
+   "altitude_local": 0.036054786294698715,
+   "altitude_relative": 0.036054786294698715,
+   "altitude_terrain": 0.02496928907930851,
+   "bottom_clearance": 0.011085497215390205
+  },
+  "DISTANCE_SENSOR[1:1]": {
+   "mavpackettype": "DISTANCE_SENSOR",
+   "time_boot_ms": 403386,
+   "min_distance": 2,
+   "max_distance": 600,
+   "current_distance": 8,
+   "type": 0,
+   "id": 0,
+   "orientation": 25,
+   "covariance": 0,
+   "horizontal_fov": 0.0,
+   "vertical_fov": 0.0,
+   "quaternion": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+   ],
+   "signal_quality": 0
+  },
+  "ATTITUDE_TARGET[1:1]": {
+   "mavpackettype": "ATTITUDE_TARGET",
+   "time_boot_ms": 403386,
+   "type_mask": 0,
+   "q": [
+    -0.02318575605750084,
+    0.0,
+    0.0,
+    0.999731183052063
+   ],
+   "body_roll_rate": 3.83972430229187,
+   "body_pitch_rate": 3.83972430229187,
+   "body_yaw_rate": 6.356706619262695,
+   "thrust": 0.0010000000474974513
+  },
+  "OPTICAL_FLOW_RAD[1:1]": {
+   "mavpackettype": "OPTICAL_FLOW_RAD",
+   "time_usec": 403384624,
+   "sensor_id": 0,
+   "integration_time_us": 20000,
+   "integrated_x": -0.0,
+   "integrated_y": -0.0,
+   "integrated_xgyro": -8.273212006315589e-05,
+   "integrated_ygyro": -7.821995495760348e-06,
+   "integrated_zgyro": 2.207918805652298e-05,
+   "temperature": 0,
+   "quality": 26,
+   "time_delta_distance_us": 0,
+   "distance": 0.07999999821186066
+  },
+  "POSITION_TARGET_LOCAL_NED[1:1]": {
+   "mavpackettype": "POSITION_TARGET_LOCAL_NED",
+   "time_boot_ms": 403386,
+   "coordinate_frame": 1,
+   "type_mask": 63,
+   "x": NaN,
+   "y": NaN,
+   "z": NaN,
+   "vx": NaN,
+   "vy": NaN,
+   "vz": NaN,
+   "afx": 0.0,
+   "afy": 0.0,
+   "afz": 100.0,
+   "yaw": -3.095216989517212,
+   "yaw_rate": 0.0
+  },
+  "SERVO_OUTPUT_RAW[1:1]": {
+   "mavpackettype": "SERVO_OUTPUT_RAW",
+   "time_usec": 403396187,
+   "port": 0,
+   "servo1_raw": 0,
+   "servo2_raw": 0,
+   "servo3_raw": 0,
+   "servo4_raw": 0,
+   "servo5_raw": 0,
+   "servo6_raw": 0,
+   "servo7_raw": 0,
+   "servo8_raw": 0,
+   "servo9_raw": 0,
+   "servo10_raw": 0,
+   "servo11_raw": 0,
+   "servo12_raw": 0,
+   "servo13_raw": 0,
+   "servo14_raw": 0,
+   "servo15_raw": 0,
+   "servo16_raw": 0
+  },
+  "VFR_HUD[1:1]": {
+   "mavpackettype": "VFR_HUD",
+   "airspeed": NaN,
+   "groundspeed": 0.004349242430180311,
+   "heading": 182,
+   "throttle": 0,
+   "alt": -24.73211097717285,
+   "climb": 0.001919369213283062
+  },
+  "RC_CHANNELS[1:1]": {
+   "mavpackettype": "RC_CHANNELS",
+   "time_boot_ms": 403382,
+   "chancount": 16,
+   "chan1_raw": 0,
+   "chan2_raw": 0,
+   "chan3_raw": 0,
+   "chan4_raw": 0,
+   "chan5_raw": 0,
+   "chan6_raw": 0,
+   "chan7_raw": 0,
+   "chan8_raw": 0,
+   "chan9_raw": 0,
+   "chan10_raw": 0,
+   "chan11_raw": 0,
+   "chan12_raw": 0,
+   "chan13_raw": 0,
+   "chan14_raw": 0,
+   "chan15_raw": 0,
+   "chan16_raw": 0,
+   "chan17_raw": 65535,
+   "chan18_raw": 65535,
+   "rssi": 255
+  },
+  "PING[1:1]": {
+   "mavpackettype": "PING",
+   "time_usec": 402556009,
+   "seq": 395,
+   "target_system": 0,
+   "target_component": 0
+  },
+  "EXTENDED_SYS_STATE[1:1]": {
+   "mavpackettype": "EXTENDED_SYS_STATE",
+   "vtol_state": 0,
+   "landed_state": 1
+  },
+  "SYS_STATUS[1:1]": {
+   "mavpackettype": "SYS_STATUS",
+   "onboard_control_sensors_present": 16395,
+   "onboard_control_sensors_enabled": 81931,
+   "onboard_control_sensors_health": 52480063,
+   "load": 488,
+   "voltage_battery": 4474,
+   "current_battery": -68,
+   "battery_remaining": 1,
+   "drop_rate_comm": 0,
+   "errors_comm": 0,
+   "errors_count1": 0,
+   "errors_count2": 0,
+   "errors_count3": 0,
+   "errors_count4": 0
+  },
+  "UNKNOWN_8[0:0]": {
+   "mavpackettype": "UNKNOWN_8",
+   "data": "bytearray(b'\\xfd \\x00\\x00c\\x01\\x01\\x08\\x00\\x00Y\\x1f\\x00\\x18\\x00\\x00\\x00\\x00~f\\x00\\x00\\x14\\x00\\x00\\x00j\\xdb\\x00\\x00 \\x00\\x00\\x00\\xe1\\x03\\x00\\x00\\x00\\x00y\\x18D\\xd4')"
+  },
+  "ESTIMATOR_STATUS[1:1]": {
+   "mavpackettype": "ESTIMATOR_STATUS",
+   "time_usec": 402994133,
+   "flags": 239,
+   "vel_ratio": NaN,
+   "pos_horiz_ratio": NaN,
+   "pos_vert_ratio": 0.0024650869891047478,
+   "mag_ratio": NaN,
+   "hagl_ratio": NaN,
+   "tas_ratio": NaN,
+   "pos_horiz_accuracy": 0.0164964459836483,
+   "pos_vert_accuracy": 0.04274318739771843
+  },
+  "OPEN_DRONE_ID_LOCATION[1:1]": {
+   "mavpackettype": "OPEN_DRONE_ID_LOCATION",
+   "target_system": 0,
+   "target_component": 0,
+   "id_or_mac": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+   ],
+   "status": 1,
+   "direction": 36100,
+   "speed_horizontal": 25500,
+   "speed_vertical": 6300,
+   "latitude": 0,
+   "longitude": 0,
+   "altitude_barometric": -24.7056884765625,
+   "altitude_geodetic": -1000.0,
+   "height_reference": 0,
+   "height": -1000.0,
+   "horizontal_accuracy": 0,
+   "vertical_accuracy": 0,
+   "barometer_accuracy": 0,
+   "speed_accuracy": 0,
+   "timestamp": 65535.0,
+   "timestamp_accuracy": 0
+  },
+  "SCALED_PRESSURE[1:1]": {
+   "mavpackettype": "SCALED_PRESSURE",
+   "time_boot_ms": 402903,
+   "press_abs": 1016.2338256835938,
+   "press_diff": 0.0,
+   "temperature": 3846,
+   "temperature_press_diff": 0
+  },
+  "UNKNOWN_411[0:0]": {
+   "mavpackettype": "UNKNOWN_411",
+   "data": "bytearray(b'\\xfd\\x01\\x00\\x00#\\x01\\x01\\x9b\\x01\\x00a\\xf7\\xd7')"
+  },
+  "MISSION_CURRENT[1:1]": {
+   "mavpackettype": "MISSION_CURRENT",
+   "seq": 0,
+   "total": 65535,
+   "mission_state": 1,
+   "mission_mode": 2
+  },
+  "HEARTBEAT[1:1]": {
+   "mavpackettype": "HEARTBEAT",
+   "type": 2,
+   "autopilot": 12,
+   "base_mode": 29,
+   "custom_mode": 50593792,
+   "system_status": 0,
+   "mavlink_version": 3
+  },
+  "BATTERY_STATUS[1:1]": {
+   "mavpackettype": "BATTERY_STATUS",
+   "id": 0,
+   "battery_function": 1,
+   "type": 1,
+   "temperature": 32767,
+   "voltages": [
+    4526,
+    65535,
+    65535,
+    65535,
+    65535,
+    65535,
+    65535,
+    65535,
+    65535,
+    65535
+   ],
+   "current_battery": -71,
+   "current_consumed": -79,
+   "energy_consumed": -1,
+   "battery_remaining": 0,
+   "time_remaining": 1,
+   "charge_state": 4,
+   "voltages_ext": [
+    0,
+    0,
+    0,
+    0
+   ],
+   "mode": 0,
+   "fault_bitmask": 0
+  },
+  "UNKNOWN_436[0:0]": {
+   "mavpackettype": "UNKNOWN_436",
+   "data": "bytearray(b'\\xfd\\x08\\x00\\x00\\xe4\\x01\\x01\\xb4\\x01\\x00\\x00\\x00\\x04\\x03\\x00\\x00\\x04\\x03\\xc5\\xad')"
+  },
+  "VIBRATION[1:1]": {
+   "mavpackettype": "VIBRATION",
+   "time_usec": 403001894,
+   "vibration_x": 3.306113993684079e-10,
+   "vibration_y": 0.007625410798937082,
+   "vibration_z": 0.09006667882204056,
+   "clipping_0": 0,
+   "clipping_1": 0,
+   "clipping_2": 0
+  },
+  "UNKNOWN_380[0:0]": {
+   "mavpackettype": "UNKNOWN_380",
+   "data": "bytearray(b'\\xfd\\x14\\x00\\x00\\xfb\\x01\\x01|\\x01\\x00\\x00\\x00\\x00\\x00\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xceB')"
+  }
+ }
+}

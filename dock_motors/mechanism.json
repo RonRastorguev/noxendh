@@ -1,0 +1,42 @@
+{
+  "_source": "Nox Box Mechanism artifact (claude.ai/code/artifact/cfe4560d-d81c-44b6-9ca7-2e51a6b592ad), read 2026-10-17. Its layout numbers are marked C (from arm_layout.py / box-*.md), its motion times E (estimates). Every value marked ASSUMED or PROVISIONAL below must be confirmed on the real mechanism before it carries a pack.",
+
+  "roles": {
+    "_note": "ASSUMED: which board motor drives what was not identified yet. Confirm by jogging (README, 'Swap wheel').",
+    "wheel": "motor1",
+    "head_A": "motor2",
+    "head_B": "motor3",
+    "grip_A": "servo1",
+    "grip_B": "servo2"
+  },
+
+  "wheel": {
+    "_note": "Axle motor on the arm walks a 20T pulley round the fixed 80T sun (artifact: 'a flat band from the 80T to the axle motor's 20T'): 80/20 = 4 motor deg per wheel deg. dir = +1 if a clockwise motor turn raises phi (ASSUMED +1).",
+    "motor_deg_per_deg": 4.0,
+    "dir": 1,
+    "speed_deg_s": 45,
+    "top_deg": 90,
+    "phi_limits_deg": [-300, 90],
+    "_limits_note": "ASSUMED: the arm carries the head motors, so their cables limit how far it may turn. [-300, 90] is exactly what the 9 bays + the top need (A: -210..90, B: -300..0). Narrow it if the cables have less slack."
+  },
+
+  "heads": {
+    "_note": "Each head rides a belt on its bar, driven by a 20T pulley. The artifact draws the belt strands 12.7 mm apart = a 20T GT2 pulley's pitch diameter, so 40 mm per motor turn (INFERRED, confirm the belt). dir per head = +1 if a clockwise motor turn extends the head (ASSUMED).",
+    "mm_per_motor_rev": 40.0,
+    "dir": {"A": 1, "B": 1},
+    "speed_mm_s": 20,
+    "ext_mm": {"park": 32.0, "bay": 84.6, "wait": 81.0, "drone": 89.6},
+    "_ext_note": "Head positions along the bar, the artifact's Z0_PARK / Z0_BAY / Z0_WAIT / Z0_DRONE (C)."
+  },
+
+  "grippers": {
+    "_note": "PROVISIONAL: servo angles for blades open / closed (closed = gripping the cartridge tab). The artifact's blades travel 5 mm on a ~6 mm pinion, ~48 deg of servo, so 66 / 114 around centre. Calibrate on the real gripper before it holds a pack (README).",
+    "open_deg": {"A": 66, "B": 66},
+    "closed_deg": {"A": 114, "B": 114},
+    "provisional": true,
+    "settle_s": 0.6
+  },
+
+  "bays_deg": [0, -30, -60, -90, -120, -150, -180, -210, 30],
+  "motor_max_deg_s": 360
+}

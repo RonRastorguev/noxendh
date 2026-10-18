@@ -1,0 +1,5 @@
+500 flow samples, 215 with rotation > 0.3 rad/s and quality >= 30 (saved cap/flow_gyro.csv)
+  x (roll): flow/gyro on the same axis = +0.07 over 125 samples (aligned: about +1)
+  y (pitch): flow/gyro on the same axis = -0.03 over 129 samples (aligned: about +1)
+misalignment delta = +88.4 deg (flow vs gyro), magnitude ratio 1.11
+sent: nothing

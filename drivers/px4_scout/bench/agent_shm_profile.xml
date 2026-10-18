@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Fast-DDS profile for the Micro XRCE-DDS agent:
+     SHARED-MEMORY transport only, on every participant the agent creates
+     (is_default_profile). Same intent as FASTDDS_BUILTIN_TRANSPORTS=SHM for the
+     ROS nodes: this host's WSL loses UDP discovery whenever
+     its network interfaces are down, and everything that talks DDS to the FC
+     lives on this one machine. Selected by run_sitl_check.sh through
+     FASTRTPS_DEFAULT_PROFILES_FILE. -->
+<profiles xmlns="http://www.eprosima.com/XMLSchemas/fastRTPS_Profiles">
+  <transport_descriptors>
+    <transport_descriptor>
+      <transport_id>noxen_shm</transport_id>
+      <type>SHM</type>
+      <segment_size>8388608</segment_size>
+    </transport_descriptor>
+  </transport_descriptors>
+  <participant profile_name="default_xrce_participant" is_default_profile="true">
+    <rtps>
+      <useBuiltinTransports>false</useBuiltinTransports>
+      <userTransports>
+        <transport_id>noxen_shm</transport_id>
+      </userTransports>
+    </rtps>
+  </participant>
+</profiles>

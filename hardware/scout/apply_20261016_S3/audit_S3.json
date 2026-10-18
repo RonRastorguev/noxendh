@@ -1,0 +1,18 @@
+{
+ "bytes": 244,
+ "messages": 11,
+ "by_type": {
+  "HEARTBEAT": 5,
+  "COMMAND_LONG": 1,
+  "PARAM_REQUEST_LIST": 2,
+  "PARAM_REQUEST_READ": 2,
+  "PARAM_SET": 1
+ },
+ "reboots": [],
+ "non_whitelisted": [
+  [
+   "PARAM_SET",
+   "message type PARAM_SET not whitelisted"
+  ]
+ ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "noxen-alerts",
+  "private": true,
+  "type": "module",
+  "description": "Photon (Spectrum) iMessage alerts for flagged changes, with reply handling (ARCHITECTURE §9, DH-22)",
+  "scripts": {
+    "start": "node --env-file=.env bridge.mjs",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "spectrum-ts": "^12.11.0"
+  }
+}

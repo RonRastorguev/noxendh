@@ -1,0 +1,18 @@
+log C:\Users\Ron\Desktop\noxen-dh26\hardware\scout\flight_20261016b\sess010_log100.ulg: 17 s
+modes:
+    -0.1-  16.1 s  Altitude    ARMED
+    16.1-  16.6 s  Altitude    disarmed
+airborne (land detector): 6.2-16.5 s (10 s)
+flow fused while airborne: 43 % of samples; range height 100 %
+
+== Altitude: 8 s airborne
+  roll rate: rms 60.5 deg/s, dominant 1.0 Hz (4 % of 1-40 Hz power), tracking error rms 86.4 deg/s
+  pitch rate: rms 40.5 deg/s, dominant 1.4 Hz (9 % of 1-40 Hz power), tracking error rms 39.9 deg/s
+  tilt: roll +1.7 ± 7.9 deg, pitch +3.4 ± 4.8 deg; slow tilt rhythm 0.13 Hz (19 %)
+  position: radius 117 cm mean / 271 cm max; x 0.13 Hz, y 0.13 Hz; x-y phase -163 deg (±90 = circling), corr -0.93; speed rms 41 cm/s
+  height (dist_bottom): 0.28 m ± 25 cm; eph 0.29 m
+
+vibration (accel_vibration_metric) airborne: 1.8 m/s^2 (PX4 flags > ~30 as high); gyro 0.194 rad/s
+battery under load: 15.03 -> 14.40 V, current 4.2 A mean
+
+PX4 params of note: {'SENS_FLOW_ROT': 2, 'SDLOG_PROFILE': 3, 'MC_ROLLRATE_P': 0.11999999731779099, 'MC_ROLLRATE_D': 0.0020000000949949026, 'MC_PITCHRATE_P': 0.11999999731779099, 'MC_PITCHRATE_D': 0.0020000000949949026, 'MC_ROLL_P': 6.5, 'MC_PITCH_P': 6.5, 'MPC_XY_VEL_P_ACC': 1.7999999523162842, 'MPC_XY_P': 0.949999988079071, 'IMU_GYRO_CUTOFF': 90.0, 'IMU_DGYRO_CUTOFF': 50.0}

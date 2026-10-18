@@ -1,0 +1,16 @@
+# Written by the dashboard's Crop tool: the box every scan is cropped to, in the frame named by
+# frame_id (a table calibration, or 'sensor'). A crop for another frame is ignored. Reset = delete.
+frame_id: table-20261017T234757Z_1f77
+set_at: '2026-10-18T00:45:57+00:00'
+from_scan: 20261017T232516Z_1265
+roi:
+  center:
+  - -0.5145
+  - -0.4119
+  size:
+  - 0.6987
+  - 1.1194
+  yaw_deg: -60.31
+  z:
+  - -0.1047
+  - 1.3013

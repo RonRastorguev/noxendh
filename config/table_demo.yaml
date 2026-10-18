@@ -1,0 +1,78 @@
+# Demo A (table) configuration. Defaults from ARCHITECTURE.md §12; capture sections added (DH-03, DH-04).
+# Values marked "tune" are placeholders until the noise test / Saturday measurements replace them.
+
+# roi: [x,y,z] box. ONCE THE TABLE IS CALIBRATED (config/table_frame.yaml, written by tools/calibrate_table.py or the
+# dashboard's Calibrate button) the calibration's own box replaces this one: the diorama rectangle in the table frame.
+# Until then, a PROVISIONAL bring-up box in the sensor frame (2026-10-17): everything within 3 m of the L2, so the
+# tabletop-tuned ICP checks pass on a whole room (they failed at 24 m range: fitness 0.72). null = no crop.
+roi: {min: [-3.0, -3.0, -0.3], max: [3.0, 3.0, 3.0]}
+
+# Table frame (DH-23): found from a scan, never typed. perception/table_frame.py documents the fit.
+table_frame_file: config/table_frame.yaml
+table_fit:
+  expected_size_m: [0.6, 1.0]        # Ron 2026-10-17: the diorama is "about 0.6 m by 1 m" (x across, y along)
+  roi_margin_m: 0.03                 # crop margin around the rectangle
+  roi_height_m: 0.45                 # crop top above the tabletop (shelves are ~0.20 m in the synthetic model)
+  max_range_m: 3.0                   # only surfaces this close to the lidar are candidates
+accumulation_s: 10.0                 # Ron 2026-10-17: "recording for maybe 10 seconds" (dashboard Rescan / Set baseline)
+voxel_m: 0.01
+diff_threshold_m: 0.04               # tune from noise test
+cluster_eps_m: 0.02
+min_cluster_points: 50
+min_cluster_size_m: 0.04
+icp: {max_rmse_m: 0.01, min_fitness: 0.8, min_structure_fitness: 0.9, max_corr_m: 0.05, max_iter: 200, coarse_points: 4000, coarse_corr_m: 0.10}   # rmse/fitness: spec placeholders, tune from noise test; structure fitness + iterations: DH-14
+registration:
+  fixed_rig_known_pose: true         # the table rig does not move: if ICP cannot confirm an alignment but the lidar is
+                                     # verifiably unmoved (IMU tilt + scene overlap), keep the known pose (DH-32)
+reg_max_points: 40000                # random subsample for ICP, never the voxel grid (DH-14)
+visibility_voxel_m: 0.02             # ray-march grid for the occlusion / revealed checks (DH-13)
+dbscan_min_samples: 5
+association: {dim_tol: 0.15, dim_abs_tol_m: 0.02, intensity_tol: 0.15, min_score: 0.6, max_move_m: null}   # dim_tol from the spec (~15 %); the rest provisional, tune on recorded moves (DH-15)
+visual: {delta_e_threshold: 18, min_area_px: 400, blur_px: 5, morph_px: 5, ecc: true, normalize: true}   # threshold/area: spec defaults, tune on the real camera (DH-16)
+classifier:
+  primary: perceptron
+  timeout_s: 8                        # per provider; Perceptron Mk1.5 took 0.8-3.4 s per change on real crops (DH-27)
+  fallbacks: [openai, cached]
+  perceptron:                         # DH-27; key: PERCEPTRON_API_KEY in the repo-root .env (gitignored)
+    model: perceptron-mk1.5           # or perceptron-mk1 (same price; Perceptron recommends Mk1.5)
+    # The model picks exactly ONE of these per change (JSON-schema constrained). routine = never alerts, decided here,
+    # not by the model. hint (optional) is shown to the model only; label is what the dashboard and the texts show.
+    # min_severity (optional) is a floor the model's severity is raised to (config decides, like routine).
+    categories:
+      - {id: rust, label: rust, routine: false, hint: orange-brown discolouration}
+      - {id: corrosion, label: corrosion, routine: false}
+      - {id: leak, label: leak or spill, routine: false}
+      - {id: burnt, label: burnt, routine: false, min_severity: high, hint: "the surface turned black, charred or sooty; scorch marks"}   # Ron 2026-10-18: always severe
+      - {id: damage, label: damage, routine: false}
+      - {id: new_object, label: new object, routine: false}
+      - {id: object_removed, label: object removed, routine: false}
+      - {id: object_moved, label: object moved, routine: true}
+      - {id: no_change, label: no real change, routine: true}
+      - {id: other, label: other change, routine: false}
+
+# Fixed rig: sensor frame = map frame (ARCHITECTURE §8.6, DH-09) until the table is calibrated; then frame = table
+# and sensor_pose = the lidar's pose in it, both from config/table_frame.yaml (DH-23).
+frame: sensor
+sensor_pose: [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+
+lidar:
+  # The L2's factory destination is 192.168.1.2:6201 (DH-04). The laptop's Ethernet takes that address.
+  local_ip: 0.0.0.0                  # bind all interfaces; the L2 only reaches the one on its subnet
+  local_port: 6201
+  range_min_m: 0.05                  # L2 datasheet near blind zone
+  range_max_m: 30.0                  # L2 datasheet (90 % reflectivity)
+  seq_modulus: 1024                  # the real unit's 10-bit DataInfo.seq
+  first_data_timeout_s: 3.0          # no datagram this long after start -> capture fails loudly
+
+camera:
+  model: DECXIN 2633V2               # a second unit, identical to the Scout's (Ron 2026-10-15)
+  device: 1                          # OpenCV DSHOW index, measured 2026-10-17 (0 = the laptop's Integrated Webcam). Re-check if USB ports change
+  width: 1280                        # measured 2026-10-17: this unit's max mode is 1280x960 (4:3); 1920x1080 is not offered, even with MJPG
+  height: 960
+  warmup_frames: 15                  # discarded so auto-exposure settles before the kept frame
+  fov_diag_deg: 102                  # listing figure, ASSUMED diagonal: only the starting guess; the corner clicks fit the focal (DH-24)
+
+# Camera -> lidar calibration, written by the dashboard's Calibrate camera (four clicked table corners, DH-24).
+camera_calibration_file: config/camera_calibration.yaml
+
+scans_dir: data/scans

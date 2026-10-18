@@ -1,0 +1,57 @@
+{
+ "changeset": "PARAM_CHANGESET_S6",
+ "set": "Scout: RadioMaster Pocket (ExpressLRS / CRSF) switch layout: SD kill, SB Position/Altitude/Land, SA pilot/offboard, SC mission select (later)",
+ "status": "PREPARED, NOT WRITTEN. Written only on Ron's explicit go with this file's sha256.",
+ "firmware": "PX4 1.18.0 RC fca3df865af36124a28c9d607e850f111dbaaea9, MICOAIR_H743_V2",
+ "board_uid": "0x3533511634343432",
+ "baseline_dump": "hardware/scout/apply_20261016_S5/apply_PARAM_CHANGESET_S5_022814/post.params",
+ "scope": "Ron 2026-10-18: 'implement this layout': SB (3-pos) = Position / Altitude / Land, SA (2-pos) = pilot <-> software (offboard), SD (2-pos) = kill, SC (3-pos) = mission select later. The receiver is CRSF (RC_CRSF_PRT_CFG 201) = ExpressLRS on a Pocket, and ELRS sends CH5 (AUX1) as a 1-bit, 2-position channel in every packet: a 3-position mode switch on CH5 loses its middle position (why CH5 only ever gave Altitude or Position before), while CH5 is the most reliable channel. So: CH5 = kill (SD), CH6 = flight mode (SB, 3 positions survive in ELRS Hybrid/Wide), CH7 = offboard (SA), CH8 = mission select (SC, no FC parameter: the laptop will read it). A 3-position switch gives PWM ~1000 / 1500 / 2000 = mode slots 1 / 4 / 6. Value codes from PX4 parameter metadata: 1 Altitude, 2 Position, 11 Land.",
+ "note": "Types: 6 = INT32. Every 'current' is the live value; the apply tool refuses on drift. scout_apply.sh refuses unless the FC's UID is board_uid. No reboot needed. THE RADIO MIXER MUST CHANGE AT THE SAME TIME (hardware/scout/RADIO_POCKET_S6.md): until it does, the old CH5 flight-mode switch would act as the KILL switch. Props off, disarmed, while both are changed. Verify after: listener input_rc + manual_control_switches with each switch moved (read-only). COM_FLTMODE4 (SB middle) is already 1 = Altitude and is not written.",
+ "writes": [
+  {
+   "n": 1,
+   "name": "RC_MAP_KILL_SW",
+   "type": 6,
+   "current": 8,
+   "proposed": 5,
+   "reboot": false,
+   "source": "kill on CH5 (SD): ELRS sends AUX1 in every packet"
+  },
+  {
+   "n": 2,
+   "name": "RC_MAP_FLTMODE",
+   "type": 6,
+   "current": 5,
+   "proposed": 6,
+   "reboot": false,
+   "source": "flight mode on CH6 (SB, 3-pos): keeps all three positions over ELRS"
+  },
+  {
+   "n": 3,
+   "name": "RC_MAP_OFFB_SW",
+   "type": 6,
+   "current": 6,
+   "proposed": 7,
+   "reboot": false,
+   "source": "offboard (software in control) on CH7 (SA)"
+  },
+  {
+   "n": 4,
+   "name": "COM_FLTMODE1",
+   "type": 6,
+   "current": 1,
+   "proposed": 2,
+   "reboot": false,
+   "source": "SB position 1 (PWM ~1000) = Position (2): the normal pilot mode"
+  },
+  {
+   "n": 5,
+   "name": "COM_FLTMODE6",
+   "type": 6,
+   "current": 2,
+   "proposed": 11,
+   "reboot": false,
+   "source": "SB position 3 (PWM ~2000) = Land (11)"
+  }
+ ]
+}

@@ -1,0 +1,50 @@
+# Scout hardware facts. The ONLY place these numbers are written (DH-06). Every value carries its source.
+# Frames: PX4 body frame FRD (x forward = FC -> camera, y right, z down), origin at the FC (its IMU).
+
+flight_controller:
+  model: MicoAir 743 AIO
+  firmware: {target: PX4, version_target: "1.18.0 RC fca3df86", flashed: false,
+             source: "Ron 2026-10-15: Ron flashes it to PX4"}
+
+companion:
+  model: Radxa Zero 3W
+  soc: RK3566 (4x Cortex-A55)
+  ram_gb: 2                          # measured 2026-10-15: free -h 1.9 GiB total; device-tree model "Radxa ZERO 3"
+  os: "Armbian 26.8.1 Debian 13 trixie, kernel 6.1.115-vendor-rk35xx (DH-07, DH-11)"
+  hostname: scout
+  user: noxen                        # key login (WSL ~/.ssh/id_ed25519_scout, alias `ssh scout`); sudo needs the password
+  root_ssh_key_login: true           # backstop installed by write_presets.sh; revisit before joining any network but home
+  wifi: {ssid: AlphaSigmaPhi, address: 10.1.10.77, dhcp: true, band: "2.4 GHz ch 1, 20 MHz", measured: 2026-10-15}
+  # 2026-10-18: on the laptop's Windows hotspot (same SSID/password) it is scout.mshome.net (192.168.137.216); from
+  # Windows: `ssh scout` (C:\Users\Ron\.ssh\config). WSL's mirrored networking cannot reach the hotspot subnet.
+  wifi_hotspot: {ssid: AlphaSigmaPhi, host: scout.mshome.net, address: 192.168.137.216, measured: 2026-10-18}
+  source: "budget sheet + board markings (Rockchip / Radxa), Ron 2026-10-15"
+
+fc_link:                             # companion <-> FC serial, as WIRED by Ron's hardware person (found 2026-10-18)
+  fc_port: "TELEM2 = UART4, pads R4 / T4 (MICOAIR_H743_V2 target), UXRCE_DDS_CFG 102, SER_TEL2_BAUD 921600"
+  radxa_port: "UART3-M0 = header pin 3 (RX, from FC T4) / pin 5 (TX, to FC R4), /dev/ttyS3, overlay rk3568-uart3-m0"
+  baud: 921600
+  verified: "FC -> Radxa: uXRCE-DDS ping frames (0x7e, 23 B, ~1 Hz) received on ttyS3 2026-10-18; Radxa -> FC: NOT verified (needs the agent)"
+  note: "WIRING_RADXA_FC.md planned pins 16/18 (UART4-M1); the wires are on pins 3/5 (found by watching every header pin for edges)"
+
+camera_front:
+  model: DECXIN 2633V2               # Ron confirmed 2026-10-15
+  fov_deg_nominal: 102               # listing figure, ASSUMED diagonal (provisional) until checkerboard calibration
+  source: "Ron 2026-10-15"
+
+range_flow:
+  model: MicoAir MTF-02P             # laser rangefinder + optical flow, the ONLY downward range sensor
+  range_min_m: 0.02                  # datasheet dead zone
+  range_max_m: 6.0                   # datasheet, 90 % reflectance / 1 klx (4 m in high ambient)
+  flow_min_lux: 60                   # datasheet: flow needs > 60 lux
+  lens_height_at_rest_m: 0.0432      # 1.7 in, Ron 2026-10-15 ("about")
+  pos_from_fc_frd_m: [0.0, 0.0076, 0.0127]   # level fwd, 0.3 in right, 0.5 in below the FC; Ron 2026-10-15, hand-measured
+  source: "Ron 2026-10-15"
+
+derived:
+  fc_height_at_rest_m: 0.0559        # = lens_height_at_rest_m + 0.0127 (module below FC). Never assume z = 0 on the ground.
+
+airframe:
+  hull_radius_m: 0.20                # PROVISIONAL PLACEHOLDER, NOT MEASURED: circumscribed radius incl. props (NEEDS_RON R19)
+  hull_half_height_m: 0.06           # PROVISIONAL PLACEHOLDER, NOT MEASURED (NEEDS_RON R19)
+  source: "placeholder 2026-10-17 for the nav planner (docs/SCOUT_NAV.md); replace with Ron's measurement"

@@ -1,0 +1,19 @@
+# run data and recordings (ARCHITECTURE §14: never commit data/)
+data/
+# secrets
+.env
+.env.*
+!.env.example
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+# web
+web/node_modules/
+alerts/node_modules/
+web/dist/
+# ROS 2 workspace build output
+ros2_ws/build/
+ros2_ws/install/
+ros2_ws/log/

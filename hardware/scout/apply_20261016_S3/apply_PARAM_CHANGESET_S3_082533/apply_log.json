@@ -1,0 +1,25 @@
+{
+ "changeset": "C:\\Users\\Ron\\Desktop\\noxen-dh26\\hardware\\scout\\PARAM_CHANGESET_S3.json",
+ "sha256": "b038e6d821ad6c2c14768db48f416adb1cf6b939805b37989119ea685aefe5b0",
+ "dry_run": false,
+ "started": "2026-10-16T08:25:34Z",
+ "writes": [
+  {
+   "n": 1,
+   "name": "SENS_FLOW_ROT",
+   "from": 4,
+   "to": 2,
+   "echo": 2,
+   "ok": true,
+   "reboot": false
+  }
+ ],
+ "px4_adjusted": [],
+ "post_count": 999,
+ "changed": [
+  "SENS_FLOW_ROT"
+ ],
+ "unexpected_changes": [],
+ "not_changed": [],
+ "reboot_needed": []
+}

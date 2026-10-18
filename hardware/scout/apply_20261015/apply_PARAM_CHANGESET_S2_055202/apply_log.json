@@ -1,0 +1,116 @@
+{
+ "changeset": "C:\\Users\\Ron\\Desktop\\noxen-dh26\\hardware\\scout\\PARAM_CHANGESET_S2.json",
+ "sha256": "bff26d4c114cfb8ab370b396573bed3d18533b27cad7e4840625a13a4fcc3d3e",
+ "dry_run": false,
+ "started": "2026-10-16T05:52:04Z",
+ "writes": [
+  {
+   "n": 1,
+   "name": "MPC_XY_VEL_MAX",
+   "from": 12.0,
+   "to": 1.5,
+   "echo": 1.5,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 2,
+   "name": "MPC_VEL_MANUAL",
+   "from": 10.0,
+   "to": 3.0,
+   "echo": 3.0,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 3,
+   "name": "MPC_XY_CRUISE",
+   "from": 5.0,
+   "to": 3.0,
+   "echo": 3.0,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 4,
+   "name": "MPC_Z_VEL_MAX_UP",
+   "from": 3.0,
+   "to": 1.0,
+   "echo": 1.0,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 5,
+   "name": "MPC_Z_VEL_MAX_DN",
+   "from": 1.5,
+   "to": 0.7,
+   "echo": 0.699999988079071,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 6,
+   "name": "MPC_Z_V_AUTO_UP",
+   "from": 3.0,
+   "to": 1.0,
+   "echo": 1.0,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 7,
+   "name": "MPC_Z_V_AUTO_DN",
+   "from": 1.5,
+   "to": 0.7,
+   "echo": 0.699999988079071,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 8,
+   "name": "MPC_TKO_SPEED",
+   "from": 1.5,
+   "to": 1.0,
+   "echo": 1.0,
+   "ok": true,
+   "reboot": false
+  },
+  {
+   "n": 9,
+   "name": "MPC_LAND_SPEED",
+   "from": 0.699999988079071,
+   "to": 0.6,
+   "echo": 0.6000000238418579,
+   "ok": true,
+   "reboot": false
+  }
+ ],
+ "px4_adjusted": [
+  {
+   "name": "MPC_VEL_MANUAL",
+   "written": 3.0,
+   "now": 1.5
+  },
+  {
+   "name": "MPC_XY_CRUISE",
+   "written": 3.0,
+   "now": 1.5
+  }
+ ],
+ "post_count": 999,
+ "changed": [
+  "MPC_LAND_SPEED",
+  "MPC_TKO_SPEED",
+  "MPC_VEL_MANUAL",
+  "MPC_XY_CRUISE",
+  "MPC_XY_VEL_MAX",
+  "MPC_Z_VEL_MAX_DN",
+  "MPC_Z_VEL_MAX_UP",
+  "MPC_Z_V_AUTO_DN",
+  "MPC_Z_V_AUTO_UP"
+ ],
+ "unexpected_changes": [],
+ "not_changed": [],
+ "reboot_needed": []
+}

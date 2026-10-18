@@ -1,0 +1,15 @@
+{
+  "port": null,
+  "baud": 115200,
+  "default_speed_deg_s": 30,
+  "motors": {
+    "motor1": {"axis": "X", "invert": false},
+    "motor2": {"axis": "Y", "invert": false},
+    "motor3": {"axis": "Z", "invert": true}
+  },
+  "servos": {
+    "servo1": 0,
+    "servo2": 1
+  },
+  "servo_range_deg": [0, 180]
+}

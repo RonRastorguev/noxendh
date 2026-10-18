@@ -1,0 +1,67 @@
+# Scout obstacle avoidance from the forward camera: generic looming (avoidance/, docs/SCOUT_NAV.md §5,
+# decisions docs/decisions_scout_nav/looming.md DN-20..DN-37).
+# EVERY value here is PROVISIONAL: chosen on the synthetic room only (no Scout footage exists). Tune on real video.
+#
+# Read, never copied (avoidance/config.py load_config, DN-31):
+#   ttc_emergency_s  <- config/flight_demo.yaml avoid.looming_ttc_s (1.5 s)
+#   hull_radius_m    <- config/scout_hw.yaml airframe.hull_radius_m (0.20, PROVISIONAL placeholder, NEEDS_RON R19)
+#   hull_half_height_m <- config/scout_hw.yaml airframe.hull_half_height_m (0.06, PROVISIONAL placeholder)
+#   top_clear_m      <- hull_radius_m + flight_demo.yaml nav.dynamic_inflate_extra_m (0.70)
+# A key below that is null keeps the code default (avoidance/looming.py DEFAULTS); a value overrides it.
+
+looming:
+  # --- tracking (Shi-Tomasi + pyramidal KLT, forward-backward check) ---
+  max_features: 400
+  quality_level: 0.01
+  min_distance_px: 10
+  klt_win_px: 21
+  klt_levels: 3
+  fb_max_px: 0.7
+  # --- scale change ---
+  window_frames: 3                 # 0.3 s at 10 Hz; young tracks use 2
+  min_window_frames: 2             # => an obstacle that appears is measurable 0.2 s later
+  direct_check_px: 1.0             # map path: direct de-rotated KLT must agree with the chained track (DN-23)
+  own_depth: true                  # a feature's depth from the pairs that measure IT, not its neighbours' (DN-35)
+  map_own: true                    # ... and the map path's excess / expansions the same way (DN-35)
+  neighbours_k: 16                 # pairs per anchor ...
+  max_pair_px: 120.0               # ... up to this long (an anchor's own depth cancels in its pairs)
+  epi_tol_px: 1.0                  # static-point (epipolar) check of every de-rotated track (DN-24)
+  aperture_min_frac: 0.1           # gradient energy along AND across the epipolar line, each >= this x total
+                                   # (0.2 -> 0.1 with own-depth pairs, DN-35: a pop-in box kept too few tracks)
+  foe_err_px: 25.0                 # FOE error the check tolerates (~4 deg of odom velocity direction)
+  min_closing_speed_mps: 0.10      # slower along the optical axis: no looming, nothing new (DN-28)
+  odom_jump_m: 0.08                # odom step the velocity cannot explain = a local-frame reset (DN-34)
+  reset_settle_frames: 2
+  # --- emergency (image + FC odometry only, DN-25) ---
+  ttc_emergency_s: null            # null = flight_demo.yaml avoid.looming_ttc_s
+  corridor_margin_m: 0.15          # corridor ellipse: hull radius + this across, hull half-height + this vertically
+  raw_explained_frac: 0.5          # no looming_raw box when this share of the emergency cluster is map-consistent
+  min_emergency_features: 5        # a cluster, never one feature ...
+  min_emergency_inside: 3          # ... with this many inside the flat-disc corridor ellipse
+  # --- map-anchored (needs the map pose, DN-26/27) ---
+  map_render_scale: 0.25           # expected depth rendered at 160x120 for a 640x480 stream
+  map_render_spacing_m: 0.06
+  map_pose_tol_px: 2               # nearest mapped surface within ~1.4 deg (render px x 4): pose-error tolerance
+  map_edge_ratio: 1.25             # features on a mapped depth edge are never flagged
+  map_pair_depth_ratio: 1.5        # map-path pairs only within one mapped depth layer
+  map_rel_margin: 0.35             # excess expansion needed: > max(abs, rel x predicted)
+  map_abs_margin: 0.012
+  map_horizon_s: 10.0              # only what would be reached within this at the current closing speed
+  ego_scale_max: 0.3               # odometry scale measured on the mapped scene, clamped to 1 +- this (DN-36)
+  ego_scale_min_features: 40       # ... from at least this many map-consistent features
+  map_min_tau_m: 0.07              # map path needs >= 7 cm forward motion per window (~0.25 m/s)
+  map_border_px: 24                # never flag features this close to the image border
+  map_min_cluster_features: 6
+  map_confirm_frames: 3            # persistence before an obstacle is emitted (track flag streak) ...
+  map_place_tol_m: 0.3             # ... and the same 3D placement (max(this, 0.15 x range)) in consecutive frames
+  map_place_quantile: 0.3          # cluster depth = this quantile of members' own depths (near side, DN-26)
+  map_merge_gap_m: null            # clusters closer than this are one obstacle; null = hull diameter
+  assumed_depth_m: 0.5             # unseen extent along the view (person / pillar sized)
+  # --- obstacle top (DN-29) ---
+  top_min_features: 3              # background rays above, k-th lowest bounds the top
+  top_bg_depth_factor: 1.5         # a background ray measures beyond 1.5x the cluster depth ...
+  top_bg_map_tol: 0.15             # ... and lies on the mapped surface (own depth within 15 % of the map's)
+  top_near_depth_factor: 1.2       # features above within 1.2x the cluster depth are more obstacle
+  top_near_min_features: 2
+  top_edge_px: 100                 # cluster top this close to the image top: top out of view -> ceiling
+  top_unseen_pad_m: 0.5            # top in view, nothing near above, not bounded: highest member + this

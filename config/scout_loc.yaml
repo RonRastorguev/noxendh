@@ -1,0 +1,122 @@
+# Scout camera relocalization in the prior lidar map (ARCHITECTURE §8.2-8.3; localization/, DL-nn in
+# docs/DECISIONS_SCOUT_LOC.md). EVERY threshold here is PROVISIONAL: picked on synthetic data, to be tuned on real
+# Scout footage. Hardware facts are not written here: the lens FOV comes from config/scout_hw.yaml (DH-06), the
+# loc-lost hold time from config/flight_demo.yaml safety.loc_lost_hold_s.
+
+camera:
+  # Calibrated intrinsics (checkerboard, §6.9), YAML {width, height, fx, fy, cx, cy, dist: [k1, k2, p1, p2, k3]}.
+  # null = NOMINAL pinhole model from scout_hw.yaml camera_front.fov_deg_nominal (102, assumed diagonal), no
+  # distortion. Not good enough for real flight; fine for code paths and synthetic tests.
+  intrinsics_file: null
+  nominal_width: 640                 # stream resolution: NOT known yet (set to what the Radxa streams)
+  nominal_height: 480
+  nominal_fov_axis: diagonal         # DH-06: "assumed diagonal"
+  # Camera pose in the Scout body frame (forward-left-up, REP-103 base_link). NOT MEASURED: optical axis along
+  # body x, zero offset. Move the measured numbers into scout_hw.yaml when Ron measures the mount (DL-07).
+  body_from_camera: {mount: forward_optical, translation_m: [0.0, 0.0, 0.0], pitch_down_deg: 0.0}
+
+landmark_map:
+  orb: {n_features: 2000, fast_threshold: 15, grid: [8, 6], clahe_clip: 2.0}
+  map_spacing_m: 0.03                # point spacing of the prior map after voxel filtering (Point-LIO map: TBD)
+  splat_scale: 1.0
+  max_splat_px: 8
+  depth_window_px: 3                 # 7x7 window (DL-05)
+  max_rel_depth_spread: 0.05         # keypoints on depth edges are dropped (tune)
+  min_valid_frac: 0.6
+  min_depth_m: 0.2
+  max_depth_m: 8.0                   # tune
+  keyframe_min_dist_m: 0.3           # keyframe selection along the mapping walk (tune)
+  keyframe_min_angle_deg: 15.0
+
+orb_pnp:
+  orb: {n_features: 1500, fast_threshold: 15, grid: [8, 6], clahe_clip: 2.0}
+  n_local_keyframes: 8
+  max_view_angle_deg: 75.0
+  n_global_keyframes: 10
+  global_on_local_fail: true
+  ratio: 0.8
+  same_point_radius_m: 0.05
+  max_hamming: 64
+  ransac_reproj_px: 4.0              # at the stream resolution (tune)
+  ransac_iterations: 300
+  min_inliers: 25                    # §8.3 "PnP inliers below threshold" (tune)
+  max_reproj_rms_px: 3.0
+
+apriltag:
+  enabled: false                     # §8.3 fallback; turn on once tags are surveyed into the map
+  family: DICT_APRILTAG_36h11
+  corner_refine: subpix              # synthetic: far more accurate than OpenCV's "apriltag" refinement (DL-09)
+  min_tag_px: 40.0                   # synthetic: smaller tags gave 10-50 cm errors (DL-09)
+  max_reproj_rms_px: 2.0
+  single_tag_ambiguity_ratio: 3.0    # lone tag, no prior: 2nd IPPE solution must fit 3x worse ... (DL-09)
+  single_tag_max_spread_m: 0.10      # ... unless both solutions are this close anyway
+  prior_max_dist_m: 1.0              # lone tag with a prior: the chosen solution must be this near it
+  tags_file: null                    # YAML {tags: {id: {size_m, position: [x,y,z], quat_xyzw: [...]}}} in map
+
+localizer:
+  estimators: [orb_pnp, apriltag]    # tried in order each frame; disabled ones are skipped
+  reacquire_fixes: 2
+  max_speed_mps: 2.0                 # plausibility gate, not the flight limit (that is flight_demo.yaml 0.5)
+  max_rot_rate_dps: 180.0
+  jump_slack_m: 0.15
+  jump_slack_deg: 10.0
+
+# Map <-> odom alignment (localization/map_align.py MapOdomAligner(cfg=<this section>); docs/SCOUT_NAV.md §4;
+# decisions DN-10..DN-19 in docs/decisions_scout_nav/map_align.md). EVERY value is PROVISIONAL: chosen on synthetic
+# odom + fixes (tests/test_map_align.py), no Scout flight data exists. Same keys/values as map_align.DEFAULTS.
+map_align:
+  odom_buffer_s: 3.0                 # odom history for interpolating at the fix's IMAGE stamp (latency 50-200 ms)
+  max_extrapolate_s: 0.10
+  max_odom_age_s: 0.5                # newest odom older than this -> valid() false
+  default_height_ref: range          # real Scout EKF2_HGT_REF=2; the mission overrides it from vehicle capabilities
+  # fix noise (1 sigma) and odom drift model (random walk) -> Kalman gains, gates and the drift budget
+  fix_sigma_xy_m: 0.03
+  fix_sigma_z_m: 0.03
+  fix_sigma_yaw_deg: 1.0
+  q_xy_time: 0.01                    # m/sqrt(s), hover drift
+  q_xy_dist: 0.05                    # m/sqrt(m travelled), flow drift with distance
+  q_yaw_time_deg: 0.1                # deg/sqrt(s), gyro-only yaw
+  q_z_time: 0.005
+  init_sigma_xy_m: 0.03              # the fixed takeoff pose, placed by hand
+  init_sigma_yaw_deg: 2.0
+  init_sigma_z_m: 0.03
+  # gating and re-anchoring (DN-11)
+  gate_sigma: 4.0                    # gate = max(gate_min, gate_sigma * sqrt(P + R)); widens while no fix is accepted
+  gate_min_xy_m: 0.15
+  gate_min_z_m: 0.15
+  gate_min_yaw_deg: 5.0
+  reanchor_fixes: 5                  # this many consecutive rejected, mutually consistent fixes ...
+  reanchor_window_s: 2.0
+  reanchor_min_span_s: 0.3           # ... spanning at least this long -> re-anchor (the frame really changed)
+  reanchor_tol_m: 0.08
+  reanchor_tol_z_m: 0.08
+  reanchor_tol_deg: 3.0
+  init_fixes: 2                      # only without init_known_pose
+  # output slew limits (DN-12): what keeps setpoint_to_odom from jumping (0.3 m/s = 1.5 cm per 50 ms tick)
+  slew_max_mps: 0.3
+  slew_max_z_mps: 0.2
+  slew_max_dps: 6.0
+  # validity (DN-15): false when no accepted fix for max_fix_age_s AND the propagated drift exceeds the budget
+  max_fix_age_s: 3.0
+  drift_budget_m: 0.08               # synthetic: ~4.5 s of odom-only flight at 0.5 m/s, minutes of hover
+  drift_budget_deg: 5.0
+  # rangefinder height reference (DN-13, DN-14)
+  use_dist_bottom: true              # raw range in OdomSample.dist_bottom_m -> PX4's step lag measured, not assumed
+  dist_bottom_min_m: 0.02            # MTF-02P dead zone / max range (scout_hw.yaml range_flow); outside -> lag model
+  dist_bottom_max_m: 6.0
+  hgt_model_tau_up_s: 0.5            # ASSUMED PX4 step lag, used only without dist_bottom. tau_up 3 + tau_down 0 =
+  hgt_model_tau_down_s: 0.5          #   "conservative": the Scout only ever errs UPWARDS at a terrain edge (DN-14)
+  rng_deadband_m: 0.03               # smooth: L * (1 - exp(-(L/db)^2)), exact for a real lag residual
+  rng_offset_tau_s: 5.0
+  rng_offset_track_band_m: 0.05
+  rng_offset_relock_s: 10.0
+  terrain_max_rate_mps: 20.0
+  terrain_transient_band_m: 0.05
+  terrain_transient_hold_s: 0.5
+  terrain_settle_max_s: 5.0          # lag model: fixes do not update the z bias this long after a terrain step
+  # surface under the rangefinder beam (DN-14b): chosen by map-z continuity, never by the map edge
+  terrain_ambiguity_radius_m: 0.25   # beam footprint + x/y error: map surfaces this close are candidates; >1 = ambiguous
+  surface_step_m: 0.08               # per-sample map-z continuity tolerance (min)
+  surface_snap_tol_m: 0.10           # first acquisition: snap to a map surface this close
+  max_vz_mps: 1.5                    # continuity tolerance = max(surface_step_m, 2 * max_vz_mps * dt)
+  candidates_period_s: 0.1

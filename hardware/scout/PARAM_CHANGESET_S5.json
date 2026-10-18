@@ -1,0 +1,16 @@
+{
+ "changeset": "PARAM_CHANGESET_S5",
+ "set": "Scout: one estimator on IMU 0 (vertical-speed bias + estimator-switch jumps)",
+ "status": "PREPARED, NOT WRITTEN. Written only on Ron's explicit go with this file's sha256.",
+ "firmware": "PX4 1.18.0 RC fca3df865af36124a28c9d607e850f111dbaaea9, MICOAIR_H743_V2",
+ "board_uid": "0x3533511634343432",
+ "baseline_dump": "hardware/scout/apply_20261016_S4/apply_PARAM_CHANGESET_S4_015400/post.params",
+ "scope": "hardware/scout/flight_20261016b/README.md + the vertical-speed analysis: with estimator instance 1 (IMU 1, accel/gyro 3604506) in charge, the estimated vertical speed ran +0.19 m/s above the true rate (9 five-second chunks, +0.12..+0.26) for 49 s; with instance 0 (IMU 0) in charge (sess009/log103, 107 s) the bias was +0.04 m/s mean. IMU 1 is also the sensor with ~19 000 data gaps on the bench and more accel clipping. And every switch between the two estimators (EKF2_MULTI_IMU 3) shifted the local frame by metres (3.6 m at 57 s in sess010/log101). Fix: PX4's standard single estimator (EKF2_MULTI_IMU 0 + SENS_IMU_MODE 1, both PX4 defaults), with IMU 1 kept as a LOW-priority backup so IMU 0 is always primary while healthy. Rows 1-2 need a reboot (firmware metadata): Ron power-cycles the FC (battery AND USB out) after the write.",
+ "note": "Types: 6 = INT32. Every 'current' is the live value; the apply tool refuses on drift. scout_apply.sh refuses unless the FC's UID is board_uid. Verify after the power-cycle: one estimator instance, primary IMU = 6946834 / 6684690, and a hover log with est. vertical speed matching the height slope.",
+ "writes": [
+  {"n": 1, "name": "EKF2_MULTI_IMU", "type": 6, "current": 3, "proposed": 0, "reboot": true, "source": "single estimator (PX4 default 0): no switch-induced frame jumps"},
+  {"n": 2, "name": "SENS_IMU_MODE", "type": 6, "current": 0, "proposed": 1, "reboot": true, "source": "sensor hub publishes the primary IMU (PX4 default 1; required with a single estimator)"},
+  {"n": 3, "name": "CAL_ACC1_PRIO", "type": 6, "current": 50, "proposed": 25, "reboot": false, "source": "IMU 1 accel (3604506) Low: backup only, IMU 0 (6946834, prio 50) primary"},
+  {"n": 4, "name": "CAL_GYRO1_PRIO", "type": 6, "current": 50, "proposed": 25, "reboot": false, "source": "IMU 1 gyro (3604506) Low: backup only, IMU 0 (6684690, prio 50) primary"}
+ ]
+}

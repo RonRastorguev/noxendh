@@ -1,0 +1,68 @@
+# Scout navigation (piece C of docs/SCOUT_NAV.md §6; decisions DN-40..59 in docs/decisions_scout_nav/navigation.md).
+# EVERY value here is PROVISIONAL: chosen on the synthetic 8 x 6 x 3 m room, no flight data exists.
+#
+# NOT written here (read from their owners by navigation.nav_config.load_nav_config(), never copied):
+#   config/flight_demo.yaml  safety.max_speed_mps (0.5, horizontal cap), safety.geofence_margin_m (null today),
+#                            nav.static_inflate_extra_m (0.3), nav.dynamic_inflate_extra_m (0.5),
+#                            nav.emergency_hover_s (1.0), avoid.looming_ttc_s (1.5, checked < ttc_floor_s)
+#   config/scout_hw.yaml     airframe.hull_radius_m, airframe.hull_half_height_m (placeholders, NEEDS_RON R19)
+# Sections are flattened into one dict; a key may appear in only one section.
+
+map:
+  voxel_m: 0.1                       # occupancy voxel edge (also the planner's xy cell)
+  voxel_min_points: 3                # a voxel needs >= this many map points to be occupied (rejects stray points)
+  surface_layer_frac: 0.3            # floor / ceiling = lowest / highest voxel layer holding >= this share of the
+                                     # fullest layer's occupied voxels
+
+band:
+  min_alt_m: 0.4                     # flight band bottom above the map floor
+  ceiling_margin_m: 0.5              # flight band top below the map ceiling
+
+goal:
+  standoff_m: 0.8                    # hover point = B + standoff x horizontal wall normal
+  goal_pca_radius_m: 0.25            # map points within this of B feed the PCA normal
+  goal_min_points: 20                # fewer -> "B is not on a mapped surface"
+  goal_max_b_dist_m: 0.10            # nearest map point farther than this -> "B is not on a mapped surface"
+  goal_max_normal_tilt_deg: 30.0     # |normal elevation| above this -> "not a wall" (floor, crate top, ceiling)
+  goal_max_planarity: 0.2            # lambda_min / lambda_mid above this -> not a plane at B (corner, edge, clutter)
+
+planner:
+  layer_dz_m: 0.2                    # flight layers every 0.2 m from the band bottom
+  climb_cost_factor: 3.0             # cost of 1 m of vertical travel, in metres of horizontal travel
+  static_vmargin_m: 0.2              # vertical clearance to the mapped map = hull_half_height + this
+  dynamic_vmargin_m: 0.3             # vertical clearance to an obstacle top = hull_half_height + this (covers the
+                                     # rangefinder height step over a box, docs/SCOUT_NAV.md §3)
+  max_start_escape_m: 1.2            # a start inside inflation may hop at most this far to the nearest free node
+                                     # (1.2 > dynamic inflation 0.8 + a stop inside the hard keep-out; sim late_obstacle)
+  around_tol_m: 0.25                 # lateral deviation from the straight line that makes a plan "around"
+
+follower:
+  max_speed_v_mps: 0.3               # vertical speed cap (the horizontal cap is flight_demo safety.max_speed_mps)
+  max_accel_mps2: 0.5                # reference acceleration limit (along the path)
+  max_yaw_rate_dps: 45.0
+  max_heading_err_deg: 20.0          # horizontal motion only while |heading - motion direction| <= this
+  corner_stop_deg: 10.0              # path vertices turning more than this are stop points (stop, yaw, go)
+  final_yaw_dist_m: 1.0              # in the last metre of path the yaw turns to the goal yaw (heading gate waived)
+  ttc_floor_s: 2.0                   # horizontal speed <= (distance ahead - stop margin) / ttc_floor_s; must exceed
+                                     # flight_demo avoid.looming_ttc_s (1.5) so a mapped wall never looms
+  stop_margin_m: 0.3                 # must be < goal standoff - arrive tolerance
+  ttc_ray_max_m: 5.0
+  ttc_rays_lateral: 9                # parallel TTC rays across hull_radius + looming corridor_margin_m (DN-57)
+  short_hop_m: 0.3                   # a shorter horizontal hop is flown facing the next segment (DN-58)
+  max_lead_m: 0.4                    # the reference waits when it is this far ahead of the vehicle
+  arrive_tol_m: 0.10
+  arrive_tol_deg: 8.0
+  arrive_max_speed_mps: 0.1
+
+safety:
+  geofence_margin_m_default: 0.4     # used while flight_demo.yaml safety.geofence_margin_m is null
+  max_step_m: 0.6                    # setpoint at most this far from the current pose
+  max_sp_rate_mps: 0.75              # setpoint may move at most this fast between ticks (1.5 x the speed cap)
+
+memory:
+  memory_s: null                     # null = remember for the whole sortie (DN-50; NOT the spec's 1.5 s decay)
+  merge_gap_m: 0.3                   # detections overlapping or closer than this merge into one box
+  change_tol_m: 0.1                  # a box moving / growing more than this bumps the memory version (replan)
+  raw_weight: 0.5                    # weight of a map-free "looming_raw" detection relative to "looming_map"
+  unseen_top_cover_frac: 0.5         # a later seen-top detection retires an unseen top when it contains its footprint
+                                     #   centre and covers at least this share of its area (DN-51 amended; PROVISIONAL)

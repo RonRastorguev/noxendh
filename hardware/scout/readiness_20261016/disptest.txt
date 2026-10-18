@@ -1,0 +1,8 @@
+4502 samples, 3 still pauses while lifted (saved cap/displacement.csv)
+  pause 0:  18.6- 20.3 s at range 0.90 m
+  pause 1:  20.6- 22.6 s at range 0.90 m
+  pause 2:  46.7- 48.2 s at range 0.83 m
+moves between pauses (Scout frame):
+  move 1 ( 20.3-> 20.6 s): forward -0.00 m, right -0.02 m
+  move 2 ( 22.6-> 46.7 s): forward -0.37 m, right -0.04 m
+sent: nothing

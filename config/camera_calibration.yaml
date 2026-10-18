@@ -1,0 +1,47 @@
+# Written by the dashboard's Calibrate camera (four clicked table corners). Re-click to redo it.
+# T_cam_from_lidar: lidar (sensor) frame -> camera; valid while both stay on one bracket.
+fitted_at: '2026-10-18T00:15:17+00:00'
+from_scan: 20261018T000057Z_44e9
+table_calib_id: table-20261017T234757Z_1f77
+image_size:
+- 1280
+- 960
+K:
+- - 647.9178305586391
+  - 0.0
+  - 640.0
+- - 0.0
+  - 647.9178305586391
+  - 480.0
+- - 0.0
+  - 0.0
+  - 1.0
+dist:
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+- 0.0
+T_cam_from_lidar:
+- - 0.5064882771079675
+  - 0.8578442575082229
+  - -0.08702270928742759
+  - 0.09373878025212903
+- - -0.8474359454117248
+  - 0.5138725548647226
+  - 0.1333706197487367
+  - 0.007144035075032529
+- - 0.1591303983541126
+  - 0.006195558729307546
+  - 0.9872381526977738
+  - 0.041401878514003565
+- - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+fov_diag_deg_assumed: 102.0
+focal_px: 647.9
+focal_from: auto-align
+reproj_px: 5.11
+camera_to_lidar_m: 0.103
+warnings: []

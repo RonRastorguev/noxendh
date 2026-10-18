@@ -1,0 +1,57 @@
+# Written by tools/calibrate_table.py (or the dashboard's Calibrate button). Do not hand-edit:
+# re-run the calibration. Scans captured with it are in the table frame (perception/table_frame.py).
+calib_id: table-20261017T234757Z_1f77
+fitted_at: '2026-10-17T23:48:07+00:00'
+from_scan: 20261017T234757Z_1f77
+T_table_sensor:
+- - 0.541898
+  - 0.244851
+  - 0.803987
+  - -1.013196
+- - -0.19361
+  - -0.894523
+  - 0.402919
+  - -0.678806
+- - 0.81784
+  - -0.374001
+  - -0.437334
+  - 0.833092
+- - 0.0
+  - 0.0
+  - 0.0
+  - 1.0
+size_m:
+- 2.086
+- 2.554
+measured_size_m:
+- 2.086
+- 2.554
+roi:
+  min:
+  - -1.0729
+  - -1.3069
+  - -0.02
+  max:
+  - 1.0729
+  - 1.3069
+  - 0.45
+imu_accel_mean:
+- 8.0561
+- -3.6289
+- -4.2203
+quality:
+  plane_rms_m: 0.0078
+  n_surface_points: 30031
+  visible_area_m2: 1.301
+  imu_vs_surface_tilt_deg: 0.5
+  lidar_in_table_m:
+  - -1.013
+  - -0.679
+  - 0.833
+  lidar_height_above_table_m: 0.833
+  surfaces_tried:
+  - - 0.823
+    - 1.9
+warnings:
+- "the surface found is 2.1 \xD7 2.6 m, 0.83 m below the lidar (a larger table or\
+  \ the floor), not the 0.6 \xD7 1 m diorama: use Crop to pick the area"

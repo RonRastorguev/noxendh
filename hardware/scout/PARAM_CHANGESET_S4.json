@@ -1,0 +1,19 @@
+{
+ "changeset": "PARAM_CHANGESET_S4",
+ "set": "Scout inner-loop gain step (1.5 Hz pitch rocking) + Altitude on the low position of the ch 5 toggle",
+ "status": "PREPARED, NOT WRITTEN. Written only on Ron's explicit go with this file's sha256.",
+ "firmware": "PX4 1.18.0 RC fca3df865af36124a28c9d607e850f111dbaaea9, MICOAIR_H743_V2",
+ "board_uid": "0x3533511634343432",
+ "baseline_dump": "hardware/scout/apply_20261016_S3/apply_PARAM_CHANGESET_S3_082533/post.params",
+ "scope": "hardware/scout/flight_20261016/README.md: in Position the Scout rocks at ~1.5 Hz (pitch +-5-6 deg); at 1.5 Hz the actual pitch is 2x the commanded and lags ~130 deg, the pitch rate lags its setpoint ~70 deg: a rate loop too weak for its attitude loop. Values = Ron's request 2026-10-16 ('rate P 0.12, rate D 0.002, attitude P 6.5. Also put Altitude on the low switch position'). Note: PX4 scales P, I, D by MC_*RATE_K (roll 0.35, pitch 0.40, unchanged here), so the EFFECTIVE rate P goes 0.028/0.032 -> 0.042/0.048 (+50 %), effective D 0.00035/0.0004 -> 0.0007/0.0008. PX4 1.18 default attitude P is 4.0; 6.5 is a step down from 8.0, not the default. The current gains are most likely the 250-racer airframe preset (SYS_AUTOSTART 4050). None of these needs a reboot (firmware metadata). COM_FLTMODE1 8 -> 1: the 2-position ch 5 toggle then gives low = Altitude, high = Position (slot 6, unchanged); Stabilized leaves the switch.",
+ "note": "Types: 6 = INT32, 9 = REAL32. Every 'current' is the live value; the apply tool refuses on drift. scout_apply.sh refuses unless the FC's UID is board_uid. After the write: hover 30-60 s in Position on a charged pack, then the log is read; a high-pitched buzz or hot motors = rate gains too high, land.",
+ "writes": [
+  {"n": 1, "name": "MC_ROLLRATE_P", "type": 9, "current": 0.0799999982118607, "proposed": 0.12, "reboot": false, "source": "Ron 2026-10-16; +50 % (effective 0.028 -> 0.042 with MC_ROLLRATE_K 0.35)"},
+  {"n": 2, "name": "MC_PITCHRATE_P", "type": 9, "current": 0.0799999982118607, "proposed": 0.12, "reboot": false, "source": "Ron 2026-10-16; +50 % (effective 0.032 -> 0.048 with MC_PITCHRATE_K 0.40); pitch is the rocking axis"},
+  {"n": 3, "name": "MC_ROLLRATE_D", "type": 9, "current": 0.0010000000474974513, "proposed": 0.002, "reboot": false, "source": "Ron 2026-10-16; damping x2"},
+  {"n": 4, "name": "MC_PITCHRATE_D", "type": 9, "current": 0.0010000000474974513, "proposed": 0.002, "reboot": false, "source": "Ron 2026-10-16; damping x2"},
+  {"n": 5, "name": "MC_ROLL_P", "type": 9, "current": 8.0, "proposed": 6.5, "reboot": false, "source": "Ron 2026-10-16; attitude loop -19 % (PX4 1.18 default 4.0)"},
+  {"n": 6, "name": "MC_PITCH_P", "type": 9, "current": 8.0, "proposed": 6.5, "reboot": false, "source": "Ron 2026-10-16; attitude loop -19 % (PX4 1.18 default 4.0)"},
+  {"n": 7, "name": "COM_FLTMODE1", "type": 6, "current": 8, "proposed": 1, "reboot": false, "source": "Ron 2026-10-16: 'put Altitude on the low switch position' (8 Stabilized -> 1 Altitude; ch 5 is a 2-position toggle)"}
+ ]
+}
